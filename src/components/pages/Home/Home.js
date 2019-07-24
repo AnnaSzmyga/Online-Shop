@@ -1,10 +1,12 @@
 import React from 'react';
+import Sidebar from '../../features/Sidebar/Sidebar';
 import ProductList from '../../features/ProductList/ProductList';
 
-const Home = (props) => {
+const Home = ({products}) => {
     return (
         <div>
-            <ProductList products={props.products} />
+            <Sidebar products={products} />
+            <ProductList products={products} />
         </div>
     )
 }
