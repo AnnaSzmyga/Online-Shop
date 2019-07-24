@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Czekoladowy 1",
+        "category": "traditional",
+        "price": 120,
+        "description": "Lorem ipsum czekoladowy 1",
+        "image": "http://1.bp.blogspot.com/-ZnYl-fu3Thw/UUyVk3t3wmI/AAAAAAAAADs/GgFKkzvJCII/s640/IS_czekoladowy4.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Truskawkowy",
+        "category": "traditional",
+        "price": 110,
+        "description": "Lorem ipsum truskawkowy",
+        "image": "http://3.bp.blogspot.com/-xdkrpFfe8es/UYfj0D2flfI/AAAAAAAAAJg/eeKn5jrLbvQ/s640/IS_truskawkowyII.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Szwarcwaldzki",
+        "category": "traditional",
+        "price": 130,
+        "description": "Lorem ipsum szwarcwaldzki",
+        "image": "http://3.bp.blogspot.com/-6QNuYBPGQzE/UdHcC3xw7SI/AAAAAAAAAOg/okP5r4idZEs/s640/IS_wisniowy1.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Trolle",
+        "category": "kids",
+        "price": 170,
+        "description": "Lorem ipsum Trolle",
+        "image": "https://4.bp.blogspot.com/-CjSxNpE85L4/WfoAzYeYHqI/AAAAAAAAB_Q/OrXgB-xRQYM2SakLDlffuH6STHv151IPwCLcBGAs/s640/IMG_20170826_144558.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Strażak Sam",
+        "category": "kids",
+        "price": 170,
+        "description": "Lorem ipsum Strażak Sam",
+        "image": "https://4.bp.blogspot.com/-X3xuPmZI6z4/WtZSH3MKO-I/AAAAAAAACC0/vnt7cg9whrM3B00sG6xUNYnKCAuB2R8QgCLcBGAs/s640/IMG_20180417_215818.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Weselny z piwoniami",
+        "category": "wedding",
+        "price": 320,
+        "description": "Lorem ipsum weselny z piwoniami",
+        "image": "https://3.bp.blogspot.com/-xWMhJZEFv1c/Wta_d1beUaI/AAAAAAAACDw/E8XC9fXGIvMWInbPje7ySUIjhfrhbLL7wCLcBGAs/s640/IMG_20180305_054256.png"
+    }
+]

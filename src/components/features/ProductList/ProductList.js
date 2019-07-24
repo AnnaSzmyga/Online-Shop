@@ -1,13 +1,15 @@
 import React from 'react';
 import Product from '../Product/Product';
 
+import './ProductList.css';
+
 const ProductList = (props) => {
     return (
         <div>
-            <ul>
+            <ul className="productList">
                 {
                     props.products.map((product) => {
-                        return <Product name={product.name} id={product.id} key={product.id} />
+                        return <Product product={product} key={product.id} />
                     })
                 }
             </ul>

@@ -1,9 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Product = (props) => {
+import './Product.css';
+
+const Product = ({product}) => {
     return (
-        <li><Link to={`${props.match.url}/products/${props.product.id}`}>{props.product.name}</Link></li>
+        <li className="productCard">
+            <Link to={`/cakes/${product.id}`} className="productCard__link">
+                <div className="productCard__linkImage" alt={product.name} style={{backgroundImage: `url(${product.image})`}}></div>
+            </Link>
+            <div>
+                <h3 className="productCard__heading">{product.name}</h3>
+                <p className="productCard__price">Cena: {product.price}zł</p>
+            </div>
+        </li>
     )
 }
 

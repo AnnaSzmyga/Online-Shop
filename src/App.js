@@ -1,58 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-// import Home from './components/pages/Home/Home';
-// import ProductPage from './components/pages/ProductPage/ProductPage';
-// import Cart from './components/pages/Cart/Cart';
-// import Contact from './components/pages/Contact/Contact';
-
-import MainLayout from './components/layout/MainLayout/MainLayout';
+import MainLayoutContainer from './components/layout/MainLayout/MainLayoutContainer';
+//import products from './data/data.json';
 
 class App extends React.Component {
-  state = {
-    products: [
-      {
-        id: 1,
-        name: "okulary"
-      },
-      {
-        id: 2,
-        name: "lusterko"
-      },
-      {
-        id: 3,
-        name: "kubek"
-      }
-    ]
-  }
   render() {
-    return (
-      <Router>
-        <MainLayout products={this.state.products} />
-      </Router>
-    )
+    return <MainLayoutContainer />
   }
 }
 
 // class App extends React.Component {
+//   state = {products};
 //   render() {
-//     return (
-//       <BrowserRouter>
-//         <MainLayout>
-//           <Navbar />
-//           <PagesContainer>
-//             <Switch>
-//               <Route path={"/"} exact component={Home} />
-//               <Route path={"/products/:id"} exact component={ProductPage} />
-//               <Route path={"/cart"} exact component={Cart} />
-//               <Route path={"/contact"} exact component={Contact} />
-//             </Switch>
-//           </PagesContainer>
-//           <Footer />
-//         </MainLayout>
-//       </BrowserRouter>
-//     )
+//     return <MainLayout products={this.state.products} />
 //   }
 // }
+
 
 export default App;

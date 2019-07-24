@@ -1,7 +1,38 @@
-a, a:visited {
+.Menu {
+    height: 100px;
+}
+
+.Menu__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+/* .Menu__item {
+
+} */
+
+.Menu__link, .Menu__link:visited {
+    padding: 10px 20px;
     color: black;
 }
 
-a.active {
+.Menu__link--active {
     color: blue;
 }
+
+.Menu--footer {
+    color: grey;
+}
+
+/* a, a:visited {
+    color: black;
+} */
+
+/* a.active {
+    color: blue;
+} */

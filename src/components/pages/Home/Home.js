@@ -3,7 +3,7 @@ import ProductList from '../../features/ProductList/ProductList';
 
 const Home = (props) => {
     return (
-        <div>Home
+        <div>
             <ProductList products={props.products} />
         </div>
     )

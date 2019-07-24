@@ -5,13 +5,20 @@ import './Menu.css';
 
 const Menu = (props) => {
     return (
-        <div>
-            <ul>
-                <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
-                <li><NavLink to="/faq" activeClassName="active">FAQ</NavLink></li>
-                <li><NavLink to="/regulations" activeClassName="active">Regulamin</NavLink></li>
-                <li><NavLink to="/contact" activeClassName="active">Kontakt</NavLink></li>
-                <li><NavLink to="/cart" activeClassName="active">Koszyk</NavLink></li>
+        <div className="Menu">
+            <ul className="Menu__list">
+                <li className="Menu__item">
+                    <NavLink exact to="/" className="Menu__link" activeClassName="Menu__link--active">Home</NavLink>
+                </li>
+                <li className="Menu__item">
+                    <NavLink to="/faq" className="Menu__link" activeClassName="Menu__link--active">FAQ</NavLink>
+                </li>
+                <li className="Menu__item">
+                    <NavLink to="/regulations" className="Menu__link" activeClassName="Menu__link--active">Regulamin</NavLink>
+                </li>
+                <li className="Menu__item">
+                    <NavLink to="/contact" className="Menu__link" activeClassName="Menu__link--active">Kontakt</NavLink>
+                </li>
             </ul>
         </div>
     )
