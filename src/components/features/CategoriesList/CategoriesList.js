@@ -1,6 +1,8 @@
 import React from 'react';
 import Category from '../Category/Category';
 
+import './CategoriesList.css';
+
 const CategoriesList = (props) => {
     const categories = [
         {
@@ -33,13 +35,11 @@ const CategoriesList = (props) => {
         }
     ]
     return (
-        <div>
-            <ul>
-                {
-                    categories.map((category) => <Category category={category} />)
-                }
-            </ul>
-        </div>
+        <ul className="categoriesList">
+            {
+                categories.map((category) => <Category category={category} />)
+            }
+        </ul>
     )
 }
 

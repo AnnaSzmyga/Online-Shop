@@ -3,11 +3,20 @@ import Navbar from '../Navbar/Navbar';
 import PageContainer from '../PageContainer/PageContainer';
 import Footer from '../Footer/Footer';
 
-const MainLayout = ({products}) => {
+import './MainLayout.css';
+
+const MainLayout = ({products, sortAsc, sortDesc, sortAZ, sortZA}) => {
+    console.log(products);
     return (
-        <div>
+        <div className="mainLayout">
             <Navbar />
-            <PageContainer products={products} />
+            <PageContainer
+                products={products}
+                sortAsc={sortAsc}
+                sortDesc={sortDesc}
+                sortAZ={sortAZ}
+                sortZA={sortZA}
+            />
             <Footer />
         </div>
     )

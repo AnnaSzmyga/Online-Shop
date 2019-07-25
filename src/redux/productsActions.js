@@ -1,4 +1,9 @@
 export const SELECT_CATEGORY = 'SELECT_CATEGORY';
+export const SORT_ASC = 'SORT_ASC';
+export const SORT_DESC = 'SORT_DESC';
+export const SORT_AZ = 'SORT_AZ';
+export const SORT_ZA = 'SORT_ZA';
+
 
 export function selectCategory(category) {
     return {
@@ -6,3 +11,28 @@ export function selectCategory(category) {
         category
     }
 };
+
+export function sortAsc() {
+    return {
+        type: SORT_ASC,
+    }
+};
+
+export function sortDesc() {
+    return {
+        type: SORT_DESC,
+    }
+};
+
+export function sortAZ() {
+    return {
+        type: SORT_AZ,
+    }
+};
+
+export function sortZA() {
+    return {
+        type: SORT_ZA,
+    }
+};
+
