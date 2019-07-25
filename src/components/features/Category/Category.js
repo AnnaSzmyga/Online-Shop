@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-const Category = ({category}) => {
+const Category = ({category, onFilterCategory}) => {
     return (
-        <li>{category.categoryOutput}</li>
+        <li onClick={onFilterCategory}>{category.categoryOutput}</li>
     )
 }
 

@@ -7,35 +7,53 @@ import './Home.css';
 class Home extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { products: this.props.products };
+        this.state = {
+            products: this.props.products,
+            isFiltered: false
+        };
     }
     sortAscend = () => {
-        let products = this.props.products;
+        let products = this.state.isFiltered ? this.state.products : this.props.products;
         products.sort((a, b) => {
             return a.price - b.price;
           });
         this.setState({products});
     }
     sortDescend = () => {
-        let products = this.props.products;
+        let products = this.state.isFiltered ? this.state.products : this.props.products;
         products.sort((a, b) => {
             return b.price - a.price;
           });
         this.setState({products});
     }
     sortAZ = () => {
-        let products = this.props.products;
+        let products = this.state.isFiltered ? this.state.products : this.props.products;
         products.sort((a, b) => {
             return a.name.localeCompare(b.name);
           });
         this.setState({products});
     }
     sortZA = () => {
-        let products = this.props.products;
+        let products = this.state.isFiltered ? this.state.products : this.props.products;
         products.sort((a, b) => {
             return b.name.localeCompare(a.name);
           });
         this.setState({products});
+    }
+    filterCategory = (category) => {
+        let products = [];
+        // products.filter((product) => {category === product.category});
+        // dlaczego wyrzuca błąd?
+        this.props.products.forEach((product) => {
+            if (product.category === category) {
+                products.push(product);
+            }
+        });
+
+        this.setState({
+            products,
+            isFiltered: true
+        });
     }
     render() {
         return (
@@ -46,6 +64,7 @@ class Home extends React.Component {
                     sortDescend={this.sortDescend}
                     sortAZ={this.sortAZ}
                     sortZA={this.sortZA}
+                    filterCategory={this.filterCategory}
                 />
                 <ProductList products={this.state.products} />
             </div>

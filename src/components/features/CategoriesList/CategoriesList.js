@@ -3,7 +3,7 @@ import Category from '../Category/Category';
 
 import './CategoriesList.css';
 
-const CategoriesList = (props) => {
+const CategoriesList = ({filterCategory}) => {
     const categories = [
         {
             categoryName: "traditional",
@@ -37,7 +37,7 @@ const CategoriesList = (props) => {
     return (
         <ul className="categoriesList">
             {
-                categories.map((category) => <Category category={category} />)
+                categories.map((category) => <Category category={category} onFilterCategory={() => filterCategory(category.categoryName)} />)
             }
         </ul>
     )
