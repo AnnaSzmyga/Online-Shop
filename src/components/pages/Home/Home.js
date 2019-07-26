@@ -67,7 +67,10 @@ class Home extends React.Component {
                     sortZA={this.sortZA}
                     filterCategory={this.filterCategory}
                 />
-                <ProductList products={this.state.products} addToCart={this.props.addToCart} />
+                <ProductList
+                    products={this.state.products}
+                    addToCart={this.props.addToCart}
+                />
             </div>
         )
     }

@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 
 import './MainLayout.css';
 
-const MainLayout = ({products, cart, addProduct}) => {
+const MainLayout = ({products, cart, addProduct, removeProduct}) => {
     return (
         <div className="mainLayout">
             <Navbar />
@@ -13,6 +13,7 @@ const MainLayout = ({products, cart, addProduct}) => {
                 products={products}
                 cart={cart}
                 addProduct={addProduct}
+                removeProduct={removeProduct}
             />
             <Footer />
         </div>
