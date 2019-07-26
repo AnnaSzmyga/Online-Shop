@@ -1,8 +1,10 @@
 import React from 'react';
+import Button from '../../common/Button/Button';
+
 import './ProductPage.css';
 
 
-const ProductPage = ({match, products}) => {
+const ProductPage = ({match, products, addProduct}) => {
 
       // const activeProduct = products.filter((product) => {product.id.toString() === match.params.id});
 
@@ -21,6 +23,7 @@ const ProductPage = ({match, products}) => {
           <div>
             <p>Produkt ID: {match.params.id}</p>
             <p>Nazwa: {activeProduct.name}</p>
+            <Button buttonOutput="Dodaj do koszyka" onClickCallback={() => addProduct(activeProduct)} />
             <img src={activeProduct.image} className="ProductImage" alt={activeProduct.name} />
           </div>
         )
