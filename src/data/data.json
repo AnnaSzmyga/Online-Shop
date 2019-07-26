@@ -46,5 +46,93 @@
         "price": 320,
         "description": "Lorem ipsum weselny z piwoniami",
         "image": "https://3.bp.blogspot.com/-xWMhJZEFv1c/Wta_d1beUaI/AAAAAAAACDw/E8XC9fXGIvMWInbPje7ySUIjhfrhbLL7wCLcBGAs/s640/IMG_20180305_054256.png"
+    },
+    {
+        "id": 7,
+        "name": "Shrek",
+        "category": "kids",
+        "price": 190,
+        "description": "Lorem ipsum shrek",
+        "image": "https://2.bp.blogspot.com/-cHFBYme1z2Y/W8eNz4KxVFI/AAAAAAAAE8I/73i-rhgHT6sUbeCdAu19N0gHoNeOOvIwwCLcBGAs/s640/IMG_20180625_073035.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Tort na chrzciny 1",
+        "category": "christening",
+        "price": 260,
+        "description": "Lorem ipsum tort na chrzciny 1",
+        "image": "https://3.bp.blogspot.com/-Jr-c8gUBpK0/WtZSoUxNDqI/AAAAAAAACDA/Q0EcLJhkTVs8h-BLQpuzZoirhlCNfVy5wCLcBGAs/s640/IMG_20180417_220028.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Mini eklerki",
+        "category": "others",
+        "price": 60,
+        "description": "Lorem ipsum mini eklerki",
+        "image": "https://4.bp.blogspot.com/-EOl-4gYMBjU/WtZMy1hqkSI/AAAAAAAACBU/-Fp3pYuKDnok0ytLLIQJA4mYdCcJC7JbACLcBGAs/s640/IMG_20171210_120904.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Mini serniczki Oreo",
+        "category": "others",
+        "price": 70,
+        "description": "Lorem ipsum mini serniczki Oreo",
+        "image": "https://3.bp.blogspot.com/-ZKK9AGfCN7w/WUoeY_K9MHI/AAAAAAAAB7U/i6F2tI5Ge18U-6mRtBLptAGuPoGGzgCOACLcBGAs/s320/IMG_20170604_143005.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Ninjago",
+        "category": "kids",
+        "price": 180,
+        "description": "Lorem ipsum Ninjago",
+        "image": "https://1.bp.blogspot.com/-nw4Kz3ZTJ6U/WtZT-7TBWcI/AAAAAAAACDY/em73dI8GRDg1dJGVjP369p1wikr4zLM6ACLcBGAs/s640/IMG_20180417_220631.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Komunijny 1",
+        "category": "communion",
+        "price": 270,
+        "description": "Lorem ipsum Komunijny 1",
+        "image": "https://2.bp.blogspot.com/-gSstmoqERbA/W8eI2ShOitI/AAAAAAAAEp0/9axt17ZCxK0ZrhLOUVn1gYH6fFc2qJt6QCLcBGAs/s640/IMG_20180514_124900.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Weselny 1",
+        "category": "wedding",
+        "price": 370,
+        "description": "Lorem ipsum weselny 1",
+        "image": "https://4.bp.blogspot.com/-zWG19TfG61k/W8eLOGsa6yI/AAAAAAAAE0Q/Ss4ZpBMp6R8fAReVspbFufvawCJx7GsyACLcBGAs/s640/IMG_20180915_154252.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Komunijny 2",
+        "category": "communion",
+        "price": 370,
+        "description": "Lorem ipsum Komunijny 2",
+        "image": "https://3.bp.blogspot.com/-ebaiVnoY-0k/WUoZ5jaIfSI/AAAAAAAAB6g/D2AW9BuO7FgXC4Nzi_znOb5DFrnun3ttACLcBGAs/s640/IMG_20170621_085944.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Mam talent",
+        "category": "occasional",
+        "price": 170,
+        "description": "Lorem ipsum Mam talent",
+        "image": "https://4.bp.blogspot.com/-o7p7h5p2HLk/W8ePoKNRWXI/AAAAAAAAE_I/cAiOVja3gH00EPohplKXTMl1KjDXEx-6ACLcBGAs/s640/IMG_20181013_200805.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Na 18-kę",
+        "category": "occasional",
+        "price": 270,
+        "description": "Lorem ipsum na 18-kę",
+        "image": "https://4.bp.blogspot.com/-aDx7-6ww-4I/WCrx3adFOTI/AAAAAAAABuU/KKH2Gnn3YGk6isp1E6sdvuat--aE3x5gwCLcB/s640/IMG_20161111_085102.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Tort na chrzciny 2",
+        "category": "christening",
+        "price": 380,
+        "description": "Lorem ipsum Tort na chrzciny 2",
+        "image": "http://1.bp.blogspot.com/-L38u5wuyBIY/VM6XAJKZxMI/AAAAAAAABDM/NQDVqoq7fbc/s1600/IS_chrzciny4.jpg"
     }
 ]

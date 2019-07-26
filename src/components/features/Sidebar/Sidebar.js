@@ -7,13 +7,13 @@ import './Sidebar.css';
 const Sidebar = ({products, sortAscend, sortDescend, sortAZ, sortZA, filterCategory}) => {
     return (
         <div className="sidebar">
+            <CategoriesList  filterCategory={filterCategory} />
             <Sorting
                 onSortAscend={sortAscend}
                 onSortDescend={sortDescend}
                 onSortAZ={sortAZ}
                 onSortZA={sortZA}
             />
-            <CategoriesList  filterCategory={filterCategory} />
         </div>
     )
 }

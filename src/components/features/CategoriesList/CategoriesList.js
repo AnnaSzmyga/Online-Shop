@@ -37,7 +37,13 @@ const CategoriesList = ({filterCategory}) => {
     return (
         <ul className="categoriesList">
             {
-                categories.map((category) => <Category category={category} onFilterCategory={() => filterCategory(category.categoryName)} />)
+                categories.map((category) =>
+                    <Category
+                        category={category}
+                        onFilterCategory={() => filterCategory(category.categoryName)}
+                        key={category.categoryName}
+                    />
+                )
             }
         </ul>
     )

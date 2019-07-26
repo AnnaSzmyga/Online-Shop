@@ -11,6 +11,7 @@ class Home extends React.Component {
             products: this.props.products,
             isFiltered: false
         };
+        console.log(props);
     }
     sortAscend = () => {
         let products = this.state.isFiltered ? this.state.products : this.props.products;
@@ -66,7 +67,7 @@ class Home extends React.Component {
                     sortZA={this.sortZA}
                     filterCategory={this.filterCategory}
                 />
-                <ProductList products={this.state.products} />
+                <ProductList products={this.state.products} addToCart={this.props.addToCart} />
             </div>
         )
     }

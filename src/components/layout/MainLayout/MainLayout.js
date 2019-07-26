@@ -5,21 +5,34 @@ import Footer from '../Footer/Footer';
 
 import './MainLayout.css';
 
-const MainLayout = ({products, sortAsc, sortDesc, sortAZ, sortZA}) => {
-    console.log(products);
+const MainLayout = ({products, cart, addProduct}) => {
     return (
         <div className="mainLayout">
             <Navbar />
             <PageContainer
                 products={products}
-                sortAsc={sortAsc}
-                sortDesc={sortDesc}
-                sortAZ={sortAZ}
-                sortZA={sortZA}
+                cart={cart}
+                addProduct={addProduct}
             />
             <Footer />
         </div>
     )
 }
+
+// const MainLayout = ({products, sortAsc, sortDesc, sortAZ, sortZA}) => {
+//     return (
+//         <div className="mainLayout">
+//             <Navbar />
+//             <PageContainer
+//                 products={products}
+//                 sortAsc={sortAsc}
+//                 sortDesc={sortDesc}
+//                 sortAZ={sortAZ}
+//                 sortZA={sortZA}
+//             />
+//             <Footer />
+//         </div>
+//     )
+// }
 
 export default MainLayout;
