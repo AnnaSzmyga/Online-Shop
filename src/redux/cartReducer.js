@@ -1,4 +1,4 @@
-import { ADD_PRODUCT, REMOVE_PRODUCT } from './cartActions';
+import { ADD_PRODUCT, REMOVE_PRODUCT, CLEAR_CART } from './cartActions';
 
 /* INITIAL STATE */
 
@@ -15,6 +15,10 @@ export default function cartReducer(state = initialState, action) {
     case REMOVE_PRODUCT:
         console.log("usuwanie z koszyka");
         return state.filter(product => product.id !== action.id);
+
+    case CLEAR_CART:
+        console.log("usuwanie wszystkiego z koszyka");
+        return [];
 
     default:
       return state;

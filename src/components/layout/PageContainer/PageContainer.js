@@ -11,7 +11,7 @@ import ProductPage from '../../pages/ProductPage/ProductPage';
 
 import './PageContainer.css';
 
-const PageContainer = ({products, cart, addProduct, removeProduct}) => {
+const PageContainer = ({products, cart, addProduct, removeProduct, clearCart}) => {
   return (
           <div className="pageContainer">
             <Switch>
@@ -26,8 +26,14 @@ const PageContainer = ({products, cart, addProduct, removeProduct}) => {
               <Route
                 path={"/cart"}
                 exact
-                render={(props) => <Cart {...props} cartProducts={cart}
-                removeProduct={removeProduct} />}
+                render={(props) =>
+                  <Cart
+                    {...props}
+                    cartProducts={cart}
+                    removeProduct={removeProduct}
+                    clearCart={clearCart}
+                  />
+                }
               />
               <Route path={"/cakes/:id"} render={(props) => <ProductPage {...props} products={products} />} />
               <Route component={NoMatch} />
