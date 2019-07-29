@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../../common/Button/Button';
 
 import './ProductPage.css';
 
 
-const ProductPage = ({match, products, addProduct}) => {
+const ProductPage = ({match, products, addProduct, ...props}) => {
 
       // const activeProduct = products.filter((product) => {product.id.toString() === match.params.id});
 
@@ -16,11 +17,13 @@ const ProductPage = ({match, products, addProduct}) => {
             activeProduct = product;
         }
     })
-
     console.log(activeProduct);
 
     return (
           <div>
+            <div className="go-back" onClick={props.history.goBack}>
+              Powrót
+            </div>
             <p>Produkt ID: {match.params.id}</p>
             <p>Nazwa: {activeProduct.name}</p>
             <Button buttonOutput="Dodaj do koszyka" onClickCallback={() => addProduct(activeProduct)} />
@@ -30,6 +33,6 @@ const ProductPage = ({match, products, addProduct}) => {
 }
 
 export default ProductPage;
-
+// <Link to={() => props.history.go(-1)}><span>Powrót</span></Link>
 
 

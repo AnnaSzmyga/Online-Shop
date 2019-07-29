@@ -11,7 +11,9 @@ import ProductPage from '../../pages/ProductPage/ProductPage';
 
 import './PageContainer.css';
 
-const PageContainer = ({products, cart, addProduct, removeProduct, clearCart, changeQuantity}) => {
+const PageContainer = ({products, cart, addProduct, removeProduct, clearCart, changeQuantity, ...props}) => {
+
+  console.log(props.location);
   return (
           <div className="pageContainer">
             <Switch>
@@ -20,6 +22,12 @@ const PageContainer = ({products, cart, addProduct, removeProduct, clearCart, ch
                 exact
                 render={(props) => <Home {...props} products={products} addToCart={addProduct} />}
               />
+              <Route
+                path={"/sort_by=:sorting"}
+                exact
+                render={(props) => <Home {...props} products={products} addToCart={addProduct} />}
+              />
+
               <Route path={"/faq"} exact component={FAQ} />
               <Route path={"/regulations"} exact component={Regulations} />
               <Route path={"/contact"} exact component={Contact} />
