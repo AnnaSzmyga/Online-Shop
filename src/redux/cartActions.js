@@ -1,6 +1,7 @@
 export const ADD_PRODUCT = 'ADD_PRODUCT';
 export const REMOVE_PRODUCT = 'REMOVE_PRODUCT';
 export const CLEAR_CART = 'CLEAR_CART';
+export const CHANGE_QUANTITY = 'CHANGE_QUANTITY';
 
 
 
@@ -17,6 +18,15 @@ export function removeProduct(id) {
         id
     }
 };
+
+export function changeQuantity(id, quantity) {
+    return {
+        type: CHANGE_QUANTITY,
+        id,
+        quantity
+    }
+};
+
 
 export function clearCart() {
     return {

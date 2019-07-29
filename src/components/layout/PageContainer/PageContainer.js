@@ -11,7 +11,7 @@ import ProductPage from '../../pages/ProductPage/ProductPage';
 
 import './PageContainer.css';
 
-const PageContainer = ({products, cart, addProduct, removeProduct, clearCart}) => {
+const PageContainer = ({products, cart, addProduct, removeProduct, clearCart, changeQuantity}) => {
   return (
           <div className="pageContainer">
             <Switch>
@@ -32,6 +32,7 @@ const PageContainer = ({products, cart, addProduct, removeProduct, clearCart}) =
                     cartProducts={cart}
                     removeProduct={removeProduct}
                     clearCart={clearCart}
+                    changeQuantity={changeQuantity}
                   />
                 }
               />
