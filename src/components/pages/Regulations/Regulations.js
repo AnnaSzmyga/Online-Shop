@@ -5,7 +5,7 @@ import './Regulations.css';
 const Regulations = (props) => {
     return (
         <div className="regulations">
-            <h2 className="page-heading">Regulations</h2>
+            <h2 className="page-heading">Regulamin sklepu</h2>
             <ol className="regulations__list">
                 <li className="regulations__item">
                     <h4 className="regulations__heading">Duis dapibus ante.</h4>
