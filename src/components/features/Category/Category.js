@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Category = ({category, onFilterCategory, activeSorting}) => {
     return (
-        <li onClick={onFilterCategory}><Link to={`/${category.categoryName}`}>{category.categoryOutput}</Link></li>
+        <li onClick={onFilterCategory}><Link to={`/category=${category.categoryName}`}>{category.categoryOutput}</Link></li>
     )
 }
 

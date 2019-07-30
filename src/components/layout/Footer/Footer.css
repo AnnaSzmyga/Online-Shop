@@ -1,6 +1,9 @@
-.Footer {
+.footer {
+    min-height: 60px;
+}
+
+.footer__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 60px;
 }

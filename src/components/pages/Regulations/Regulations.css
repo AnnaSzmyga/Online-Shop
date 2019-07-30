@@ -1,0 +1,11 @@
+.regulations__list {
+    padding: 0;
+}
+
+.regulations__item {
+    margin-top: 30px;
+}
+
+.regulations__heading {
+    text-transform: uppercase;
+}

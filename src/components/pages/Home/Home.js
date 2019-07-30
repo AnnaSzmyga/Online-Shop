@@ -11,7 +11,8 @@ class Home extends React.Component {
         this.state = {
             products: this.props.products,
             activeCategory: '',
-            activeSorting: ''
+            activeSorting: '',
+            activePage: 1
         };
         console.log(props);
     }
@@ -81,7 +82,7 @@ class Home extends React.Component {
                     render={() => <p>test</p>}
                 />
                 <Route
-                    path={"/:category"}
+                    path={"/category=:category"}
                     render={(props) => <ProductList {...props} products={this.state.products} addToCart={this.props.addToCart} />}
                 />
             </div>

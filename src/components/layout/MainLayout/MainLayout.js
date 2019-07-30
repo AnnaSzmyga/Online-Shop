@@ -7,7 +7,7 @@ import './MainLayout.css';
 
 const MainLayout = ({products, cart, addProduct, removeProduct, clearCart, changeQuantity}) => {
     return (
-        <div className="mainLayout">
+        <div className="main-layout">
             <Navbar />
             <PageContainer
                 products={products}
