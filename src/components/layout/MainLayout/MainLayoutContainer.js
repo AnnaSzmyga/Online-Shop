@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import MainLayout from './MainLayout';
-//import { selectCategory, sortAsc, sortDesc, sortAZ, sortZA } from '../../../redux/productsActions';
+//import { sortAsc, sortDesc, sortAZ, sortZA } from '../../../redux/productsActions';
 import { addProduct, removeProduct, clearCart, changeQuantity } from '../../../redux/cartActions';
 
 const mapStateToProps = state => ({
@@ -13,9 +13,8 @@ const mapDispatchToProps = dispatch => ({
   removeProduct: (id) => dispatch(removeProduct(id)),
   clearCart: () => dispatch(clearCart()),
   changeQuantity: (id, quantity) => dispatch(changeQuantity(id, quantity))
-  // selectCategory: (category) => dispatch(selectCategory(category)),
-  // sortAsc: () => dispatch(sortAsc()),
-  // sortDesc: () => dispatch(sortDesc()),
+  // sortAscend: () => dispatch(sortAsc()),
+  // sortDescend: () => dispatch(sortDesc()),
   // sortAZ: () => dispatch(sortAZ()),
   // sortZA: () => dispatch(sortZA())
 });

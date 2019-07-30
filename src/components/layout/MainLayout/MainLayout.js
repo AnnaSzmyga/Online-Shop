@@ -16,6 +16,10 @@ const MainLayout = ({products, cart, addProduct, removeProduct, clearCart, chang
                 removeProduct={removeProduct}
                 clearCart={clearCart}
                 changeQuantity={changeQuantity}
+                // sortAscend={sortAscend}
+                // sortDescend={sortDescend}
+                // sortAZ={sortAZ}
+                // sortZA={sortZA}
             />
             <Footer />
         </div>

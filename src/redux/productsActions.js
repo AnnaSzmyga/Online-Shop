@@ -1,16 +1,8 @@
-export const SELECT_CATEGORY = 'SELECT_CATEGORY';
 export const SORT_ASC = 'SORT_ASC';
 export const SORT_DESC = 'SORT_DESC';
 export const SORT_AZ = 'SORT_AZ';
 export const SORT_ZA = 'SORT_ZA';
 
-
-export function selectCategory(category) {
-    return {
-        type: SELECT_CATEGORY,
-        category
-    }
-};
 
 export function sortAsc() {
     return {

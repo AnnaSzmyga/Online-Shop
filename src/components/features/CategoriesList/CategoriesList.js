@@ -3,7 +3,7 @@ import Category from '../Category/Category';
 
 import './CategoriesList.css';
 
-const CategoriesList = ({filterCategory}) => {
+const CategoriesList = ({filterCategory, activeSorting}) => {
     const categories = [
         {
             categoryName: "traditional",
@@ -41,6 +41,7 @@ const CategoriesList = ({filterCategory}) => {
                     <Category
                         category={category}
                         onFilterCategory={() => filterCategory(category.categoryName)}
+                        activeSorting={activeSorting}
                         key={category.categoryName}
                     />
                 )

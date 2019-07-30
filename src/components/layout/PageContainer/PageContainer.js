@@ -12,18 +12,11 @@ import ProductPage from '../../pages/ProductPage/ProductPage';
 import './PageContainer.css';
 
 const PageContainer = ({products, cart, addProduct, removeProduct, clearCart, changeQuantity, ...props}) => {
-
-  console.log(props.location);
   return (
           <div className="pageContainer">
             <Switch>
               <Route
                 path={"/"}
-                exact
-                render={(props) => <Home {...props} products={products} addToCart={addProduct} />}
-              />
-              <Route
-                path={"/sort_by=:sorting"}
                 exact
                 render={(props) => <Home {...props} products={products} addToCart={addProduct} />}
               />
@@ -45,11 +38,26 @@ const PageContainer = ({products, cart, addProduct, removeProduct, clearCart, ch
                 }
               />
               <Route path={"/cakes/:id"} render={(props) => <ProductPage {...props} products={products} addProduct={addProduct} />} />
-              <Route component={NoMatch} />
+
             </Switch>
           </div>
         )
 }
+//<Route component={NoMatch} />
+
+// <Route
+//   path={"/sort_by=:sorting"}
+//   exact
+//   render={(props) => <Home {...props} products={products} addToCart={addProduct} />}
+// />
+// <Route
+//   path={"/category=:category"}
+//   exact
+//   render={(props) => <Home {...props} products={products} addToCart={addProduct} />}
+// />
+
+
+
 
 // const PageContainer = ({products, sortAsc, sortDesc, sortAZ, sortZA}) => {
 //   return (

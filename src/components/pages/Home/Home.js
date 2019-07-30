@@ -1,4 +1,5 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Sidebar from '../../features/Sidebar/Sidebar';
 import ProductList from '../../features/ProductList/ProductList';
 
@@ -9,37 +10,38 @@ class Home extends React.Component {
         super(props);
         this.state = {
             products: this.props.products,
-            isFiltered: false
+            activeCategory: '',
+            activeSorting: ''
         };
         console.log(props);
     }
     sortAscend = () => {
-        let products = this.state.isFiltered ? this.state.products : this.props.products;
+        let products = (this.state.activeCategory !== '') ? this.state.products : this.props.products;
         products.sort((a, b) => {
             return a.price - b.price;
           });
-        this.setState({products});
+        this.setState({products, activeSorting: "price_asc"});
     }
     sortDescend = () => {
-        let products = this.state.isFiltered ? this.state.products : this.props.products;
+        let products = (this.state.activeCategory !== '') ? this.state.products : this.props.products;
         products.sort((a, b) => {
             return b.price - a.price;
           });
-        this.setState({products});
+        this.setState({products, activeSorting: "price_desc"});
     }
     sortAZ = () => {
-        let products = this.state.isFiltered ? this.state.products : this.props.products;
+        let products = (this.state.activeCategory !== '') ? this.state.products : this.props.products;
         products.sort((a, b) => {
             return a.name.localeCompare(b.name);
           });
-        this.setState({products});
+        this.setState({products, activeSorting: "name_asc"});
     }
     sortZA = () => {
-        let products = this.state.isFiltered ? this.state.products : this.props.products;
+        let products = (this.state.activeCategory !== '') ? this.state.products : this.props.products;
         products.sort((a, b) => {
             return b.name.localeCompare(a.name);
           });
-        this.setState({products});
+        this.setState({products, activeSorting: "name_desc"});
     }
     filterCategory = (category) => {
         let products = [];
@@ -53,41 +55,64 @@ class Home extends React.Component {
 
         this.setState({
             products,
-            isFiltered: true
+            activeCategory: category
         });
+        console.log(category);
     }
     render() {
         return (
             <div className="home">
                 <Sidebar
-                    products={this.state.products}
                     sortAscend={this.sortAscend}
                     sortDescend={this.sortDescend}
                     sortAZ={this.sortAZ}
                     sortZA={this.sortZA}
                     filterCategory={this.filterCategory}
+                    activeCategory={this.state.activeCategory}
+                    activeSorting={this.state.activeSorting}
                 />
-                <ProductList
-                    products={this.state.products}
-                    addToCart={this.props.addToCart}
+                <Route
+                    path={"/"}
+                    exact
+                    render={(props) => <ProductList {...props} products={this.props.products} addToCart={this.props.addToCart} />}
+                />
+                <Route
+                    path={"/test"}
+                    render={() => <p>test</p>}
+                />
+                <Route
+                    path={"/:category"}
+                    render={(props) => <ProductList {...props} products={this.state.products} addToCart={this.props.addToCart} />}
                 />
             </div>
         )
     }
 }
+//path={"/category=:category(\\d+)&sort_by=:sorting"}
 
 
-// const Home = ({products, sortAsc, sortDesc, sortAZ, sortZA}) => {
+
+
+
+// <ProductList
+//     products={this.state.products}
+//     addToCart={this.props.addToCart}
+// />
+
+// const Home = ({products, sortAscend, sortDescend, sortAZ, sortZA, addToCart}) => {
+//     console.log(sortAZ);
+//     console.log(products);
 //     return (
 //         <div className="home">
 //             <Sidebar
 //                 products={products}
-//                 sortAsc={sortAsc}
-//                 sortDesc={sortDesc}
+//                 sortAscend={sortAscend}
+//                 sortDescend={sortDescend}
 //                 sortAZ={sortAZ}
 //                 sortZA={sortZA}
+//                 filterCategory={() => {console.log("filterCategory")}}
 //             />
-//             <ProductList products={products} />
+//             <ProductList products={products} addToCart={addToCart} />
 //         </div>
 //     )
 // }

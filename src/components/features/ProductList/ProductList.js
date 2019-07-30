@@ -3,7 +3,8 @@ import Product from '../Product/Product';
 
 import './ProductList.css';
 
-const ProductList = ({products, addToCart}) => {
+const ProductList = ({products, addToCart, ...props}) => {
+    console.log(props);
     return (
         <div>
             <ul className="productList">

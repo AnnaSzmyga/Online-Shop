@@ -5,7 +5,7 @@ import Button from '../../common/Button/Button';
 
 
 
-const Cart = ({cartProducts, removeProduct, clearCart, changeQuantity}) => {
+const Cart = ({cartProducts, removeProduct, clearCart, changeQuantity, ...props}) => {
     console.log(cartProducts);
     const calculateAmount = () => {
         let amount = 0;
@@ -16,7 +16,10 @@ const Cart = ({cartProducts, removeProduct, clearCart, changeQuantity}) => {
     }
     return (
         <div>Koszyk:
-            <CartProductsList
+        <div className="go-back" onClick={props.history.goBack}>
+            Powrót
+        </div>
+        <CartProductsList
                 cartProducts={cartProducts}
                 removeFromCart={removeProduct}
                 changeQuantity={changeQuantity}
