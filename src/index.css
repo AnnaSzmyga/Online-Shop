@@ -8,3 +8,9 @@ body {
 	color: #353a39;
 	font-family: 'Maitree', serif;
 }
+
+.page-heading {
+	font-family: 'Cinzel', serif;
+	text-align: center;
+	margin: 50px auto;
+}
