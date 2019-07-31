@@ -1,15 +1,15 @@
-.productCard {
-    width: 25vw;
-    margin: 10px;
+.product-card {
+    width: 100%;
+    margin: 15px auto;
     padding: 20px;
     background-color: lightgrey;
 }
 
-.productCard__link {
+.product-card__link {
     width: 100%;
 }
 
-.productCard__linkImage {
+.product-card__image {
     width: 100%;
     height: 20vw;
     background-position: center;

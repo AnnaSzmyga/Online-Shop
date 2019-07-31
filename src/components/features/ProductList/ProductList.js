@@ -1,19 +1,19 @@
 import React from 'react';
 import Product from '../Product/Product';
 
+import { Row, Col } from 'reactstrap';
 import './ProductList.css';
 
-const ProductList = ({products, addToCart, ...props}) => {
-    console.log(props);
+const ProductList = ({products, addToCart}) => {
     return (
-        <div>
-            <ul className="productList">
+        <div className="products">
+            <Row>
                 {
                     products.map((product) => {
                         return <Product product={product} addToCart={addToCart} key={product.id} />
                     })
                 }
-            </ul>
+            </Row>
         </div>
     )
 }

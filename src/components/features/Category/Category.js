@@ -1,10 +1,11 @@
 import React from 'react';
 //import { Link } from 'react-router-dom';
 
+import './Category.css';
 
 const Category = ({category, onFilterCategory}) => {
     return (
-        <li onClick={onFilterCategory}>{category.categoryOutput}</li>
+        <li className="category" onClick={onFilterCategory}>{category.categoryOutput}</li>
     )
 }
 

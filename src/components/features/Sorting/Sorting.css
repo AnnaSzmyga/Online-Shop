@@ -1,0 +1,13 @@
+.sorting {
+    border-top: 3px solid grey;
+    padding: 30px 15px;
+    margin-top: 30px;
+}
+
+.sorting__heading {
+    color: grey;
+    margin-bottom: 30px;
+}
+.sorting__item {
+    margin: 10px 0;
+}

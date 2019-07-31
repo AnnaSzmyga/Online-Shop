@@ -2,20 +2,26 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../../common/Button/Button';
 
+import { Col } from 'reactstrap';
 import './Product.css';
 
 const Product = ({product, addToCart}) => {
     return (
-        <li className="productCard">
-            <Link to={`/cakes/${product.id}`} className="productCard__link">
-                <div className="productCard__linkImage" alt={product.name} style={{backgroundImage: `url(${product.image})`}}></div>
-            </Link>
-            <div>
-                <h3 className="productCard__heading">{product.name}</h3>
-                <p className="productCard__price">Cena: {product.price}zł</p>
-                <Button buttonOutput="Dodaj do koszyka" onClickCallback={() => {addToCart(product)}} />
+
+
+        <Col sm="12" md="6">
+            <div className="product-card">
+                <Link to={`/cakes/${product.id}`} className="product-card__link">
+                    <div className="product-card__image" alt={product.name} style={{backgroundImage: `url(${product.image})`}}></div>
+                </Link>
+                <div>
+                    <h3 className="product-card__heading">{product.name}</h3>
+                    <p className="product-card__price">Cena: {product.price}zł</p>
+                    <Button buttonOutput="Dodaj do koszyka" onClickCallback={() => {addToCart(product)}} />
+                </div>
             </div>
-        </li>
+        </Col>
+
     )
 }
 
