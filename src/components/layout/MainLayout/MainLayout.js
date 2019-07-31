@@ -8,7 +8,7 @@ import './MainLayout.css';
 const MainLayout = ({products, cart, addProduct, removeProduct, clearCart, changeQuantity}) => {
     return (
         <div className="main-layout">
-            <Navbar />
+            <Navbar cartContent={cart.length}/>
             <PageContainer
                 products={products}
                 cart={cart}

@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 import './CartLink.css';
 
-const CartLink = (props) => {
+const CartLink = ({cartContent}) => {
         return (
                 <div>
-                        <NavLink to="/cart" activeClassName="active">Koszyk</NavLink>
+                        <NavLink to="/cart" activeClassName="active">Koszyk({cartContent})</NavLink>
                 </div>
         )
 }

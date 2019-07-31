@@ -1,3 +1,30 @@
-.ProductImage {
-    width: 80vw;
+.product {
+    display: flex;
+    align-items: center;
+    background-color: lightgrey;
+    padding: 15px;
+    margin: 20px auto;
+}
+
+.product__image-box {
+    flex: 4;
+}
+
+.product__image {
+    width: 100%;
+}
+
+.product__content {
+    padding: 0 25px;
+    flex: 6;
+}
+
+.product__heading {
+    margin-bottom: 30px;
+}
+.product__price {
+    font-size: 20px;
+}
+.product__price span {
+    font-weight: bold;
 }

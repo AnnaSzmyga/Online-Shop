@@ -1,6 +1,7 @@
 .productList {
     display: flex;
     flex-wrap: wrap;
+    flex:6;
     padding-left: 0;
     list-style-type: none;
 }

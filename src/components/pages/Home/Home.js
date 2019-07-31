@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+//import { Switch, Route } from 'react-router-dom';
 import Sidebar from '../../features/Sidebar/Sidebar';
 import ProductList from '../../features/ProductList/ProductList';
 
@@ -69,22 +69,11 @@ class Home extends React.Component {
                     sortAZ={this.sortAZ}
                     sortZA={this.sortZA}
                     filterCategory={this.filterCategory}
-                    activeCategory={this.state.activeCategory}
-                    activeSorting={this.state.activeSorting}
+                    //activeCategory={this.state.activeCategory}
+                    //activeSorting={this.state.activeSorting}
                 />
-                <Route
-                    path={"/"}
-                    exact
-                    render={(props) => <ProductList {...props} products={this.props.products} addToCart={this.props.addToCart} />}
-                />
-                <Route
-                    path={"/test"}
-                    render={() => <p>test</p>}
-                />
-                <Route
-                    path={"/category=:category"}
-                    render={(props) => <ProductList {...props} products={this.state.products} addToCart={this.props.addToCart} />}
-                />
+                <ProductList products={this.state.products} addToCart={this.props.addToCart} />
+
             </div>
         )
     }
@@ -95,10 +84,7 @@ class Home extends React.Component {
 
 
 
-// <ProductList
-//     products={this.state.products}
-//     addToCart={this.props.addToCart}
-// />
+
 
 // const Home = ({products, sortAscend, sortDescend, sortAZ, sortZA, addToCart}) => {
 //     console.log(sortAZ);

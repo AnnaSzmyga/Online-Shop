@@ -39,6 +39,10 @@ const PageContainer = ({products, cart, addProduct, removeProduct, clearCart, ch
               />
             }
           />
+          <Route
+                    path={"/test"}
+                    render={() => <p>test</p>}
+                />
           <Route path={"/cakes/:id"} render={(props) => <ProductPage {...props} products={products} addProduct={addProduct} />} />
           <Route component={NoMatch} />
         </Switch>

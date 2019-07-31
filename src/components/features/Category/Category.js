@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 
-const Category = ({category, onFilterCategory, activeSorting}) => {
+const Category = ({category, onFilterCategory}) => {
     return (
-        <li onClick={onFilterCategory}><Link to={`/category=${category.categoryName}`}>{category.categoryOutput}</Link></li>
+        <li onClick={onFilterCategory}>{category.categoryOutput}</li>
     )
 }
 

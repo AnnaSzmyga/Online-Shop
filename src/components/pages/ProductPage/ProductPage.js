@@ -20,14 +20,19 @@ const ProductPage = ({match, products, addProduct, ...props}) => {
     console.log(activeProduct);
 
     return (
-          <div>
+          <div className="product-page">
             <div className="go-back" onClick={props.history.goBack}>
               Powrót
             </div>
-            <p>Produkt ID: {match.params.id}</p>
-            <p>Nazwa: {activeProduct.name}</p>
-            <Button buttonOutput="Dodaj do koszyka" onClickCallback={() => addProduct(activeProduct)} />
-            <img src={activeProduct.image} className="ProductImage" alt={activeProduct.name} />
+            <div className="product">
+              <div className="product__image-box"><img className="product__image" src={activeProduct.image} alt={activeProduct.name}/></div>
+              <div className="product__content">
+                <h2 className="product__heading">{activeProduct.name}</h2>
+                <p className="product__price">Cena: <span>{activeProduct.price}zł</span></p>
+                <p className="product__description">{activeProduct.description}</p>
+                <Button buttonOutput="Dodaj do koszyka" onClickCallback={() => addProduct(activeProduct)} />
+              </div>
+            </div>
           </div>
         )
 }

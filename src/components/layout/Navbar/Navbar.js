@@ -7,13 +7,13 @@ import { Container } from 'reactstrap';
 import './Navbar.css';
 
 
-const Navbar = (props) => {
+const Navbar = ({cartContent, ...props}) => {
     return (
         <div className="navbar">
             <Container>
                 <Logo />
                 <Menu />
-                <CartLink />
+                <CartLink cartContent={cartContent} />
             </Container>
         </div>
     )

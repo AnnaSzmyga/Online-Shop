@@ -9,14 +9,14 @@ const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, activ
         <div className="sidebar">
             <CategoriesList
                 filterCategory={filterCategory}
-                activeSorting={activeSorting}
+                //activeSorting={activeSorting}
             />
             <Sorting
                 onSortAscend={sortAscend}
                 onSortDescend={sortDescend}
                 onSortAZ={sortAZ}
                 onSortZA={sortZA}
-                activeCategory={activeCategory}
+                //activeCategory={activeCategory}
             />
         </div>
     )
