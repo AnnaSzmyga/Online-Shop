@@ -22,6 +22,7 @@ const ProductPage = ({match, products, addProduct, ...props}) => {
     return (
           <div className="product-page">
             <div className="go-back" onClick={props.history.goBack}>
+              <i class="fas fa-arrow-left go-back__icon"></i>
               Powrót
             </div>
             <div className="product">
