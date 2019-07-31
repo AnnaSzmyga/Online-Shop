@@ -1,9 +1,19 @@
 .category {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #2ea18a;
     text-align: center;
     padding: 10px 0;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+    transition: .4s;
 }
 
 .category:last-of-type {
     border-bottom: 0;
+}
+
+.category:hover {
+    letter-spacing: 2px;
+    color: #58B19F;
+    font-weight: 700;
 }

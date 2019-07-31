@@ -12,7 +12,7 @@ const Footer = (props) => {
             <Container>
                 <div className="footer__content">
                     <p>All rights reserved</p>
-                    <Menu className="menu--footer" />
+                    <Menu className="footer-menu" />
                 </div>
             </Container>
         </div>

@@ -1,3 +1,16 @@
 .button {
-    background-color: grey;
+    background-color: #58B19F;
+    color: #f0efec;
+    font-size: 18px;
+    padding: 5px 15px;
+    outline: none;
+    border: 0;
+    transition: .4s;
+
+}
+
+.button:hover {
+    box-shadow: 3px 3px 8px #9ca5a3;
+    background-color: #2ea18a;
+    transform: scale(1.01);
 }

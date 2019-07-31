@@ -2,16 +2,55 @@
     width: 100%;
     margin: 15px auto;
     padding: 20px;
-    background-color: lightgrey;
+    background-color:#f0efec;
+    border: 1px solid #cfdbd9;
+    transition: .4s;
+}
+
+.product-card:hover {
+    box-shadow: 5px 5px 10px #9ca5a3;
+    transform: scale(1.02);
 }
 
 .product-card__link {
     width: 100%;
 }
 
+
 .product-card__image {
     width: 100%;
     height: 20vw;
     background-position: center;
     background-size: cover;
+    box-shadow: 4px 4px 8px #9ca5a3;
+    position: relative;
+}
+
+.product-card__image::after {
+    display: flex;
+    content: "Szczegóły";
+    width: 20%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 128, 112, 0.8);
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Cinzel', serif;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+
+.product-card__image:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.product-card__heading {
+    text-transform: capitalize;
+    font-family: 'Cinzel', serif;
+    margin-top: 30px;
 }
