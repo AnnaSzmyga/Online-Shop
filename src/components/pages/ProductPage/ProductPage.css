@@ -19,7 +19,6 @@
 .product {
     display: flex;
     align-items: center;
-    background-color: lightgrey;
     margin: 20px auto;
     padding: 20px;
     background-color:#f0efec;

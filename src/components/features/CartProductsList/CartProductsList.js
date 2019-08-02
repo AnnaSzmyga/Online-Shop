@@ -1,9 +1,11 @@
 import React from 'react';
 import CartProduct from '../CartProduct/CartProduct';
 
+import './CartProductsList.css';
+
 const CartProductsList = ({cartProducts, removeFromCart, changeQuantity}) => {
     return (
-        <ul>
+        <ul className="cart-products">
             {
                 cartProducts.map((product) =>
                     <CartProduct

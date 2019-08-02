@@ -11,7 +11,7 @@ const Footer = (props) => {
         <div className="footer">
             <Container>
                 <div className="footer__content">
-                    <p>All rights reserved</p>
+                    <p className="footer__text">All rights reserved</p>
                     <Menu className="footer-menu" />
                 </div>
             </Container>

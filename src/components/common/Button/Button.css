@@ -3,7 +3,6 @@
     color: #f0efec;
     font-size: 18px;
     padding: 5px 15px;
-    outline: none;
     border: 0;
     transition: .4s;
 
@@ -13,4 +12,8 @@
     box-shadow: 3px 3px 8px #9ca5a3;
     background-color: #2ea18a;
     transform: scale(1.01);
+}
+
+.button:focus {
+    outline: 0;
 }

@@ -2,9 +2,10 @@ import React from 'react';
 
 import './Button.css';
 
-const Button = ({buttonOutput, onClickCallback}) => {
+const Button = ({buttonOutput, onClickCallback, ...props}) => {
+    let className = (props.className) ? `button ${props.className}` : "button";
     return (
-        <button className="button" onClick={onClickCallback}>{buttonOutput}</button>
+        <button className={className} onClick={onClickCallback}>{buttonOutput}</button>
     )
 }
 
