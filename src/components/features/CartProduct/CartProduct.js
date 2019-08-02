@@ -20,7 +20,7 @@ const CartProduct = ({cartProduct, removeFromCart, changeQuantity}) => {
                 </div>
                 <div className="cart-product__buttons">
                     <button className="cart-product__button-up" onClick={() => changeQuantity(cartProduct.id, cartProduct.quantity + 1)}>
-                        <i class="fas fa-angle-up cart-product__icon"></i>
+                        <i className="fas fa-angle-up cart-product__icon"></i>
                     </button>
                     <input
                         className="cart-product__input"
@@ -29,7 +29,7 @@ const CartProduct = ({cartProduct, removeFromCart, changeQuantity}) => {
                         onChange={handleChange}
                     />
                     <button className="cart-product__button-down" onClick={() => changeQuantity(cartProduct.id, cartProduct.quantity - 1)}>
-                        <i class="fas fa-angle-down cart-product__icon"></i>
+                        <i className="fas fa-angle-down cart-product__icon"></i>
                     </button>
                     <Button className="cart-product__button-remove" buttonOutput="Usuń z koszyka" onClickCallback={removeFromCart} />
                 </div>

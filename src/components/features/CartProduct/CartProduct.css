@@ -29,6 +29,7 @@
 .cart-product__name {
     font-family: 'Cinzel', serif;
     margin: 0 20px;
+    text-align: left;
 }
 
 .cart-product__buttons {
