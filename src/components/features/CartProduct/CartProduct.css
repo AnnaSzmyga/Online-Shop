@@ -39,10 +39,6 @@
     width: 40px;
     height: 40px;
     text-align: center;
-    border: 1px solid #cfdbd9;
-}
-.cart-product__input:focus {
-    outline: 2px solid #93aaa6;
 }
 
 .cart-product__button-up, .cart-product__button-down {
@@ -52,10 +48,6 @@
     background-color: #e8e6e3;
     border: 1px solid #cfdbd9;
     color: #485250;
-}
-
-.cart-product__button-up:focus, .cart-product__button-down:focus {
-    outline: 0;
 }
 
 .cart-product__icon {

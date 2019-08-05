@@ -17,7 +17,6 @@ class Payment extends React.Component {
             codeInputValue: '',
             collapse: false
         }
-        console.log(this.state.discountCode);
     }
     handleChange = (e) => {
         this.setState({
@@ -26,7 +25,7 @@ class Payment extends React.Component {
         });
         if (e.target.value === this.state.discountCode) {
             this.setState({
-                amount: this.state.amount * 0.9,
+                amount: this.state.amount - (this.state.amount * this.state.discount),
                 collapse: true
             });
         } else {
@@ -43,19 +42,20 @@ class Payment extends React.Component {
                 <Collapse isOpen={this.state.collapse}>
                     <p className="payment__discount">Zniżka: <span>{this.state.discount * 100}%</span></p>
                 </Collapse>
+                <label>Wpisz swój kod rabatowy: </label>
                 <input
                     className="payment__input"
                     type="text"
-                    placeholder="Wpisz kod rabatowy"
+                    placeholder="Kod rabatowy"
                     value={this.state.codeInputValue}
                     onChange={this.handleChange}
                 />
-                <Link to="/">
+                <Link className="payment__link" to="/">
                     <Button
                         className="payment__pay-button"
                         buttonOutput="Zapłać"
                         onClickCallback={() => {
-                            this.props.closePayment();
+                            this.props.closeModal();
                             this.props.clearCart();
                         }}
                     />
@@ -63,40 +63,12 @@ class Payment extends React.Component {
                 <Button
                     className="payment__back-to-cart"
                     buttonOutput="Wróć do zamówienia"
-                    onClickCallback={this.props.closePayment}
+                    onClickCallback={this.props.closeModal}
                 />
             </div>
         )
     }
 }
 
-// const Payment = ({amount, closePayment, clearCart}) => {
-//     return (
-//         <div className="payment">
-//             <p>Wartość Twojego zamówienia: <span>{amount}zł</span></p>
-//             <input
-//                 className="payment__input"
-//                 type="text"
-//                 placeholder="kod rabatowy"
-//                 onChange={handleChange}
-//             />
-//             <Link to="/">
-//                 <Button
-//                     className="pay-button"
-//                     buttonOutput="Zapłać"
-//                     onClickCallback={() => {
-//                         closePayment();
-//                         clearCart();
-//                     }}
-//                 />
-//             </Link>
-//             <Button
-//                 className="back-to-cart"
-//                 buttonOutput="Wróć do zamówienia"
-//                 onClickCallback={closePayment}
-//             />
-//         </div>
-//     )
-// }
 
 export default Payment;

@@ -2,7 +2,7 @@ import React from 'react';
 import CartProductsList from '../../features/CartProductsList/CartProductsList';
 import Button from '../../common/Button/Button';
 import Payment from '../../features/Payment/Payment';
-import { Collapse, Fade } from 'reactstrap';
+import { Modal, Fade } from 'reactstrap';
 
 import './Cart.css';
 
@@ -11,8 +11,7 @@ class Cart extends React.Component {
         super(props);
         console.log(this.props);
         this.state = {
-            paymentClassName: '',
-            collapse: false
+            modal: false
         }
     }
 
@@ -24,12 +23,12 @@ class Cart extends React.Component {
         return amount;
     }
 
-    openPayment = () => {
-        this.setState({ collapse: true });
+    openModal = () => {
+        this.setState({ modal: true });
     }
 
-    closePayment = () => {
-        this.setState({ collapse: false });
+    closeModal = () => {
+        this.setState({ modal: false });
     }
 
     renderCart = () => {
@@ -50,15 +49,14 @@ class Cart extends React.Component {
                     changeQuantity={this.props.changeQuantity}
                 />
                 <h4 className="cart__amount">Wartość całego zamówienia: <span>{this.calculateAmount()}zł</span></h4>
-                <Button className="cart__button" buttonOutput="Przejdź do płatności" onClickCallback={this.openPayment}/>
-                <Collapse isOpen={this.state.collapse}>
+                <Button className="cart__button" buttonOutput="Przejdź do płatności" onClickCallback={this.openModal}/>
+                <Modal isOpen={this.state.modal}>
                     <Payment
-                        paymentClassName={this.state.paymentClassName}
                         amount={this.calculateAmount()}
-                        closePayment={this.closePayment}
+                        closeModal={this.closeModal}
                         clearCart={this.props.clearCart}
                     />
-                </Collapse>
+                </Modal>
             </Fade>
         )
     }
@@ -79,5 +77,6 @@ class Cart extends React.Component {
         return (this.props.cartProducts.length !== 0) ? this.renderCart() : this.renderEmptyCart();
     }
 }
+
 
 export default Cart;
