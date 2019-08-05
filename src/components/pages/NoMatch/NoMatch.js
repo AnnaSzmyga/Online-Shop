@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Fade } from 'reactstrap';
 
 const NoMatch = (props) => {
     return (
-        <div>
+        <Fade timeout={100}>
             <div>Strona nie została znaleziona.</div>
             <Link to="/">Powrót na stronę główną</Link>
-        </div>
+        </Fade>
     )
 }
 

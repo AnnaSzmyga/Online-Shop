@@ -1,6 +1,7 @@
 import React from 'react';
 //import { Link } from 'react-router-dom';
 import Button from '../../common/Button/Button';
+import { Fade } from 'reactstrap';
 
 import './ProductPage.css';
 
@@ -20,7 +21,7 @@ const ProductPage = ({match, products, addProduct, ...props}) => {
     console.log(activeProduct);
 
     return (
-          <div className="product-page">
+          <Fade timeout={100} className="product-page">
             <div className="go-back" onClick={props.history.goBack}>
               <i class="fas fa-arrow-left go-back__icon"></i>
               Powrót
@@ -34,7 +35,7 @@ const ProductPage = ({match, products, addProduct, ...props}) => {
                 <Button buttonOutput="Dodaj do koszyka" onClickCallback={() => addProduct(activeProduct)} />
               </div>
             </div>
-          </div>
+          </Fade>
         )
 }
 

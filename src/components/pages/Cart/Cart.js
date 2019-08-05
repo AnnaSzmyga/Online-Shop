@@ -2,16 +2,17 @@ import React from 'react';
 import CartProductsList from '../../features/CartProductsList/CartProductsList';
 import Button from '../../common/Button/Button';
 import Payment from '../../features/Payment/Payment';
+import { Collapse, Fade } from 'reactstrap';
 
 import './Cart.css';
 
 class Cart extends React.Component {
     constructor(props) {
         super(props);
-        console.log(this.props.cartProducts.length);
-        //const {cartProducts, removeProduct, clearCart, changeQuantity} = this.props;
+        console.log(this.props);
         this.state = {
-            paymentClassName: ''
+            paymentClassName: '',
+            collapse: false
         }
     }
 
@@ -23,15 +24,18 @@ class Cart extends React.Component {
         return amount;
     }
 
-    togglePayment = () => {
-        let paymentClassName = (this.state.paymentClassName === '') ? 'show' : '';
-        this.setState({paymentClassName});
+    openPayment = () => {
+        this.setState({ collapse: true });
+    }
+
+    closePayment = () => {
+        this.setState({ collapse: false });
     }
 
     renderCart = () => {
         this.calculateAmount();
         return (
-            <div className="cart">
+            <Fade timeout={100} className="cart">
                 <h2 className="page-heading">Koszyk</h2>
                 <div className="cart__buttons-wrapper">
                     <div className="go-back" onClick={this.props.history.goBack}>
@@ -46,27 +50,29 @@ class Cart extends React.Component {
                     changeQuantity={this.props.changeQuantity}
                 />
                 <h4 className="cart__amount">Razem do zapłaty: <span>{this.calculateAmount()}zł</span></h4>
-                <Button className="cart__button" buttonOutput="Przejdź do płatności" onClickCallback={this.togglePayment}/>
-                <Payment
-                    paymentClassName={this.state.paymentClassName}
-                    amount={this.calculateAmount()}
-                    togglePayment={this.togglePayment}
-                    clearCart={this.props.clearCart}
-                />
-            </div>
+                <Button className="cart__button" buttonOutput="Przejdź do płatności" onClickCallback={this.openPayment}/>
+                <Collapse isOpen={this.state.collapse}>
+                    <Payment
+                        paymentClassName={this.state.paymentClassName}
+                        amount={this.calculateAmount()}
+                        closePayment={this.closePayment}
+                        clearCart={this.props.clearCart}
+                    />
+                </Collapse>
+            </Fade>
         )
     }
 
     renderEmptyCart = () => {
         return (
-            <div className="cart">
+            <Fade timeout={100} className="cart">
                 <h2 className="page-heading">Koszyk</h2>
                 <p className="cart__info">Twój koszyk jest pusty.</p>
                 <div className="go-back" onClick={this.props.history.goBack}>
                     <i className="fas fa-arrow-left go-back__icon"></i>
                     Powrót
                 </div>
-            </div>
+            </Fade>
         )
     }
     render() {

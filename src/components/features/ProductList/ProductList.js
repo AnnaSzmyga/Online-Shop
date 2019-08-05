@@ -1,7 +1,7 @@
 import React from 'react';
 import Product from '../Product/Product';
 
-import { Row, Col } from 'reactstrap';
+import { Row } from 'reactstrap';
 import './ProductList.css';
 
 const ProductList = ({products, addToCart}) => {

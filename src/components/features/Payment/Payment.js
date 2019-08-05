@@ -2,12 +2,14 @@ import React from 'react';
 import Button from '../../common/Button/Button';
 import { Link } from 'react-router-dom';
 
+
 import './Payment.css';
 
-const Payment = ({paymentClassName, amount, togglePayment, clearCart}) => {
+
+const Payment = ({amount, closePayment, clearCart}) => {
     return (
-        <div className={`payment ${paymentClassName}`}>
-            <p>Wartość zamówienia: {amount}</p>
+        <div className="payment">
+            <p>Wartość zamówienia: {amount}zł</p>
             <input
                 className="payment__input"
                 type="text"
@@ -15,13 +17,19 @@ const Payment = ({paymentClassName, amount, togglePayment, clearCart}) => {
             />
             <Link to="/">
                 <Button
+                    className="pay"
                     buttonOutput="Zapłać"
                     onClickCallback={() => {
-                        togglePayment();
+                        closePayment();
                         clearCart();
                     }}
                 />
             </Link>
+            <Button
+                className="back-to-cart"
+                buttonOutput="Wróć do zamówienia"
+                onClickCallback={closePayment}
+            />
         </div>
     )
 }

@@ -2,6 +2,7 @@ import React from 'react';
 //import { Switch, Route } from 'react-router-dom';
 import Sidebar from '../../features/Sidebar/Sidebar';
 import ProductList from '../../features/ProductList/ProductList';
+import { Fade } from 'reactstrap';
 
 import './Home.css';
 
@@ -14,7 +15,6 @@ class Home extends React.Component {
             activeSorting: '',
             activePage: 1
         };
-        console.log(props);
     }
     sortAscend = () => {
         let products = (this.state.activeCategory !== '') ? this.state.products : this.props.products;
@@ -53,28 +53,27 @@ class Home extends React.Component {
                 products.push(product);
             }
         });
-
         this.setState({
             products,
             activeCategory: category
         });
-        console.log(category);
     }
     render() {
         return (
-            <div className="home">
-                <Sidebar
-                    sortAscend={this.sortAscend}
-                    sortDescend={this.sortDescend}
-                    sortAZ={this.sortAZ}
-                    sortZA={this.sortZA}
-                    filterCategory={this.filterCategory}
-                    //activeCategory={this.state.activeCategory}
-                    //activeSorting={this.state.activeSorting}
-                />
-                <ProductList products={this.state.products} addToCart={this.props.addToCart} />
-
-            </div>
+            <Fade timeout={100}>
+                <div className="home">
+                    <Sidebar
+                        sortAscend={this.sortAscend}
+                        sortDescend={this.sortDescend}
+                        sortAZ={this.sortAZ}
+                        sortZA={this.sortZA}
+                        filterCategory={this.filterCategory}
+                        //activeCategory={this.state.activeCategory}
+                        //activeSorting={this.state.activeSorting}
+                    />
+                    <ProductList products={this.state.products} addToCart={this.props.addToCart} />
+                </div>
+            </Fade>
         )
     }
 }

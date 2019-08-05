@@ -1,10 +1,11 @@
 import React from 'react';
+import { Fade } from 'reactstrap';
 
 import './Regulations.css';
 
 const Regulations = (props) => {
     return (
-        <div className="regulations">
+        <Fade timeout={100} className="regulations">
             <h2 className="page-heading">Regulamin sklepu</h2>
             <ol className="regulations__list">
                 <li className="regulations__item">
@@ -28,7 +29,7 @@ const Regulations = (props) => {
                     <p className="regulations__text">Cras sagittis, augue quis blandit bibendum, arcu odio imperdiet lacus, eget eleifend sapien erat vitae ex. Nam sagittis, enim at dictum tincidunt, lacus nulla semper dolor, non ultricies ipsum lorem non felis. Nulla facilisi. Integer ac velit nec elit cursus varius. Nulla tempor tellus sed lectus mollis, eget maximus lectus rhoncus. Aenean cursus quis urna nec pharetra. Sed sollicitudin dui odio, non ornare neque cursus blandit.</p>
                 </li>
             </ol>
-        </div>
+        </Fade>
     )
 }
 
