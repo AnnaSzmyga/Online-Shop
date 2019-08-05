@@ -49,7 +49,7 @@ class Cart extends React.Component {
                     removeFromCart={this.props.removeProduct}
                     changeQuantity={this.props.changeQuantity}
                 />
-                <h4 className="cart__amount">Razem do zapłaty: <span>{this.calculateAmount()}zł</span></h4>
+                <h4 className="cart__amount">Wartość całego zamówienia: <span>{this.calculateAmount()}zł</span></h4>
                 <Button className="cart__button" buttonOutput="Przejdź do płatności" onClickCallback={this.openPayment}/>
                 <Collapse isOpen={this.state.collapse}>
                     <Payment

@@ -7,8 +7,6 @@ import './Product.css';
 
 const Product = ({product, addToCart}) => {
     return (
-
-
         <Col sm="12" md="6">
             <Fade timeout={100}>
                 <div className="product-card">
@@ -23,7 +21,6 @@ const Product = ({product, addToCart}) => {
                 </div>
             </Fade>
         </Col>
-
     )
 }
 
