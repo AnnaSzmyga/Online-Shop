@@ -1,22 +1,35 @@
 import React from 'react';
-
+import { Pagination as PaginationBar, PaginationItem, PaginationLink } from 'reactstrap';
 import './Pagination.css';
 
-const Pagination = ({pagesNumber, changeCurrentPage}) => {
+const Pagination = ({pagesNumber, currentPage, changeCurrentPage}) => {
     let pages = [];
     for (let i = 1; i < (pagesNumber + 1); i++) {
         pages.push(i);
     }
-    console.log("liczba stron: " + pagesNumber);
+    let previousPage = (currentPage === 1) ? 1 : currentPage - 1;
+    let nextPage = (currentPage === pagesNumber) ? pagesNumber : currentPage + 1;
+
+    const checkActivePage = (page) => {
+        return (currentPage === page) ? true : false;
+    }
+
     return (
-        <div className="pagination">
-            pagination
+        <PaginationBar className="pagination-bar">
+            <PaginationItem onClick={() => {changeCurrentPage(1)}}><PaginationLink first /></PaginationItem>
+            <PaginationItem onClick={() => {changeCurrentPage(previousPage)}}><PaginationLink previous /></PaginationItem>
             {
                 pages.map((page) => {
-                    return <div onClick={() => {changeCurrentPage(page)}} key={page}>{page}</div>
+                    return (
+                        <PaginationItem onClick={() => {changeCurrentPage(page)}} active={checkActivePage(page)} key={page}>
+                            <PaginationLink>{page}</PaginationLink>
+                        </PaginationItem>
+                    )
                 })
             }
-        </div>
+            <PaginationItem onClick={() => {changeCurrentPage(nextPage)}}><PaginationLink next /></PaginationItem>
+            <PaginationItem onClick={() => {changeCurrentPage(pagesNumber)}}><PaginationLink last /></PaginationItem>
+        </PaginationBar>
     )
 }
 

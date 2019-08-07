@@ -20,7 +20,7 @@ const ProductList = ({products, addToCart, currentPage, productsPerPage, changeC
                     })
                 }
             </Row>
-            <Pagination pagesNumber={Math.ceil(products.length / 6)} changeCurrentPage={changeCurrentPage} />
+            <Pagination pagesNumber={Math.ceil(products.length / 6)} currentPage={currentPage} changeCurrentPage={changeCurrentPage} />
         </div>
     )
 }
