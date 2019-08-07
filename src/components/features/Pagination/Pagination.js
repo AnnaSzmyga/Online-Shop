@@ -13,11 +13,14 @@ const Pagination = ({pagesNumber, currentPage, changeCurrentPage}) => {
     const checkActivePage = (page) => {
         return (currentPage === page) ? true : false;
     }
+    const isDisabled = (page) => {
+        return (currentPage === page) ? true : false;
+    }
 
     return (
         <PaginationBar className="pagination-bar">
-            <PaginationItem onClick={() => {changeCurrentPage(1)}}><PaginationLink first /></PaginationItem>
-            <PaginationItem onClick={() => {changeCurrentPage(previousPage)}}><PaginationLink previous /></PaginationItem>
+            <PaginationItem onClick={() => {changeCurrentPage(1)}} disabled={isDisabled(1)}><PaginationLink first /></PaginationItem>
+            <PaginationItem onClick={() => {changeCurrentPage(previousPage)}} disabled={isDisabled(1)}><PaginationLink previous /></PaginationItem>
             {
                 pages.map((page) => {
                     return (
@@ -27,8 +30,8 @@ const Pagination = ({pagesNumber, currentPage, changeCurrentPage}) => {
                     )
                 })
             }
-            <PaginationItem onClick={() => {changeCurrentPage(nextPage)}}><PaginationLink next /></PaginationItem>
-            <PaginationItem onClick={() => {changeCurrentPage(pagesNumber)}}><PaginationLink last /></PaginationItem>
+            <PaginationItem onClick={() => {changeCurrentPage(nextPage)}} disabled={isDisabled(pagesNumber)}><PaginationLink next /></PaginationItem>
+            <PaginationItem onClick={() => {changeCurrentPage(pagesNumber)}} disabled={isDisabled(pagesNumber)}><PaginationLink last /></PaginationItem>
         </PaginationBar>
     )
 }
