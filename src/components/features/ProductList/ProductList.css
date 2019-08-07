@@ -1,3 +1,11 @@
 .products {
     width: calc(100% - 300px);
 }
+
+.products div[class^="col"] {
+    padding: 15px;
+}
+
+.products .fade {
+    height: 100%;
+}

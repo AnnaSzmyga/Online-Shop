@@ -9,7 +9,6 @@ import './Cart.css';
 class Cart extends React.Component {
     constructor(props) {
         super(props);
-        console.log(this.props);
         this.state = {
             modal: false
         }
@@ -60,16 +59,15 @@ class Cart extends React.Component {
             </Fade>
         )
     }
-
     renderEmptyCart = () => {
         return (
             <Fade timeout={100} className="cart">
                 <h2 className="page-heading">Koszyk</h2>
-                <p className="cart__info">Twój koszyk jest pusty.</p>
                 <div className="go-back" onClick={this.props.history.goBack}>
                     <i className="fas fa-arrow-left go-back__icon"></i>
                     Powrót
                 </div>
+                <p className="cart__info">Twój koszyk jest pusty.</p>
             </Fade>
         )
     }

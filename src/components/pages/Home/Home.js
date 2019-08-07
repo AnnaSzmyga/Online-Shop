@@ -13,7 +13,8 @@ class Home extends React.Component {
             products: this.props.products,
             activeCategory: '',
             activeSorting: '',
-            activePage: 1
+            currentPage: 1,
+            productsPerPage: 6,
         };
     }
     sortAscend = () => {
@@ -55,9 +56,14 @@ class Home extends React.Component {
         });
         this.setState({
             products,
-            activeCategory: category
+            activeCategory: category,
+            currentPage: 1
         });
     }
+    changeCurrentPage = (page) => {
+        this.setState({ currentPage: page });
+    }
+
     render() {
         return (
             <Fade timeout={100}>
@@ -71,12 +77,20 @@ class Home extends React.Component {
                         //activeCategory={this.state.activeCategory}
                         //activeSorting={this.state.activeSorting}
                     />
-                    <ProductList products={this.state.products} addToCart={this.props.addToCart} />
+                    <ProductList
+                        products={this.state.products}
+                        addToCart={this.props.addToCart}
+                        changeCurrentPage={this.changeCurrentPage}
+                        currentPage={this.state.currentPage}
+                        productsPerPage={this.state.productsPerPage}
+                    />
                 </div>
             </Fade>
         )
     }
 }
+
+
 //path={"/category=:category(\\d+)&sort_by=:sorting"}
 
 
