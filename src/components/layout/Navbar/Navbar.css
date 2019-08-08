@@ -5,3 +5,7 @@
     background-color: #f0efec;
     box-shadow: 3px 3px 8px #9ca5a3;
 }
+
+.navbar__logo-link:hover {
+    text-decoration: none;
+}

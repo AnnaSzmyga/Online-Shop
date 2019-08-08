@@ -67,7 +67,7 @@ class Home extends React.Component {
     render() {
         return (
             <Fade timeout={100}>
-                <div className="home">
+                <div className="home" id="home">
                     <Sidebar
                         sortAscend={this.sortAscend}
                         sortDescend={this.sortDescend}

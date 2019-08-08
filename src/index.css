@@ -1,6 +1,9 @@
 *, *::before, *::after {
 	box-sizing: border-box;
 }
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	background-color: #f0efec;
@@ -32,12 +35,13 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-/* Change Bootstrap default styles */
-
+/* CHANGE BOOTSTRAP DEFAULT STYLES: */
+/* modal */
 .modal-content {
 	border-radius: 0;
 	border: 0;
 }
+/* pagination */
 .page-link {
     background-color:#f0efec;
 	border: 1px solid #cfdbd9;
@@ -48,14 +52,13 @@ input[type=number]::-webkit-outer-spin-button {
 	background-color: #e8e6e3;
 }
 .page-item.active .page-link {
-	background-color: #2ea18a;
-	border-color: #2ea18a;
+	background-color: #a2cfc6;
+	border-color: #a2cfc6;
 	/* outline: 2px solid #93aaa6; */
 }
 .page-link:focus {
 	box-shadow: none;
 }
-
 .page-item:first-child .page-link, .page-item:last-child .page-link {
     border-radius: 0;
 }

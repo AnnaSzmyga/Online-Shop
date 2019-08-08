@@ -19,19 +19,31 @@ const Pagination = ({pagesNumber, currentPage, changeCurrentPage}) => {
 
     return (
         <PaginationBar className="pagination-bar">
-            <PaginationItem onClick={() => {changeCurrentPage(1)}} disabled={isDisabled(1)}><PaginationLink first /></PaginationItem>
-            <PaginationItem onClick={() => {changeCurrentPage(previousPage)}} disabled={isDisabled(1)}><PaginationLink previous /></PaginationItem>
+            <PaginationItem onClick={() => {changeCurrentPage(1); window.scroll(0, 0)}} disabled={isDisabled(1)}>
+                <PaginationLink first />
+            </PaginationItem>
+            <PaginationItem onClick={() => {changeCurrentPage(previousPage); window.scroll(0, 0)}} disabled={isDisabled(1)}>
+                <PaginationLink previous />
+            </PaginationItem>
             {
                 pages.map((page) => {
                     return (
-                        <PaginationItem onClick={() => {changeCurrentPage(page)}} active={checkActivePage(page)} key={page}>
-                            <PaginationLink>{page}</PaginationLink>
+                        <PaginationItem
+                            onClick={() => {changeCurrentPage(page); window.scroll(0, 0)}}
+                            active={checkActivePage(page)}
+                            key={page}
+                        >
+                            <PaginationLink href="#home">{page}</PaginationLink>
                         </PaginationItem>
                     )
                 })
             }
-            <PaginationItem onClick={() => {changeCurrentPage(nextPage)}} disabled={isDisabled(pagesNumber)}><PaginationLink next /></PaginationItem>
-            <PaginationItem onClick={() => {changeCurrentPage(pagesNumber)}} disabled={isDisabled(pagesNumber)}><PaginationLink last /></PaginationItem>
+            <PaginationItem onClick={() => {changeCurrentPage(nextPage); window.scroll(0, 0)}} disabled={isDisabled(pagesNumber)}>
+                <PaginationLink next />
+            </PaginationItem>
+            <PaginationItem onClick={() => {changeCurrentPage(pagesNumber); window.scroll(0, 0)}} disabled={isDisabled(pagesNumber)}>
+                <PaginationLink last />
+            </PaginationItem>
         </PaginationBar>
     )
 }
