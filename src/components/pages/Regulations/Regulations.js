@@ -1,4 +1,5 @@
 import React from 'react';
+import Ornament from '../../common/Ornament/Ornament';
 import { Fade } from 'reactstrap';
 
 import './Regulations.css';
@@ -7,6 +8,7 @@ const Regulations = (props) => {
     return (
         <Fade timeout={100} className="regulations">
             <h2 className="page-heading">Regulamin sklepu</h2>
+            <Ornament />
             <ol className="regulations__list">
                 <li className="regulations__item">
                     <h5 className="regulations__heading">Duis dapibus ante.</h5>

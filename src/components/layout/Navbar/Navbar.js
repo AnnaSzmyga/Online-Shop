@@ -17,7 +17,7 @@ class Navbar extends React.Component {
     // shrink navbar on scrolling
     componentDidMount() {
         document.addEventListener('scroll', () => {
-            if (window.scrollY < 200) {
+            if (window.scrollY < 150) {
                 this.setState({ padding: '35px 0' });
             } else {
                 this.setState({ padding: '15px 0' });

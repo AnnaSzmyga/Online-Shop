@@ -3,6 +3,7 @@ import CartProductsList from '../../features/CartProductsList/CartProductsList';
 import Button from '../../common/Button/Button';
 import Payment from '../../features/Payment/Payment';
 import { Modal, Fade } from 'reactstrap';
+import Ornament from '../../common/Ornament/Ornament';
 
 import './Cart.css';
 
@@ -35,6 +36,7 @@ class Cart extends React.Component {
         return (
             <Fade timeout={100} className="cart">
                 <h2 className="page-heading">Koszyk</h2>
+                <Ornament />
                 <div className="cart__buttons-wrapper">
                     <div className="go-back" onClick={() => {this.props.history.goBack(); window.scroll(0, 0)}}>
                         <i className="fas fa-arrow-left go-back__icon"></i>
@@ -63,6 +65,7 @@ class Cart extends React.Component {
         return (
             <Fade timeout={100} className="cart">
                 <h2 className="page-heading">Koszyk</h2>
+                <Ornament />
                 <div className="go-back" onClick={() => {this.props.history.goBack(); window.scroll(0, 0)}}>
                     <i className="fas fa-arrow-left go-back__icon"></i>
                     Powrót

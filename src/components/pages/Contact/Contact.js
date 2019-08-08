@@ -1,5 +1,6 @@
 import React from 'react';
 import { Fade } from 'reactstrap';
+import Ornament from '../../common/Ornament/Ornament';
 
 import './Contact.css';
 
@@ -8,6 +9,7 @@ const Contact = (props) => {
     return (
         <Fade timeout={100} className="contact">
             <h2 className="page-heading">Kontakt</h2>
+            <Ornament />
             <h4 className="contact__item">Adres:</h4>
             <p><span>ul.Słonimska 178/3 lok.6</span><span>15-957 Białystok</span></p>
             <h4 className="contact__item">Telefon:</h4>

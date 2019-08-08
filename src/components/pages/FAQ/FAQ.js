@@ -1,4 +1,5 @@
 import React from 'react';
+import Ornament from '../../common/Ornament/Ornament';
 import { Fade } from 'reactstrap';
 
 import './FAQ.css';
@@ -7,6 +8,7 @@ const FAQ = (props) => {
     return (
         <Fade timeout={100} className="faq">
             <h2 className="page-heading">Najczęściej zadawane pytania</h2>
+            <Ornament />
             <h3 className="faq__question">Jak złożyć zamówienie?</h3>
             <p className="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.</p>
             <h3 className="faq__question">Jak długo będę czekać na zamówiony tort?</h3>

@@ -1,6 +1,8 @@
 import React from 'react';
 import Sorting from '../Sorting/Sorting';
 import CategoriesList from '../CategoriesList/CategoriesList';
+import Ornament from '../../common/Ornament/Ornament';
+
 
 import './Sidebar.css';
 
@@ -11,6 +13,7 @@ const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, activ
                 filterCategory={filterCategory}
                 //activeSorting={activeSorting}
             />
+            <Ornament />
             <Sorting
                 onSortAscend={sortAscend}
                 onSortDescend={sortDescend}

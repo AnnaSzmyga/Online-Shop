@@ -35,7 +35,7 @@ const CategoriesList = ({filterCategory}) => {
         }
     ]
     return (
-        <ul className="categoriesList">
+        <ul className="categories-list">
             {
                 categories.map((category) =>
                     <Category

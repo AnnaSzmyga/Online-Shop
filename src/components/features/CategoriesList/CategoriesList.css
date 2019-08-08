@@ -1,4 +1,5 @@
-.categoriesList {
-    padding: 0 20px;;
+.categories-list {
+    padding: 0 20px;
     list-style-type: none;
+    margin: 0;
 }

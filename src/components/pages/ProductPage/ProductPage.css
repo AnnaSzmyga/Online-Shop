@@ -41,9 +41,10 @@
 }
 
 .product__heading {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     text-transform: capitalize;
     font-family: 'Cinzel', serif;
+    text-align: center;
 }
 
 .product__price {
