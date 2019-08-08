@@ -36,7 +36,7 @@ class Cart extends React.Component {
             <Fade timeout={100} className="cart">
                 <h2 className="page-heading">Koszyk</h2>
                 <div className="cart__buttons-wrapper">
-                    <div className="go-back" onClick={this.props.history.goBack}>
+                    <div className="go-back" onClick={() => {this.props.history.goBack(); window.scroll(0, 0)}}>
                         <i className="fas fa-arrow-left go-back__icon"></i>
                         Powrót
                     </div>
@@ -63,7 +63,7 @@ class Cart extends React.Component {
         return (
             <Fade timeout={100} className="cart">
                 <h2 className="page-heading">Koszyk</h2>
-                <div className="go-back" onClick={this.props.history.goBack}>
+                <div className="go-back" onClick={() => {this.props.history.goBack(); window.scroll(0, 0)}}>
                     <i className="fas fa-arrow-left go-back__icon"></i>
                     Powrót
                 </div>

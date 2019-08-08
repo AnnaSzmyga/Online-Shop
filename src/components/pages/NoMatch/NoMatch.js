@@ -10,7 +10,7 @@ const NoMatch = (props) => {
             <div className="no-match__error">404</div>
             <div className="no-match__info">Strona nie została znaleziona.</div>
             <Link className="no-match__link" to="/">
-                <div className="go-back" >
+                <div className="go-back">
                     <i className="fas fa-arrow-left go-back__icon"></i>
                     Powrót na stronę główną
                 </div>
