@@ -15,7 +15,7 @@ const CartProduct = ({cartProduct, removeFromCart, changeQuantity}) => {
         <li className="cart-product">
             <div className="cart-product__first-row">
                 <div className="cart-product__name-wrapper">
-                    <div className="cart-product__image" style={{backgroundImage: `url(${cartProduct.image})`}}></div>
+                    <div className="cart-product__image" style={{backgroundImage: `url(/images/${cartProduct.image})`}}></div>
                     <h3 className="cart-product__name">{cartProduct.name}</h3>
                 </div>
                 <div className="cart-product__buttons">

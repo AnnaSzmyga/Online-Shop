@@ -11,7 +11,7 @@ const Product = ({product, addToCart}) => {
             <Fade timeout={100}>
                 <div className="product-card">
                     <Link to={`/cakes/${product.id}`} className="product-card__link">
-                        <div className="product-card__image" alt={product.name} style={{backgroundImage: `url(${product.image})`}}></div>
+                        <div className="product-card__image" alt={product.name} style={{backgroundImage: `url(/images/${product.image})`}}></div>
                     </Link>
                     <div>
                         <h3 className="product-card__heading">{product.name}</h3>

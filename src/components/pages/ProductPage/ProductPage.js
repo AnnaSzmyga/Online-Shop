@@ -27,7 +27,7 @@ const ProductPage = ({match, products, addProduct, ...props}) => {
               Powrót
             </div>
             <div className="product">
-              <div className="product__image-box"><img className="product__image" src={activeProduct.image} alt={activeProduct.name}/></div>
+              <div className="product__image-box"><img className="product__image" src={`/images/${activeProduct.image}`} alt={activeProduct.name}/></div>
               <div className="product__content">
                 <h2 className="product__heading">{activeProduct.name}</h2>
                 <Ornament />
