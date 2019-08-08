@@ -7,19 +7,51 @@ import { Container } from 'reactstrap';
 
 import './Navbar.css';
 
-
-const Navbar = ({cartContent, ...props}) => {
-    return (
-        <div className="navbar">
-            <Container>
-                <Link to="/" className="navbar__logo-link">
-                    <Logo />
-                </Link>
-                <Menu />
-                <CartLink cartContent={cartContent} />
-            </Container>
-        </div>
-    )
+class Navbar extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            padding: '35px 0'
+        }
+    }
+    // shrink navbar on scrolling
+    componentDidMount() {
+        document.addEventListener('scroll', () => {
+            if (window.scrollY < 200) {
+                this.setState({ padding: '35px 0' });
+            } else {
+                this.setState({ padding: '15px 0' });
+            }
+        });
+    }
+    render() {
+        return (
+            <div className="navbar" style={{padding: this.state.padding}}>
+                <Container>
+                    <Link to="/" className="navbar__logo-link">
+                        <Logo />
+                    </Link>
+                    <Menu />
+                    <CartLink cartContent={this.props.cartContent} />
+                </Container>
+            </div>
+        )
+    }
 }
+
+
+// const Navbar = ({cartContent, ...props}) => {
+//     return (
+//         <div className="navbar">
+//             <Container>
+//                 <Link to="/" className="navbar__logo-link">
+//                     <Logo />
+//                 </Link>
+//                 <Menu />
+//                 <CartLink cartContent={cartContent} />
+//             </Container>
+//         </div>
+//     )
+// }
 
 export default Navbar;

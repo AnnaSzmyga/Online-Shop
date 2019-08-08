@@ -4,10 +4,8 @@
     align-items: center;
     background-color: #f0efec;
     box-shadow: 3px 3px 8px #9ca5a3;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw; */
+    z-index: 10;
+    transition: .4s;
 }
 
 .navbar__logo-link:hover {

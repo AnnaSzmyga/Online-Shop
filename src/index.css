@@ -36,17 +36,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 /* CHANGE BOOTSTRAP DEFAULT STYLES: */
+/* navbar */
 .navbar {
-    align-items: center;
-    background-color: #f0efec;
-    box-shadow: 3px 3px 8px #9ca5a3;
     position: fixed;
     top: 0;
     left: 0;
 	width: 100vw;
-	z-index: 10;
 }
-
 /* modal */
 .modal-content {
 	border-radius: 0;
@@ -65,7 +61,6 @@ input[type=number]::-webkit-outer-spin-button {
 .page-item.active .page-link {
 	background-color: #a2cfc6;
 	border-color: #a2cfc6;
-	/* outline: 2px solid #93aaa6; */
 }
 .page-link:focus {
 	box-shadow: none;
