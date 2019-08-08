@@ -1,51 +1,57 @@
 [
     {
         "id": 1,
-        "name": "Czekoladowy 1",
+        "name": "Drip cake z kwiatami",
         "category": "traditional",
-        "price": 120,
+        "price": 200,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "czekoladowy-1.png"
+        "image": "drip-cake-z-kwiatami.png",
+        "info": "promocja"
     },
     {
         "id": 2,
-        "name": "Truskawkowy",
-        "category": "traditional",
-        "price": 110,
+        "name": "Tort na roczek",
+        "category": "kids",
+        "price": 220,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "truskawkowy.png"
+        "image": "tort-na-roczek.png",
+        "info": ""
     },
     {
         "id": 3,
-        "name": "Szwarcwaldzki",
-        "category": "traditional",
-        "price": 130,
+        "name": "Komunijny 3",
+        "category": "communion",
+        "price": 290,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "szwarcwaldzki.png"
+        "image": "komunijny-3.png",
+        "info": ""
     },
     {
         "id": 4,
-        "name": "Trolle",
-        "category": "kids",
-        "price": 170,
+        "name": "Baby shower",
+        "category": "others",
+        "price": 500,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "trolle.png"
+        "image": "baby-shower.png",
+        "info": "nowość"
     },
     {
         "id": 5,
-        "name": "Strażak Sam",
+        "name": "Ze zwierzątkami",
         "category": "kids",
-        "price": 170,
+        "price": 200,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "strazak-sam.png"
+        "image": "ze-zwierzatkami.png",
+        "info": ""
     },
     {
         "id": 6,
-        "name": "Weselny z piwoniami",
-        "category": "wedding",
-        "price": 320,
+        "name": "Drip cake 2",
+        "category": "traditional",
+        "price": 190,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "weselny-z-piwoniami.png"
+        "image": "drip-cake-2.png",
+        "info": "niedostępny"
     },
     {
         "id": 7,
@@ -53,7 +59,8 @@
         "category": "kids",
         "price": 190,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "shrek.png"
+        "image": "shrek.png",
+        "info": ""
     },
     {
         "id": 8,
@@ -61,7 +68,8 @@
         "category": "christening",
         "price": 260,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "tort-na-chrzciny-1.png"
+        "image": "tort-na-chrzciny-1.png",
+        "info": "niedostępny"
     },
     {
         "id": 9,
@@ -69,7 +77,8 @@
         "category": "others",
         "price": 60,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "mini-eklerki.png"
+        "image": "mini-eklerki.png",
+        "info": "promocja"
     },
     {
         "id": 10,
@@ -77,7 +86,8 @@
         "category": "others",
         "price": 70,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "mini-serniczki-oreo.png"
+        "image": "mini-serniczki-oreo.png",
+        "info": ""
     },
     {
         "id": 11,
@@ -85,7 +95,8 @@
         "category": "kids",
         "price": 180,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "ninjago.png"
+        "image": "ninjago.png",
+        "info": "nowość"
     },
     {
         "id": 12,
@@ -93,7 +104,8 @@
         "category": "communion",
         "price": 270,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "komunijny-1.png"
+        "image": "komunijny-1.png",
+        "info": ""
     },
     {
         "id": 13,
@@ -101,7 +113,8 @@
         "category": "wedding",
         "price": 370,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "weselny-1.png"
+        "image": "weselny-1.png",
+        "info": "promocja"
     },
     {
         "id": 14,
@@ -109,7 +122,8 @@
         "category": "communion",
         "price": 370,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "komunijny-2.png"
+        "image": "komunijny-2.png",
+        "info": "promocja"
     },
     {
         "id": 15,
@@ -117,7 +131,8 @@
         "category": "occasional",
         "price": 170,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "mam-talent.png"
+        "image": "mam-talent.png",
+        "info": "nowość"
     },
     {
         "id": 16,
@@ -125,7 +140,8 @@
         "category": "occasional",
         "price": 270,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "na-18-tke-1.png"
+        "image": "na-18-tke-1.png",
+        "info": ""
     },
     {
         "id": 17,
@@ -133,6 +149,349 @@
         "category": "christening",
         "price": 380,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
-        "image": "tort-na-chrzciny-2.png"
+        "image": "tort-na-chrzciny-2.png",
+        "info": ""
+    },
+    {
+        "id": 18,
+        "name": "Pień drzewa",
+        "category": "occasional",
+        "price": 180,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "pien-drzewa.png",
+        "info": "promocja"
+    },
+    {
+        "id": 19,
+        "name": "Gniazdka bezowe",
+        "category": "others",
+        "price": 90,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "gniazdka-bezowe.png",
+        "info": ""
+    },
+    {
+        "id": 20,
+        "name": "Czekoladowy 2",
+        "category": "traditional",
+        "price": 150,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "czekoladowy-2.png",
+        "info": "nowość"
+    },
+    {
+        "id": 21,
+        "name": "Gra o tron",
+        "category": "occasional",
+        "price": 190,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "gra-o-tron.png",
+        "info": ""
+    },
+    {
+        "id": 22,
+        "name": "Tort na chrzciny 3",
+        "category": "christening",
+        "price": 280,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "tort-na-chrzciny-3.png",
+        "info": "nowość"
+    },
+    {
+        "id": 23,
+        "name": "Tort na chrzciny 4",
+        "category": "christening",
+        "price": 300,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "tort-na-chrzciny-4.png",
+        "info": ""
+    },
+    {
+        "id": 24,
+        "name": "Trolle",
+        "category": "kids",
+        "price": 170,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "trolle.png",
+        "info": "nowość"
+    },
+    {
+        "id": 25,
+        "name": "Tort na chrzciny 5",
+        "category": "christening",
+        "price": 280,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "tort-na-chrzciny-5.png",
+        "info": ""
+    },
+    {
+        "id": 26,
+        "name": "Lokomotywa Tomek",
+        "category": "kids",
+        "price": 190,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "lokomotywa-tomek.png",
+        "info": "promocja"
+    },
+    {
+        "id": 27,
+        "name": "Tort na chrzciny 6",
+        "category": "christening",
+        "price": 220,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "tort-na-chrzciny-6.png",
+        "info": ""
+    },
+    {
+        "id": 28,
+        "name": "Minekraft",
+        "category": "kds",
+        "price": 150,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "minekraft.png",
+        "info": "promocja"
+    },
+    {
+        "id": 29,
+        "name": "Dla wtajemniczonych",
+        "category": "occasional",
+        "price": 250,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "dla-wtajemniczonych.png",
+        "info": "nowość"
+    },
+    {
+        "id": 30,
+        "name": "Jej Wysokość Zosia",
+        "category": "kids",
+        "price": 220,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "jej-wysokosc-zosia.png",
+        "info": ""
+    },
+    {
+        "id": 31,
+        "name": "Minionki",
+        "category": "kids",
+        "price": 200,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "minionki.png",
+        "info": "promocja"
+    },
+    {
+        "id": 32,
+        "name": "Gitary",
+        "category": "kids",
+        "price": 130,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "gitary.png",
+        "info": "promocja"
+    },
+    {
+        "id": 33,
+        "name": "Tort na chrzciny 7",
+        "category": "christening",
+        "price": 220,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "tort-na-chrzciny-7.png",
+        "info": "promocja"
+    },
+    {
+        "id": 34,
+        "name": "Frozen",
+        "category": "kids",
+        "price": 180,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "frozen.png",
+        "info": ""
+    },
+    {
+        "id": 35,
+        "name": "Z kwiatami",
+        "category": "traditional",
+        "price": 190,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "z-kwiatami.png",
+        "info": "nowość"
+    },
+    {
+        "id": 36,
+        "name": "Urodzinowy 1",
+        "category": "occasional",
+        "price": 280,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "urodzinowy-1.png",
+        "info": ""
+    },
+    {
+        "id": 37,
+        "name": "Weselny 2",
+        "category": "wedding",
+        "price": 300,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "weselny-2.png",
+        "info": ""
+    },
+    {
+        "id": 38,
+        "name": "Strażak Sam",
+        "category": "kids",
+        "price": 170,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "strazak-sam.png",
+        "info": "promocja"
+    },
+    {
+        "id": 39,
+        "name": "Drip cake",
+        "category": "traditional",
+        "price": 200,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "drip-cake.png",
+        "info": "promocja"
+    },
+    {
+        "id": 40,
+        "name": "Ciasteczka na chrzciny",
+        "category": "christening",
+        "price": 110,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "ciasteczka-na-chrzciny.png",
+        "info": ""
+    },
+    {
+        "id": 41,
+        "name": "Pierwsze urodziny",
+        "category": "kids",
+        "price": 180,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "pierwsze-urodziny.png",
+        "info": "promocja"
+    },
+    {
+        "id": 42,
+        "name": "Cars",
+        "category": "kids",
+        "price": 210,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "cars.png",
+        "info": ""
+    },
+    {
+        "id": 43,
+        "name": "Na 30-kę",
+        "category": "occasional",
+        "price": 280,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "na-30-ke.png",
+        "info": ""
+    },
+    {
+        "id": 44,
+        "name": "Szwarcwaldzki",
+        "category": "traditional",
+        "price": 130,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "szwarcwaldzki.png",
+        "info": "niedostępny"
+    },
+    {
+        "id": 45,
+        "name": "Spiderman",
+        "category": "kids",
+        "price": 200,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "spiderman.png",
+        "info": "niedostępny"
+    },
+    {
+        "id": 46,
+        "name": "Pasowanie",
+        "category": "kids",
+        "price": 180,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "pasowanie.png",
+        "info": "nowość"
+    },
+    {
+        "id": 47,
+        "name": "Truskawkowy",
+        "category": "traditional",
+        "price": 110,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "truskawkowy.png",
+        "info": ""
+    },
+    {
+        "id": 48,
+        "name": "Księga na komunię",
+        "category": "communion",
+        "price": 340,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "ksiega-na-komunie.png",
+        "info": ""
+    },
+    {
+        "id": 49,
+        "name": "Galaktyka",
+        "category": "kids",
+        "price": 170,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "galaktyka.png",
+        "info": ""
+    },
+    {
+        "id": 50,
+        "name": "Versace",
+        "category": "occasional",
+        "price": 200,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "versace.png",
+        "info": "nowość"
+    },
+    {
+        "id": 51,
+        "name": "Na 18-tkę 2",
+        "category": "occasional",
+        "price": 220,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "na-18-tke-2.png",
+        "info": "nowość"
+    },
+    {
+        "id": 52,
+        "name": "Czekoladowy 1",
+        "category": "traditional",
+        "price": 120,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "czekoladowy-1.png",
+        "info": "promocja"
+    },
+    {
+        "id": 53,
+        "name": "Babeczki",
+        "category": "others",
+        "price": 110,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "babeczki.png",
+        "info": "promocja"
+    },
+    {
+        "id": 54,
+        "name": "Tort owocowy",
+        "category": "traditional",
+        "price": 110,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "owocowy.png",
+        "info": ""
+    },
+    {
+        "id": 55,
+        "name": "Weselny z piwoniami",
+        "category": "wedding",
+        "price": 320,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ante sit amet velit blandit, eu laoreet orci maximus. Proin at sollicitudin dui, nec pulvinar tortor. Nulla id aliquam justo, vel pharetra orci. Nam id sodales dolor. Morbi mollis lacinia nulla nec tincidunt. Pellentesque tempus tristique purus, sed commodo tortor cursus ut. Nunc ullamcorper rhoncus tellus vitae fringilla. Maecenas turpis odio, rhoncus quis euismod non, sodales non nisi. Pellentesque vel nulla non tortor fermentum interdum quis ac ligula. Integer ipsum ante, elementum vitae convallis ut, ullamcorper et nisl. Ut varius tempor orci non semper.",
+        "image": "weselny-z-piwoniami.png",
+        "info": ""
     }
 ]
