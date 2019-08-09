@@ -20,7 +20,7 @@ class Navbar extends React.Component {
             if (window.scrollY < 150) {
                 this.setState({ padding: '35px 0' });
             } else {
-                this.setState({ padding: '15px 0' });
+                this.setState({ padding: '10px 0' });
             }
         });
     }

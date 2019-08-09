@@ -6,12 +6,15 @@ import { Col, Fade } from 'reactstrap';
 import './Product.css';
 
 const Product = ({product, addToCart}) => {
+    const infoDisplay = (product.info === "") ? 'none' : "block";
     return (
         <Col sm="12" md="6">
             <Fade timeout={100}>
                 <div className="product-card">
                     <Link to={`/cakes/${product.id}`} className="product-card__link">
-                        <div className="product-card__image" alt={product.name} style={{backgroundImage: `url(/images/${product.image})`}}></div>
+                        <div className="product-card__image" alt={product.name} style={{backgroundImage: `url(/images/${product.image})`}}>
+                            <div className="product-card__info" style={{display: infoDisplay}}>{product.info}</div>
+                        </div>
                     </Link>
                     <div>
                         <h3 className="product-card__heading">{product.name}</h3>

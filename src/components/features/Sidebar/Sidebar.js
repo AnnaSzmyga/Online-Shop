@@ -21,6 +21,7 @@ const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, activ
                 onSortZA={sortZA}
                 //activeCategory={activeCategory}
             />
+            <Ornament />
         </div>
     )
 }
