@@ -1,7 +1,7 @@
 import React from 'react';
 import Category from '../Category/Category';
 
-import './CategoriesList.css';
+import './CategoriesList.scss';
 
 const CategoriesList = ({filterCategory}) => {
     const categories = [

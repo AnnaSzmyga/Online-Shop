@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import './CartLink.css';
+import './CartLink.scss';
 
 const CartLink = ({cartContent}) => {
         return (

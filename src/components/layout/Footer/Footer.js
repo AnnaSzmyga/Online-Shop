@@ -3,8 +3,8 @@ import Menu from '../../features/Menu/Menu';
 
 import { Container } from 'reactstrap';
 
-import './Footer.css';
-import '../../features/Menu/Menu.css';
+import './Footer.scss';
+import '../../features/Menu/Menu.scss';
 
 const Footer = (props) => {
     return (

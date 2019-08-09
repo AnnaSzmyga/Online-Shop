@@ -1,0 +1,12 @@
+.products {
+    width: calc(100% - 300px);
+
+    div[class^="col"] {
+        padding: 15px;
+    }
+
+    .fade {
+        height: 100%;
+    }
+}
+

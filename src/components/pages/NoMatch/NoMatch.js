@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Fade } from 'reactstrap';
 
-import './NoMatch.css';
+import './NoMatch.scss';
 
 const NoMatch = (props) => {
     return (

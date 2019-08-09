@@ -1,0 +1,18 @@
+.sorting {
+    padding: 30px;
+
+    &__heading {
+        margin-bottom: 30px;
+    }
+    &__item {
+        margin: 10px 0;
+        transition: .4s;
+        cursor: pointer;
+
+        &:hover, &.active {
+            letter-spacing: 2px;
+            color: #58B19F;
+            font-weight: bold;
+        }
+    }
+}

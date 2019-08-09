@@ -1,16 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-import './Sorting.css';
+import './Sorting.scss';
 
 const Sorting = ({onSortAscend, onSortDescend, onSortAZ, onSortZA}) => {
+    const sortingItems = document.querySelectorAll('.sorting__item');
+
+    const toggleActiveClassName = (e) => {
+        const activeItem = e.target;
+        sortingItems.forEach((item) => {
+            item.classList.remove('active');
+        });
+        activeItem.classList.add('active');
+    }
+
     return (
         <div className="sorting">
             <h3 className="sorting__heading">Sortuj:</h3>
-            <div className="sorting__item" onClick={onSortAZ}>Nazwa A-Z</div>
-            <div className="sorting__item" onClick={onSortZA}>Nazwa Z-A</div>
-            <div className="sorting__item" onClick={onSortAscend}>Cena rosnąco</div>
-            <div className="sorting__item" onClick={onSortDescend}>Cena malejąco</div>
+            <div className="sorting__item" onClick={(e) => {onSortAZ(); toggleActiveClassName(e)}}>Nazwa A-Z</div>
+            <div className="sorting__item" onClick={(e) => {onSortZA(); toggleActiveClassName(e)}}>Nazwa Z-A</div>
+            <div className="sorting__item" onClick={(e) => {onSortAscend(); toggleActiveClassName(e)}}>Cena rosnąco</div>
+            <div className="sorting__item" onClick={(e) => {onSortDescend(); toggleActiveClassName(e)}}>Cena malejąco</div>
         </div>
     )
 }

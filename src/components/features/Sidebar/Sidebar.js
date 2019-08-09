@@ -4,7 +4,7 @@ import CategoriesList from '../CategoriesList/CategoriesList';
 import Ornament from '../../common/Ornament/Ornament';
 
 
-import './Sidebar.css';
+import './Sidebar.scss';
 
 const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, activeCategory, activeSorting}) => {
     return (

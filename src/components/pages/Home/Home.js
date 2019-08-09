@@ -4,7 +4,7 @@ import Sidebar from '../../features/Sidebar/Sidebar';
 import ProductList from '../../features/ProductList/ProductList';
 import { Fade } from 'reactstrap';
 
-import './Home.css';
+import './Home.scss';
 
 class Home extends React.Component {
     constructor(props) {

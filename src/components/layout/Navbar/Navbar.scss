@@ -6,8 +6,8 @@
     box-shadow: 3px 3px 8px #9ca5a3;
     z-index: 10;
     transition: .4s;
-}
 
-.navbar__logo-link:hover {
-    text-decoration: none;
+    &__logo-link:hover {
+        text-decoration: none;
+    }
 }

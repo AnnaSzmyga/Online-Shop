@@ -3,7 +3,7 @@ import Button from '../../common/Button/Button';
 import Ornament from '../../common/Ornament/Ornament';
 import { Fade } from 'reactstrap';
 
-import './ProductPage.css';
+import './ProductPage.scss';
 
 
 const ProductPage = ({match, products, addProduct, ...props}) => {
@@ -14,16 +14,14 @@ const ProductPage = ({match, products, addProduct, ...props}) => {
     let activeProduct;
     products.forEach((product) => {
         if (product.id.toString() === match.params.id) {
-            console.log(product.name);
             activeProduct = product;
         }
     })
-    console.log(activeProduct);
 
     return (
           <Fade timeout={100} className="product-page">
             <div className="go-back" onClick={props.history.goBack}>
-              <i class="fas fa-arrow-left go-back__icon"></i>
+              <i className="fas fa-arrow-left go-back__icon"></i>
               Powrót
             </div>
             <div className="product">
@@ -41,6 +39,3 @@ const ProductPage = ({match, products, addProduct, ...props}) => {
 }
 
 export default ProductPage;
-// <Link to={() => props.history.go(-1)}><span>Powrót</span></Link>
-
-

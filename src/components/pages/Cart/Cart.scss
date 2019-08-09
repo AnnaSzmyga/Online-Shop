@@ -1,0 +1,35 @@
+.cart {
+    text-align: right;
+    padding-top: 30px;
+
+    &--empty {
+        text-align: center;
+    }
+
+    &__info {
+        font-family: 'Cinzel', serif;
+        font-size: 22px;
+        margin-top: 50px;
+    }
+
+    &__amount {
+        text-align: right;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    &__button {
+        margin-top: 30px;
+        font-family: 'Cinzel', serif;
+        padding: 10px 20px;
+    }
+}

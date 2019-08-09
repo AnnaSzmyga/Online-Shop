@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Button from '../../common/Button/Button';
 
 import { Col, Fade } from 'reactstrap';
-import './Product.css';
+import './Product.scss';
 
 const Product = ({product, addToCart}) => {
     const infoDisplay = (product.info === "") ? 'none' : "block";

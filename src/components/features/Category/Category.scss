@@ -6,14 +6,15 @@
     font-size: 18px;
     font-family: 'Cinzel', serif;
     transition: .4s;
-}
+    cursor: pointer;
 
-.category:last-of-type {
-    border-bottom: 0;
-}
+    &:hover {
+        letter-spacing: 2px;
+        color: #58B19F;
+        font-weight: 700;
+    }
 
-.category:hover {
-    letter-spacing: 2px;
-    color: #58B19F;
-    font-weight: 700;
+    &:last-of-type {
+        border-bottom: 0;
+    }
 }

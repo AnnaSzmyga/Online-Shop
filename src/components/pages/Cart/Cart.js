@@ -5,7 +5,7 @@ import Payment from '../../features/Payment/Payment';
 import { Modal, Fade } from 'reactstrap';
 import Ornament from '../../common/Ornament/Ornament';
 
-import './Cart.css';
+import './Cart.scss';
 
 class Cart extends React.Component {
     constructor(props) {
@@ -35,7 +35,6 @@ class Cart extends React.Component {
         this.calculateAmount();
         return (
             <Fade timeout={100} className="cart">
-                <h2 className="page-heading">Koszyk</h2>
                 <Ornament />
                 <div className="cart__buttons-wrapper">
                     <div className="go-back" onClick={() => {this.props.history.goBack(); window.scroll(0, 0)}}>
@@ -63,14 +62,13 @@ class Cart extends React.Component {
     }
     renderEmptyCart = () => {
         return (
-            <Fade timeout={100} className="cart">
-                <h2 className="page-heading">Koszyk</h2>
+            <Fade timeout={100} className="cart cart--empty">
                 <Ornament />
+                <p className="cart__info">Twój koszyk jest pusty.</p>
                 <div className="go-back" onClick={() => {this.props.history.goBack(); window.scroll(0, 0)}}>
                     <i className="fas fa-arrow-left go-back__icon"></i>
                     Powrót
                 </div>
-                <p className="cart__info">Twój koszyk jest pusty.</p>
             </Fade>
         )
     }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../../common/Button/Button';
 
-import './CartProduct.css';
+import './CartProduct.scss';
 
 const CartProduct = ({cartProduct, removeFromCart, changeQuantity}) => {
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Button.css';
+import './Button.scss';
 
 const Button = ({buttonOutput, onClickCallback, ...props}) => {
     let className = (props.className) ? `button ${props.className}` : "button";

@@ -1,7 +1,7 @@
 import React from 'react';
 //import { Link } from 'react-router-dom';
 
-import './Category.css';
+import './Category.scss';
 
 const Category = ({category, onFilterCategory}) => {
     return (

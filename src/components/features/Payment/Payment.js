@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Collapse } from 'reactstrap';
 
 
-import './Payment.css';
+import './Payment.scss';
 
 
 class Payment extends React.Component {
@@ -50,16 +50,16 @@ class Payment extends React.Component {
                     value={this.state.codeInputValue}
                     onChange={this.handleChange}
                 />
-                <Link className="payment__link" to="/">
-                    <Button
-                        className="payment__pay-button"
-                        buttonOutput="Zapłać"
-                        onClickCallback={() => {
-                            this.props.closeModal();
-                            this.props.clearCart();
-                        }}
-                    />
-                </Link>
+                <Button
+                    className="payment__pay-button"
+                    buttonOutput="Zapłać"
+                    onClickCallback={() => {
+                        this.props.closeModal();
+                        this.props.clearCart();
+                    }}
+                >
+                    <Link className="payment__link" to="/"></Link>
+                </Button>
                 <Button
                     className="payment__back-to-cart"
                     buttonOutput="Wróć do zamówienia"

@@ -11,7 +11,7 @@ import ProductPage from '../../pages/ProductPage/ProductPage';
 
 import { Container } from 'reactstrap';
 
-import './PageContainer.css';
+import './PageContainer.scss';
 
 const PageContainer = ({products, cart, addProduct, removeProduct, clearCart, changeQuantity, ...props}) => {
   return (

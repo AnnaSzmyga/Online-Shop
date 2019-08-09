@@ -3,7 +3,7 @@ import Navbar from '../Navbar/Navbar';
 import PageContainer from '../PageContainer/PageContainer';
 import Footer from '../Footer/Footer';
 
-import './MainLayout.css';
+import './MainLayout.scss';
 
 const MainLayout = ({products, cart, addProduct, removeProduct, clearCart, changeQuantity}) => {
     return (

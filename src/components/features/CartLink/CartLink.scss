@@ -1,0 +1,20 @@
+.cart-link {
+    color: #353a39;
+    font-size: 14px;
+    font-weight: 700;
+
+    &:hover {
+        text-decoration: none;
+        color: #353a39;
+    }
+
+    &__icon {
+        color: #353a39;
+        font-size: 24px;
+        transition: .3s;
+
+        &:hover {
+            color: #58B19F;
+        }
+    }
+}

@@ -3,7 +3,7 @@ import Product from '../Product/Product';
 import Pagination from '../Pagination/Pagination';
 
 import { Row } from 'reactstrap';
-import './ProductList.css';
+import './ProductList.scss';
 
 const ProductList = ({products, addToCart, currentPage, productsPerPage, changeCurrentPage}) =>{
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Fade } from 'reactstrap';
 import Ornament from '../../common/Ornament/Ornament';
 
-import './Contact.css';
+import './Contact.scss';
 
 
 const Contact = (props) => {

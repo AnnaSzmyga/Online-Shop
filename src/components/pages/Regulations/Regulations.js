@@ -2,7 +2,7 @@ import React from 'react';
 import Ornament from '../../common/Ornament/Ornament';
 import { Fade } from 'reactstrap';
 
-import './Regulations.css';
+import './Regulations.scss';
 
 const Regulations = (props) => {
     return (

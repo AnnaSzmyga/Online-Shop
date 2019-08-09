@@ -1,7 +1,7 @@
 import React from 'react';
 import CartProduct from '../CartProduct/CartProduct';
 
-import './CartProductsList.css';
+import './CartProductsList.scss';
 
 const CartProductsList = ({cartProducts, removeFromCart, changeQuantity}) => {
     return (

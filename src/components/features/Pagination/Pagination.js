@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pagination as PaginationBar, PaginationItem, PaginationLink } from 'reactstrap';
-import './Pagination.css';
+import './Pagination.scss';
 
 const Pagination = ({pagesNumber, currentPage, changeCurrentPage}) => {
     let pages = [];

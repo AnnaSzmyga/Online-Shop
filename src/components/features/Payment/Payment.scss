@@ -1,0 +1,38 @@
+.payment {
+    width: 100%;
+    padding: 20px;
+    background-color:#f0efec;
+    border: 1px solid #cfdbd9;
+    text-align: center;
+
+    &__amount span, &__discount span {
+        font-weight: bold;
+        font-size: larger;
+    }
+    &__input {
+        margin: 0 10px;
+        padding: 5px 10px;
+    }
+
+    &__pay-button {
+        display: block;
+        margin: 20px auto;
+        font-family: 'Cinzel', serif;
+        padding: 10px 20px;
+    }
+    &__link {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__back-to-cart {
+        background-color: transparent;
+        border: 2px solid #2ea18a;
+        color: #2ea18a;
+
+        &:hover {
+            background-color: #e8e6e3;
+            color: #2ea18a;
+        }
+    }
+}
