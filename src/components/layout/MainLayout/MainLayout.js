@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import PageContainer from '../PageContainer/PageContainer';
 import Footer from '../Footer/Footer';
+import PropTypes from 'prop-types';
 
 import './MainLayout.scss';
 
@@ -24,6 +25,15 @@ const MainLayout = ({products, cart, addProduct, removeProduct, clearCart, chang
             <Footer />
         </div>
     )
+}
+
+MainLayout.propTypes = {
+    products: PropTypes.array,
+    cart: PropTypes.array,
+    addProduct: PropTypes.func,
+    removeProduct: PropTypes.func,
+    clearCart: PropTypes.func,
+    changeQuantity: PropTypes.func
 }
 
 // const MainLayout = ({products, sortAsc, sortDesc, sortAZ, sortZA}) => {

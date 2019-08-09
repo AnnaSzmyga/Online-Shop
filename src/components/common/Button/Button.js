@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './Button.scss';
 
@@ -9,5 +10,9 @@ const Button = ({buttonOutput, onClickCallback, ...props}) => {
     )
 }
 
+Button.propTypes = {
+    buttonOutput: PropTypes.string,
+    onClickCallback: PropTypes.func
+}
 
 export default Button;

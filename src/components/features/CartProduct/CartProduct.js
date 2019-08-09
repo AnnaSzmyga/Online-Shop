@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../common/Button/Button';
+import PropTypes from 'prop-types';
 
 import './CartProduct.scss';
 
@@ -40,6 +41,12 @@ const CartProduct = ({cartProduct, removeFromCart, changeQuantity}) => {
             </div>
         </li>
     )
+}
+
+CartProduct.propTypes = {
+    cartProduct: PropTypes.object,
+    removeFromCart: PropTypes.func,
+    changeQuantity: PropTypes.func
 }
 
 export default CartProduct;

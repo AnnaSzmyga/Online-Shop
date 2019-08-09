@@ -1,5 +1,7 @@
 import React from 'react';
 import { Pagination as PaginationBar, PaginationItem, PaginationLink } from 'reactstrap';
+import PropTypes from 'prop-types';
+
 import './Pagination.scss';
 
 const Pagination = ({pagesNumber, currentPage, changeCurrentPage}) => {
@@ -46,6 +48,12 @@ const Pagination = ({pagesNumber, currentPage, changeCurrentPage}) => {
             </PaginationItem>
         </PaginationBar>
     )
+}
+
+Pagination.propTypes = {
+    pagesNumber: PropTypes.number,
+    currentPage: PropTypes.number,
+    changeCurrentPage: PropTypes.func
 }
 
 export default Pagination;

@@ -4,6 +4,7 @@ import Logo from '../../features/Logo/Logo';
 import Menu from '../../features/Menu/Menu';
 import CartLink from '../../features/CartLink/CartLink';
 import { Container } from 'reactstrap';
+import PropTypes from 'prop-types';
 
 import './Navbar.scss';
 
@@ -37,6 +38,10 @@ class Navbar extends React.Component {
             </div>
         )
     }
+}
+
+Navbar.propTypes = {
+    cartContent: PropTypes.number
 }
 
 

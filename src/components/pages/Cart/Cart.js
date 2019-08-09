@@ -4,6 +4,7 @@ import Button from '../../common/Button/Button';
 import Payment from '../../features/Payment/Payment';
 import { Modal, Fade } from 'reactstrap';
 import Ornament from '../../common/Ornament/Ornament';
+import PropTypes from 'prop-types';
 
 import './Cart.scss';
 
@@ -75,6 +76,15 @@ class Cart extends React.Component {
     render() {
         return (this.props.cartProducts.length !== 0) ? this.renderCart() : this.renderEmptyCart();
     }
+}
+
+Cart.propTypes = {
+    cartProducts: PropTypes.array,
+    removeProduct: PropTypes.func,
+    clearCart: PropTypes.func,
+    changeQuantity: PropTypes.func,
+    openModal: PropTypes.func,
+    closeModal: PropTypes.func
 }
 
 

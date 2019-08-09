@@ -3,6 +3,7 @@ import React from 'react';
 import Sidebar from '../../features/Sidebar/Sidebar';
 import ProductList from '../../features/ProductList/ProductList';
 import { Fade } from 'reactstrap';
+import PropTypes from 'prop-types';
 
 import './Home.scss';
 
@@ -90,6 +91,10 @@ class Home extends React.Component {
     }
 }
 
+Home.propTypes = {
+    products: PropTypes.array,
+    addToCart: PropTypes.func
+}
 
 //path={"/category=:category(\\d+)&sort_by=:sorting"}
 

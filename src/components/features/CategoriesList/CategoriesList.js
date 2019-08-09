@@ -1,5 +1,6 @@
 import React from 'react';
 import Category from '../Category/Category';
+import PropTypes from 'prop-types';
 
 import './CategoriesList.scss';
 
@@ -47,6 +48,10 @@ const CategoriesList = ({filterCategory}) => {
             }
         </ul>
     )
+}
+
+CategoriesList.propTypes = {
+    filterCategory: PropTypes.func
 }
 
 export default CategoriesList;

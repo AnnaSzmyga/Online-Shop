@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../../common/Button/Button';
 import { Link } from 'react-router-dom';
 import { Collapse } from 'reactstrap';
+import PropTypes from 'prop-types';
 
 
 import './Payment.scss';
@@ -68,6 +69,12 @@ class Payment extends React.Component {
             </div>
         )
     }
+}
+
+Payment.propTypes = {
+    amount: PropTypes.number,
+    closeModal: PropTypes.func,
+    clearCart: PropTypes.func
 }
 
 

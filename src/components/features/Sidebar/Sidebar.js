@@ -2,7 +2,7 @@ import React from 'react';
 import Sorting from '../Sorting/Sorting';
 import CategoriesList from '../CategoriesList/CategoriesList';
 import Ornament from '../../common/Ornament/Ornament';
-
+import PropTypes from 'prop-types';
 
 import './Sidebar.scss';
 
@@ -26,6 +26,13 @@ const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, activ
     )
 }
 
+Sidebar.propTypes = {
+    sortAscend: PropTypes.func,
+    sortDescend: PropTypes.func,
+    sortAZ: PropTypes.func,
+    sortZA: PropTypes.func,
+    filterCategory: PropTypes.func
+}
 
 
 // const Sidebar = ({products, sortAscend, sortDescend, sortAZ, sortZA}) => {

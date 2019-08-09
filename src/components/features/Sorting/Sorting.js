@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './Sorting.scss';
 
@@ -22,6 +23,13 @@ const Sorting = ({onSortAscend, onSortDescend, onSortAZ, onSortZA}) => {
             <div className="sorting__item" onClick={(e) => {onSortDescend(); toggleActiveClassName(e)}}>Cena malejąco</div>
         </div>
     )
+}
+
+Sorting.propTypes = {
+    onSortAscend: PropTypes.func,
+    onSortDescend: PropTypes.func,
+    onSortAZ: PropTypes.func,
+    onSortZA: PropTypes.func
 }
 
 export default Sorting;

@@ -1,5 +1,6 @@
 import React from 'react';
 import CartProduct from '../CartProduct/CartProduct';
+import PropTypes from 'prop-types';
 
 import './CartProductsList.scss';
 
@@ -18,6 +19,12 @@ const CartProductsList = ({cartProducts, removeFromCart, changeQuantity}) => {
             }
         </ul>
     )
+}
+
+CartProductsList.propTypes = {
+    cartProducts: PropTypes.array,
+    removeFromCart: PropTypes.func,
+    changeQuantity: PropTypes.func
 }
 
 export default CartProductsList;

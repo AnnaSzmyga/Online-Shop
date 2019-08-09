@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../../common/Button/Button';
-
+import PropTypes from 'prop-types';
 import { Col, Fade } from 'reactstrap';
 import './Product.scss';
 
@@ -25,6 +25,11 @@ const Product = ({product, addToCart}) => {
             </Fade>
         </Col>
     )
+}
+
+Product.propTypes = {
+    product: PropTypes.object,
+    addToCart: PropTypes.func
 }
 
 export default Product;
