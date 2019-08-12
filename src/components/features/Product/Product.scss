@@ -24,6 +24,10 @@
         box-shadow: 4px 4px 8px #9ca5a3;
         position: relative;
 
+        @media(max-width: 767px) {
+            height: 40vh;
+        }
+
         &::after {
             display: flex;
             content: "Szczegóły";

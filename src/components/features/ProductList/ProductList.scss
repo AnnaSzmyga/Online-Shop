@@ -1,6 +1,10 @@
 .products {
     width: calc(100% - 300px);
 
+    @media(max-width: 767px) {
+        width: 100%;
+    }
+
     div[class^="col"] {
         padding: 15px;
     }

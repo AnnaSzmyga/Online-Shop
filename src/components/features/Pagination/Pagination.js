@@ -19,8 +19,10 @@ const Pagination = ({pagesNumber, currentPage, changeCurrentPage}) => {
         return (currentPage === page) ? true : false;
     }
 
+    const paginationSize = (window.innerWidth > 768) ? "" : "sm"
+
     return (
-        <PaginationBar className="pagination-bar">
+        <PaginationBar className="pagination-bar" size={paginationSize}>
             <PaginationItem onClick={() => {changeCurrentPage(1); window.scroll(0, 0)}} disabled={isDisabled(1)}>
                 <PaginationLink first />
             </PaginationItem>

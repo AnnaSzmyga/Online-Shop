@@ -8,7 +8,7 @@ import './Product.scss';
 const Product = ({product, addToCart}) => {
     const infoDisplay = (product.info === "") ? 'none' : "block";
     return (
-        <Col sm="12" md="6">
+        <Col md="12" lg="6">
             <Fade timeout={100}>
                 <div className="product-card">
                     <Link to={`/cakes/${product.id}`} className="product-card__link">
