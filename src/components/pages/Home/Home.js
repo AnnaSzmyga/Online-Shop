@@ -65,6 +65,16 @@ class Home extends React.Component {
         this.setState({ currentPage: page });
     }
 
+    toggleActiveClassName = (e) => {
+        const clickedItem = e.target;
+        const clickedItemClass = clickedItem.getAttribute("class");
+        const items = document.querySelectorAll(`.${clickedItemClass}`);
+        items.forEach((item) => {
+            item.classList.remove('active');
+        });
+        clickedItem.classList.add('active');
+    }
+
     render() {
         return (
             <Fade timeout={100}>
@@ -75,6 +85,7 @@ class Home extends React.Component {
                         sortAZ={this.sortAZ}
                         sortZA={this.sortZA}
                         filterCategory={this.filterCategory}
+                        toggleActiveClassName={this.toggleActiveClassName}
                         //activeCategory={this.state.activeCategory}
                         //activeSorting={this.state.activeSorting}
                     />

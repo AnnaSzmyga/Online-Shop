@@ -8,7 +8,7 @@
     transition: .4s;
     cursor: pointer;
 
-    &:hover {
+    &:hover, &.active {
         letter-spacing: 2px;
         color: #58B19F;
         font-weight: 700;

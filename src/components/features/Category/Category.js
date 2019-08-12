@@ -4,9 +4,14 @@ import PropTypes from 'prop-types';
 
 import './Category.scss';
 
-const Category = ({category, onFilterCategory}) => {
+const Category = ({category, onFilterCategory, toggleActiveClassName}) => {
     return (
-        <li className="category" onClick={onFilterCategory}>{category.categoryOutput}</li>
+        <li
+            className="category"
+            onClick={(e) => {onFilterCategory(); toggleActiveClassName(e)}}
+        >
+            {category.categoryOutput}
+        </li>
     )
 }
 

@@ -3,17 +3,7 @@ import PropTypes from 'prop-types';
 
 import './Sorting.scss';
 
-const Sorting = ({onSortAscend, onSortDescend, onSortAZ, onSortZA}) => {
-    const sortingItems = document.querySelectorAll('.sorting__item');
-
-    const toggleActiveClassName = (e) => {
-        const activeItem = e.target;
-        sortingItems.forEach((item) => {
-            item.classList.remove('active');
-        });
-        activeItem.classList.add('active');
-    }
-
+const Sorting = ({onSortAscend, onSortDescend, onSortAZ, onSortZA, toggleActiveClassName}) => {
     return (
         <div className="sorting">
             <h3 className="sorting__heading">Sortuj:</h3>

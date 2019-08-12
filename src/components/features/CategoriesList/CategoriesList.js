@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import './CategoriesList.scss';
 
-const CategoriesList = ({filterCategory}) => {
+const CategoriesList = ({filterCategory, toggleActiveClassName}) => {
     const categories = [
         {
             categoryName: "traditional",
@@ -42,6 +42,7 @@ const CategoriesList = ({filterCategory}) => {
                     <Category
                         category={category}
                         onFilterCategory={() => filterCategory(category.categoryName)}
+                        toggleActiveClassName={toggleActiveClassName}
                         key={category.categoryName}
                     />
                 )

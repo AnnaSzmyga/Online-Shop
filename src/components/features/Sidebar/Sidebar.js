@@ -6,11 +6,12 @@ import PropTypes from 'prop-types';
 
 import './Sidebar.scss';
 
-const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, activeCategory, activeSorting}) => {
+const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, toggleActiveClassName, activeCategory, activeSorting}) => {
     return (
         <div className="sidebar">
             <CategoriesList
                 filterCategory={filterCategory}
+                toggleActiveClassName={toggleActiveClassName}
                 //activeSorting={activeSorting}
             />
             <Ornament />
@@ -19,6 +20,7 @@ const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, activ
                 onSortDescend={sortDescend}
                 onSortAZ={sortAZ}
                 onSortZA={sortZA}
+                toggleActiveClassName={toggleActiveClassName}
                 //activeCategory={activeCategory}
             />
             <Ornament />
