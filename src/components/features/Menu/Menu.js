@@ -3,9 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 import './Menu.scss';
 
-const Menu = (props) => {
+const Menu = ({menuShow}) => {
+    const menuClassName = (menuShow) ? "menu" : `menu menu-hidden`;
     return (
-        <div className="menu">
+        <div className={menuClassName}>
             <ul className="menu__list">
                 <li className="menu__item">
                     <NavLink exact to="/" className="menu__link" activeClassName="menu__link--active">Home</NavLink>

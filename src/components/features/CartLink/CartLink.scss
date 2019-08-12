@@ -1,3 +1,10 @@
+.cart-link-wrapper {
+    @media(max-width: 767px) {
+        &.menu-hidden {
+            display: none;
+        }
+    }
+}
 .cart-link {
     color: #353a39;
     font-size: 14px;

@@ -1,5 +1,19 @@
 .menu {
     height: 50px;
+    transition: .4s;
+
+    @media(max-width: 767px) {
+        height: auto;
+        opacity: 1;
+        visibility: visible;
+        // transition: .4s;
+        &.menu-hidden {
+            display: none;
+            opacity: .5;
+            visibility: hidden;
+        }
+
+    }
 
     &__list {
         padding: 0;
@@ -9,6 +23,16 @@
         justify-content: flex-end;
         align-items: center;
         height: 100%;
+        @media(max-width: 767px) {
+            flex-direction: column;
+            margin-top: 15px;
+            align-items: flex-start;
+        }
+    }
+    &__item {
+        @media(max-width: 767px) {
+            margin: 10px 0;
+        }
     }
 
     &__link, &__link:visited {

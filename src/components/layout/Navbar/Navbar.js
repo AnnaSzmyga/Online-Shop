@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../features/Logo/Logo';
+import Hamburger from '../../features/Hamburger/Hamburger';
 import Menu from '../../features/Menu/Menu';
 import CartLink from '../../features/CartLink/CartLink';
 import { Container } from 'reactstrap';
@@ -12,9 +13,11 @@ class Navbar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            padding: '35px 0'
+            padding: '35px 0',
+            showMenu: false
         }
-    }
+        console.log(this.state)
+;    }
     // shrink navbar on scrolling
     componentDidMount() {
         document.addEventListener('scroll', () => {
@@ -25,15 +28,23 @@ class Navbar extends React.Component {
             }
         });
     }
+
+    toggleMenu = () => {
+        this.setState({menuShow: !this.state.menuShow});
+    }
+
     render() {
         return (
             <div className="navbar" style={{padding: this.state.padding}}>
                 <Container>
-                    <Link to="/" className="navbar__logo-link">
-                        <Logo />
-                    </Link>
-                    <Menu />
-                    <CartLink cartContent={this.props.cartContent} />
+                    <div className="navbar__mobile-view">
+                        <Link to="/" className="navbar__logo-link">
+                            <Logo />
+                        </Link>
+                        <Hamburger toggleMenu={this.toggleMenu} />
+                    </div>
+                    <Menu menuShow={this.state.menuShow} />
+                    <CartLink cartContent={this.props.cartContent} menuShow={this.state.menuShow} />
                 </Container>
             </div>
         )
