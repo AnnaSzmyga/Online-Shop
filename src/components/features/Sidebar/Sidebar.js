@@ -6,9 +6,11 @@ import PropTypes from 'prop-types';
 
 import './Sidebar.scss';
 
-const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, toggleActiveClassName, activeCategory, activeSorting}) => {
+const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, toggleActiveClassName, sidebarShow, activeCategory, activeSorting}) => {
+
+    const sidebarClassName = (sidebarShow) ? "sidebar" : "sidebar sidebar-hidden"
     return (
-        <div className="sidebar">
+        <div className={sidebarClassName}>
             <CategoriesList
                 filterCategory={filterCategory}
                 toggleActiveClassName={toggleActiveClassName}

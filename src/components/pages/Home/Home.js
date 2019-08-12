@@ -2,6 +2,7 @@ import React from 'react';
 //import { Switch, Route } from 'react-router-dom';
 import Sidebar from '../../features/Sidebar/Sidebar';
 import ProductList from '../../features/ProductList/ProductList';
+import FilterButton from '../../features/FilterButton/FilterButton';
 import { Fade } from 'reactstrap';
 import PropTypes from 'prop-types';
 
@@ -16,6 +17,7 @@ class Home extends React.Component {
             activeSorting: '',
             currentPage: 1,
             productsPerPage: 6,
+            showSidebar: false
         };
     }
     sortAscend = () => {
@@ -75,6 +77,10 @@ class Home extends React.Component {
         clickedItem.classList.add('active');
     }
 
+    toggleSidebar = () => {
+        this.setState({sidebarShow: !this.state.sidebarShow})
+    }
+
     render() {
         return (
             <Fade timeout={100}>
@@ -86,6 +92,7 @@ class Home extends React.Component {
                         sortZA={this.sortZA}
                         filterCategory={this.filterCategory}
                         toggleActiveClassName={this.toggleActiveClassName}
+                        sidebarShow={this.state.sidebarShow}
                         //activeCategory={this.state.activeCategory}
                         //activeSorting={this.state.activeSorting}
                     />
@@ -96,6 +103,7 @@ class Home extends React.Component {
                         currentPage={this.state.currentPage}
                         productsPerPage={this.state.productsPerPage}
                     />
+                    <FilterButton toggleSidebar={this.toggleSidebar} sidebarShow={this.state.sidebarShow} />
                 </div>
             </Fade>
         )

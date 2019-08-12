@@ -2,13 +2,27 @@
     min-width: 300px;
     margin-right: 15px;
     padding: 15px;
+    transition: .4s;
 
     @media(max-width: 767px) {
-        width: 90vw;
+        min-width: 70vw;
+        height: 100vh;
         position: fixed;
         top: 0;
         left: 0;
         background-color: grey;
-        padding-top: 250px;
+        padding-top: 140px;
+        z-index: 9;
+        background-color: #f0efec;
+        border-right: 1px solid #cfdbd9;
+        opacity: 1;
+        visibility: visible;
+
+        &.sidebar-hidden {
+            opacity: 0;
+            visibility: hidden;
+            width: 40px;
+            left: -70vw;
+        }
     }
 }

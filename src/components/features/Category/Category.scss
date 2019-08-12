@@ -17,4 +17,9 @@
     &:last-of-type {
         border-bottom: 0;
     }
+
+    @media(max-width: 767px) {
+        font-size: 14px;
+        padding: 6px 0;
+    }
 }
