@@ -3,7 +3,7 @@ import React from 'react';
 import './FilterButton.scss';
 
 const FilterButton = ({toggleSidebar, sidebarShow}) => {
-        const buttonText = (sidebarShow) ? "schowaj filtry" : "pokaż filtry"
+        const buttonText = (sidebarShow) ? "Ukryj filtry" : "Pokaż filtry"
         return (
                 <div className="filter-button" onClick={toggleSidebar}>
                         <span>{buttonText}</span>

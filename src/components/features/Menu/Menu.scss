@@ -6,11 +6,11 @@
         height: auto;
         opacity: 1;
         visibility: visible;
-        // transition: .4s;
+
         &.menu-hidden {
-            display: none;
-            opacity: .5;
+            opacity: 0;
             visibility: hidden;
+            margin-top: -250px;
         }
 
     }

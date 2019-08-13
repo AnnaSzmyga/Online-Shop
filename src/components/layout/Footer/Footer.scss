@@ -13,5 +13,11 @@
 
     &__text {
         margin: 0;
+
+        span {
+            font-family: 'Parisienne', cursive;
+            color: #2ea18a;
+            font-size: larger;
+        }
     }
 }

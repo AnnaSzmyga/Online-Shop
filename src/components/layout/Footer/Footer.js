@@ -11,7 +11,7 @@ const Footer = (props) => {
         <div className="footer">
             <Container>
                 <div className="footer__content">
-                    <p className="footer__text">All rights reserved by WonderCake</p>
+                    <p className="footer__text">All rights reserved by <span>WonderCake</span></p>
                     <Menu className="footer-menu" />
                 </div>
                 <a target="_blank" href="https://www.vecteezy.com" style={{fontSize: '12px', color: '#353a39'}}>Free vector art via Vecteezy</a>
