@@ -14,7 +14,7 @@ class Navbar extends React.Component {
         super(props);
         this.state = {
             padding: '35px 0',
-            showMenu: false
+            menuShow: false
         }
         console.log(this.state)
 ;    }
@@ -41,7 +41,7 @@ class Navbar extends React.Component {
                         <Link to="/" className="navbar__logo-link">
                             <Logo />
                         </Link>
-                        <Hamburger toggleMenu={this.toggleMenu} />
+                        <Hamburger toggleMenu={this.toggleMenu} menuShow={this.state.menuShow} />
                     </div>
                     <Menu menuShow={this.state.menuShow} />
                     <CartLink cartContent={this.props.cartContent} menuShow={this.state.menuShow} />

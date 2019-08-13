@@ -1,6 +1,6 @@
 .menu {
     height: 50px;
-    transition: .4s;
+    transition: margin-top .4s, opacity .6s;
 
     @media(max-width: 767px) {
         height: auto;
