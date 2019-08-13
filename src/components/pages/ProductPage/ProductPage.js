@@ -18,6 +18,7 @@ const ProductPage = ({products, addProduct, ...props}) => {
           activeProduct = product;
       }
   })
+  const productInfoDisplay = (activeProduct.info === "") ? "none" : "inline";
 
   return (
     <Fade timeout={100} className="product-page">
@@ -31,6 +32,7 @@ const ProductPage = ({products, addProduct, ...props}) => {
           <h2 className="product__heading">{activeProduct.name}</h2>
           <Ornament />
           <p className="product__price">Cena: <span>{activeProduct.price}zł</span></p>
+          <p className="product__info" style={{display: productInfoDisplay}}>Status: <span>{activeProduct.info}</span></p>
           <p className="product__description">{activeProduct.description}</p>
           <Button buttonOutput="Dodaj do koszyka" onClickCallback={() => addProduct(activeProduct)} />
         </div>
