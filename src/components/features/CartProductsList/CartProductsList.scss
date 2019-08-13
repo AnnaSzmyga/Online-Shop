@@ -1,8 +1,10 @@
+@import "../../../styles/variables.scss";
+
 .cart-products {
     padding: 20px;
     list-style-type: none;
     margin: 40px auto;
-    background-color:#f0efec;
-    border: 1px solid #cfdbd9;
-    box-shadow: 5px 5px 10px #9ca5a3;
+    background-color: $main-bg;
+    border: 1px solid $light-border;
+    box-shadow: 5px 5px 10px $box-shadow-color;
 }

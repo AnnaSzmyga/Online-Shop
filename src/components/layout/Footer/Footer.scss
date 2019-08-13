@@ -1,7 +1,9 @@
+@import "../../../styles/variables.scss";
+
 .footer {
     min-height: 60px;
-    background-color: #f0efec;
-    border-top: 1px solid #cfdbd9;
+    background-color: $main-bg;
+    border-top: 1px solid $light-border;
     padding-top: 25px;
     padding-bottom: 10px;
 
@@ -16,7 +18,7 @@
 
         span {
             font-family: 'Parisienne', cursive;
-            color: #2ea18a;
+            color: $primary-green;
             font-size: larger;
         }
     }

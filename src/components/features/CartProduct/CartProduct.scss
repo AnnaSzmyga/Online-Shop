@@ -1,8 +1,10 @@
+@import "../../../styles/variables.scss";
+
 .cart-product {
     display: flex;
     flex-direction: column;
     padding: 10px 0;
-    border-bottom: 1px solid #cfdbd9;
+    border-bottom: 1px solid $light-border;
 
     &:last-of-type {
         border: 0;
@@ -28,7 +30,7 @@
         height: 60px;
         background-size: cover;
         background-position: center;
-        box-shadow: 5px 5px 10px #9ca5a3;
+        box-shadow: 5px 5px 10px $box-shadow-color;
         flex-shrink: 0;
     }
 
@@ -60,7 +62,7 @@
         height: 40px;
         padding: 0;
         background-color: #e8e6e3;
-        border: 1px solid #cfdbd9;
+        border: 1px solid $light-border;
         color: #485250;
     }
 
@@ -75,12 +77,12 @@
 
     &__button-remove {
         background-color: transparent;
-        border: 2px solid #2ea18a;
-        color: #2ea18a;
+        border: 2px solid $primary-green;
+        color: $primary-green;
         margin-left: 20px;
         &:hover {
             background-color: #e8e6e3;
-            color: #2ea18a;
+            color: $primary-green;
         }
 
         @media(max-width: 767px) {

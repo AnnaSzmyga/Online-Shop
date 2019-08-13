@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .menu {
     height: 50px;
     transition: margin-top .4s, opacity .6s;
@@ -52,13 +54,13 @@
             position: absolute;
             top: 0;
             left: 0;
-            border-top: 1px solid  #58B19F;
-            border-bottom: 1px solid  #58B19F;
+            border-top: 1px solid  $primary-green;
+            border-bottom: 1px solid  $primary-green;
             transition: .4s;
         }
 
         &:hover {
-            color: #58B19F;
+            color: $primary-green;
             text-decoration: none;
 
             &::after {
@@ -67,7 +69,7 @@
         }
 
         &--active {
-            color: #58B19F;
+            color: $primary-green;
         }
     }
 }

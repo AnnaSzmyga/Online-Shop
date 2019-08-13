@@ -1,5 +1,7 @@
+@import "../../../styles/variables.scss";
+
 .category {
-    border-bottom: 1px solid #2ea18a;
+    border-bottom: 1px solid $primary-green;
     text-align: center;
     padding: 10px 0;
     text-transform: capitalize;
@@ -10,7 +12,7 @@
 
     &:hover, &.active {
         letter-spacing: 2px;
-        color: #58B19F;
+        color: $primary-green;
         font-weight: 700;
     }
 

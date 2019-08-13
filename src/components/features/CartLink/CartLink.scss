@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .cart-link-wrapper {
     @media(max-width: 767px) {
         &.menu-hidden {
@@ -6,22 +8,22 @@
     }
 }
 .cart-link {
-    color: #353a39;
+    color: $text-color;
     font-size: 14px;
     font-weight: 700;
 
     &:hover {
         text-decoration: none;
-        color: #353a39;
+        color: $text-color;
     }
 
     &__icon {
-        color: #353a39;
+        color: $text-color;
         font-size: 24px;
         transition: .3s;
 
         &:hover {
-            color: #58B19F;
+            color: $primary-green;
         }
     }
 }

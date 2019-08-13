@@ -1,6 +1,8 @@
+@import "../../../styles/variables.scss";
+
 .logo {
     font-family: 'Parisienne', cursive;
-    color: #2ea18a;
+    color: $primary-green;
     font-size: 46px;
     padding-left: 30px;
 

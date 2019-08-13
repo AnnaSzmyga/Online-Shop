@@ -1,14 +1,16 @@
+@import "../../../styles/variables.scss";
+
 .button {
-    background-color: #58B19F;
-    color: #f0efec;
+    background-color: $primary-green;
+    color: $main-bg;
     font-size: 18px;
     padding: 5px 15px;
     border: 0;
     transition: .4s;
 
     &:hover {
-        box-shadow: 3px 3px 8px #9ca5a3;
-        background-color: #2ea18a;
+        box-shadow: 3px 3px 8px $box-shadow-color;
+        background-color: darken($primary-green, 8%);
         transform: scale(1.01);
     }
     &:focus {

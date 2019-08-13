@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .go-back {
     display: inline-block;
     font-size: 26px;
@@ -8,7 +10,7 @@
     transition: .4s;
 
     &:hover {
-        color:  #58B19F;
+        color: $primary-green;
     }
 
     &__icon {
@@ -22,9 +24,9 @@
     align-items: center;
     margin: 20px auto;
     padding: 20px;
-    background-color:#f0efec;
-    border: 1px solid #cfdbd9;
-    box-shadow: 5px 5px 10px #9ca5a3;
+    background-color: $main-bg;
+    border: 1px solid $light-border;
+    box-shadow: 5px 5px 10px $box-shadow-color;
 
     @media(max-width: 767px) {
         flex-direction: column;
@@ -32,7 +34,7 @@
 
     &__image-box {
         flex: 4;
-        box-shadow: 4px 4px 8px #9ca5a3;
+        box-shadow: 4px 4px 8px $box-shadow-color;
 
         @media(max-width: 767px) {
             margin-bottom: 20px;

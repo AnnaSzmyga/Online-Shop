@@ -1,8 +1,10 @@
+@import "../../../styles/variables.scss";
+
 .payment {
     width: 100%;
     padding: 20px;
-    background-color:#f0efec;
-    border: 1px solid #cfdbd9;
+    background-color: $main-bg;
+    border: 1px solid $light-border;
     text-align: center;
 
     &__amount span, &__discount span {
@@ -27,12 +29,12 @@
 
     &__back-to-cart {
         background-color: transparent;
-        border: 2px solid #2ea18a;
-        color: #2ea18a;
+        border: 2px solid $primary-green;
+        color: $primary-green;
 
         &:hover {
             background-color: #e8e6e3;
-            color: #2ea18a;
+            color: $primary-green;
         }
     }
 }

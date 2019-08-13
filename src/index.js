@@ -7,7 +7,7 @@ import store from './redux/store';
 import ScrollToTop from './components/ScrollToTop';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.scss';
+import './styles/index.scss';
 
 const Root = () => (
     <Provider store={store}>

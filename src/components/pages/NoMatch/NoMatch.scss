@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .no-match {
     &__error {
         font-size: 56px;
@@ -10,6 +12,6 @@
     }
 
     &__link {
-        color: #353a39;
+        color: $text-color;
     }
 }

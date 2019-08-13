@@ -1,16 +1,20 @@
+@import "../../../styles/variables.scss";
+
 .filter-button {
-    color: #58B19F;
+    color: $text-color;
     display: none;
     height: 30px;
-
+    background-color: rgba(46, 161, 138, .2);
     align-items: center;
-    border: 2px solid #58B19F;
+    border: 1px solid $primary-green;
     border-radius: 15px;
     padding: 0 15px;
     position: fixed;
     bottom: 15px;
     right: 15px;
     font-size: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #fff;
     z-index: 15;
     transition: .4s;
 
