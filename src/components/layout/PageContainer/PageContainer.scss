@@ -2,4 +2,8 @@
     min-height: calc(100vh - 160px);
     margin-top: 150px;
     margin-bottom: 30px;
+
+    @media(max-width: 767px) {
+        margin-top: 130px;
+    }
 }

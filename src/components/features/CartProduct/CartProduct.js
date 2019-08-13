@@ -32,7 +32,7 @@ const CartProduct = ({cartProduct, removeFromCart, changeQuantity}) => {
                     <button className="cart-product__button-down" onClick={() => changeQuantity(cartProduct.id, cartProduct.quantity - 1)}>
                         <i className="fas fa-angle-down cart-product__icon"></i>
                     </button>
-                    <Button className="cart-product__button-remove" buttonOutput="Usuń z koszyka" onClickCallback={removeFromCart} />
+                    <Button className="cart-product__button-remove" buttonOutput="Usuń produkt" onClickCallback={removeFromCart} />
                 </div>
             </div>
             <div className="cart-product__price-wrapper">

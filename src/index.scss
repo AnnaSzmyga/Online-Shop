@@ -17,6 +17,11 @@ body {
 	text-align: center;
 	margin: 50px auto;
 	padding-top: 50px;
+
+	@media(max-width: 767px) {
+		margin: 20px auto;
+		padding-top: 30px;
+	}
 }
 button:focus {
     outline: 0;
