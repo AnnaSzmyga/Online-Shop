@@ -26,4 +26,9 @@
             left: -70vw;
         }
     }
+    .ornament {
+        @media(max-width: 330px) {
+            display: none;
+        }
+    }
 }

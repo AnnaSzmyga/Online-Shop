@@ -68,6 +68,10 @@
             }
         }
 
+        @media(min-width: 767px) and (max-width: 991px) {
+            padding: 10px;
+        }
+
         &--active {
             color: $primary-green;
         }
