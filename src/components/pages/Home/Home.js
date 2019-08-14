@@ -1,5 +1,4 @@
 import React from 'react';
-//import { Switch, Route } from 'react-router-dom';
 import Sidebar from '../../features/Sidebar/Sidebar';
 import ProductList from '../../features/ProductList/ProductList';
 import FilterButton from '../../features/FilterButton/FilterButton';
@@ -14,40 +13,39 @@ class Home extends React.Component {
         this.state = {
             products: this.props.products,
             searchingText: '',
-            activeCategory: '',
-            activeSorting: '',
+            isFiltered: false,
             currentPage: 1,
             productsPerPage: 6,
             showSidebar: false
         };
     }
     sortAscend = () => {
-        let products = (this.state.activeCategory !== '') ? this.state.products : this.props.products;
+        let products = (this.state.isFiltered) ? this.state.products : this.props.products;
         products.sort((a, b) => {
             return a.price - b.price;
           });
-        this.setState({products, activeSorting: "price_asc"});
+        this.setState({products});
     }
     sortDescend = () => {
-        let products = (this.state.activeCategory !== '') ? this.state.products : this.props.products;
+        let products = (this.state.isFiltered) ? this.state.products : this.props.products;
         products.sort((a, b) => {
             return b.price - a.price;
           });
-        this.setState({products, activeSorting: "price_desc"});
+        this.setState({products});
     }
     sortAZ = () => {
-        let products = (this.state.activeCategory !== '') ? this.state.products : this.props.products;
+        let products = (this.state.isFiltered) ? this.state.products : this.props.products;
         products.sort((a, b) => {
             return a.name.localeCompare(b.name);
           });
-        this.setState({products, activeSorting: "name_asc"});
+        this.setState({products});
     }
     sortZA = () => {
-        let products = (this.state.activeCategory !== '') ? this.state.products : this.props.products;
+        let products = (this.state.isFiltered) ? this.state.products : this.props.products;
         products.sort((a, b) => {
             return b.name.localeCompare(a.name);
           });
-        this.setState({products, activeSorting: "name_desc"});
+        this.setState({products});
     }
     filterCategory = (category) => {
         let products = [];
@@ -60,7 +58,7 @@ class Home extends React.Component {
         });
         this.setState({
             products,
-            activeCategory: category,
+            isFiltered: true,
             currentPage: 1
         });
     }
@@ -82,6 +80,9 @@ class Home extends React.Component {
             products,
             searchingText: ''
         });
+        document.querySelectorAll(".active-filter").forEach((item) => {
+            item.classList.remove('active-filter');
+        });
     }
 
     changeCurrentPage = (page) => {
@@ -93,9 +94,9 @@ class Home extends React.Component {
         const clickedItemClass = clickedItem.getAttribute("class");
         const items = document.querySelectorAll(`.${clickedItemClass}`);
         items.forEach((item) => {
-            item.classList.remove('active');
+            item.classList.remove('active-filter');
         });
-        clickedItem.classList.add('active');
+        clickedItem.classList.add('active-filter');
     }
 
     toggleSidebar = () => {
@@ -117,8 +118,6 @@ class Home extends React.Component {
                         handleSearching={this.handleSearching}
                         toggleActiveClassName={this.toggleActiveClassName}
                         sidebarShow={this.state.sidebarShow}
-                        //activeCategory={this.state.activeCategory}
-                        //activeSorting={this.state.activeSorting}
                     />
                     <ProductList
                         products={this.state.products}
@@ -139,30 +138,5 @@ Home.propTypes = {
     addToCart: PropTypes.func
 }
 
-//path={"/category=:category(\\d+)&sort_by=:sorting"}
-
-
-
-
-
-
-
-// const Home = ({products, sortAscend, sortDescend, sortAZ, sortZA, addToCart}) => {
-//     console.log(sortAZ);
-//     console.log(products);
-//     return (
-//         <div className="home">
-//             <Sidebar
-//                 products={products}
-//                 sortAscend={sortAscend}
-//                 sortDescend={sortDescend}
-//                 sortAZ={sortAZ}
-//                 sortZA={sortZA}
-//                 filterCategory={() => {console.log("filterCategory")}}
-//             />
-//             <ProductList products={products} addToCart={addToCart} />
-//         </div>
-//     )
-// }
 
 export default Home;

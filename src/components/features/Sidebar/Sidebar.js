@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 import './Sidebar.scss';
 
-const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, searchingText, handleTextChange, handleSearching, toggleActiveClassName, sidebarShow, activeCategory, activeSorting}) => {
+const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, searchingText, handleTextChange, handleSearching, toggleActiveClassName, sidebarShow}) => {
 
     const sidebarClassName = (sidebarShow) ? "sidebar" : "sidebar sidebar-hidden"
     return (
@@ -20,7 +20,6 @@ const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, searc
             <CategoriesList
                 filterCategory={filterCategory}
                 toggleActiveClassName={toggleActiveClassName}
-                //activeSorting={activeSorting}
             />
             <Ornament />
             <Sorting
@@ -29,7 +28,6 @@ const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, searc
                 onSortAZ={sortAZ}
                 onSortZA={sortZA}
                 toggleActiveClassName={toggleActiveClassName}
-                //activeCategory={activeCategory}
             />
             <Ornament />
         </div>
@@ -41,22 +39,13 @@ Sidebar.propTypes = {
     sortDescend: PropTypes.func,
     sortAZ: PropTypes.func,
     sortZA: PropTypes.func,
-    filterCategory: PropTypes.func
+    filterCategory: PropTypes.func,
+    searchingText: PropTypes.string,
+    handleTextChange: PropTypes.func,
+    handleSearching: PropTypes.func,
+    toggleActiveClassName: PropTypes.func,
+    sidebarShow: PropTypes.bool
 }
 
-
-// const Sidebar = ({products, sortAscend, sortDescend, sortAZ, sortZA}) => {
-//     return (
-//         <div className="sidebar">
-//             <Sorting
-//                 onSortAsc={sortAsc}
-//                 onSortDesc={sortDesc}
-//                 onSortAZ={sortAZ}
-//                 onSortZA={sortZA}
-//             />
-//             <CategoriesList />
-//         </div>
-//     )
-// }
 
 export default Sidebar;

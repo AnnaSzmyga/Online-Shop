@@ -10,7 +10,7 @@
     transition: .4s;
     cursor: pointer;
 
-    &:hover, &.active {
+    &:hover, &.active-filter {
         letter-spacing: 2px;
         color: $primary-green;
         font-weight: 700;
