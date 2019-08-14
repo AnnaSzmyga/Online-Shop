@@ -1,4 +1,5 @@
 import React from 'react';
+import Searching from '../Searching/Searching';
 import Sorting from '../Sorting/Sorting';
 import CategoriesList from '../CategoriesList/CategoriesList';
 import Ornament from '../../common/Ornament/Ornament';
@@ -6,11 +7,16 @@ import PropTypes from 'prop-types';
 
 import './Sidebar.scss';
 
-const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, toggleActiveClassName, sidebarShow, activeCategory, activeSorting}) => {
+const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, searchingText, handleTextChange, handleSearching, toggleActiveClassName, sidebarShow, activeCategory, activeSorting}) => {
 
     const sidebarClassName = (sidebarShow) ? "sidebar" : "sidebar sidebar-hidden"
     return (
         <div className={sidebarClassName}>
+            <Searching
+                searchingText={searchingText}
+                onTextChange={handleTextChange}
+                onSearch={handleSearching}
+            />
             <CategoriesList
                 filterCategory={filterCategory}
                 toggleActiveClassName={toggleActiveClassName}

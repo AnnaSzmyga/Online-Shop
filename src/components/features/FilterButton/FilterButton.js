@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './FilterButton.scss';
 
@@ -11,5 +12,10 @@ const FilterButton = ({toggleSidebar, sidebarShow}) => {
                 </div>
         )
 }
+
+FilterButton.propTypes = {
+        sidebarShow: PropTypes.bool,
+        toggleSidebar: PropTypes.func
+    }
 
 export default FilterButton;

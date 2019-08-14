@@ -13,6 +13,7 @@ class Home extends React.Component {
         super(props);
         this.state = {
             products: this.props.products,
+            searchingText: '',
             activeCategory: '',
             activeSorting: '',
             currentPage: 1,
@@ -63,6 +64,26 @@ class Home extends React.Component {
             currentPage: 1
         });
     }
+
+    handleTextChange = (e) => {
+        const searchingText = e.target.value;
+        this.setState({searchingText});
+    }
+
+    handleSearching = (e) => {
+        e.preventDefault();
+        let products = [];
+        this.props.products.forEach((product) => {
+            if (product.name.toLowerCase().includes(this.state.searchingText.trim().toLowerCase())) {
+                products.push(product);
+            }
+        });
+        this.setState({
+            products,
+            searchingText: ''
+        });
+    }
+
     changeCurrentPage = (page) => {
         this.setState({ currentPage: page });
     }
@@ -91,6 +112,9 @@ class Home extends React.Component {
                         sortAZ={this.sortAZ}
                         sortZA={this.sortZA}
                         filterCategory={this.filterCategory}
+                        searchingText={this.state.searchingText}
+                        handleTextChange={this.handleTextChange}
+                        handleSearching={this.handleSearching}
                         toggleActiveClassName={this.toggleActiveClassName}
                         sidebarShow={this.state.sidebarShow}
                         //activeCategory={this.state.activeCategory}

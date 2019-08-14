@@ -1,0 +1,36 @@
+@import "../../../styles/variables.scss";
+
+.searching {
+    //text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+
+    &__input {
+        padding-left: 10px;
+        padding-right: 30px;
+        height: 35px;
+        width: 100%;
+        border-bottom: 1px solid $light-border;
+    }
+    &__button {
+        width: 34px;
+        height: 34px;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        &:hover .searching__icon{
+            font-size: larger;
+        }
+    }
+
+    &__icon {
+        color: $primary-green;
+        transition: .3s;
+    }
+}
