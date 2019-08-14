@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import './Pagination.scss';
 
-const Pagination = ({pagesNumber, currentPage, changeCurrentPage}) => {
+const Pagination = ({pagesNumber, currentPage, changeCurrentPage, paginationDisplay}) => {
     let pages = [];
     for (let i = 1; i < (pagesNumber + 1); i++) {
         pages.push(i);
@@ -22,7 +22,7 @@ const Pagination = ({pagesNumber, currentPage, changeCurrentPage}) => {
     const paginationSize = (window.innerWidth > 768) ? "" : "sm"
 
     return (
-        <PaginationBar className="pagination-bar" size={paginationSize}>
+        <PaginationBar className="pagination-bar" size={paginationSize} style={{display: paginationDisplay}}>
             <PaginationItem onClick={() => {changeCurrentPage(1); window.scroll(0, 0)}} disabled={isDisabled(1)}>
                 <PaginationLink first />
             </PaginationItem>
@@ -55,7 +55,8 @@ const Pagination = ({pagesNumber, currentPage, changeCurrentPage}) => {
 Pagination.propTypes = {
     pagesNumber: PropTypes.number,
     currentPage: PropTypes.number,
-    changeCurrentPage: PropTypes.func
+    changeCurrentPage: PropTypes.func,
+    paginationDisplay: PropTypes.string
 }
 
 export default Pagination;

@@ -13,6 +13,7 @@ class Home extends React.Component {
         this.state = {
             products: this.props.products,
             searchingText: '',
+            searchingAlert: "none",
             isFiltered: false,
             currentPage: 1,
             productsPerPage: 6,
@@ -24,28 +25,28 @@ class Home extends React.Component {
         products.sort((a, b) => {
             return a.price - b.price;
           });
-        this.setState({products});
+        this.setState({products, searchingAlert: "none"});
     }
     sortDescend = () => {
         let products = (this.state.isFiltered) ? this.state.products : this.props.products;
         products.sort((a, b) => {
             return b.price - a.price;
           });
-        this.setState({products});
+        this.setState({products, searchingAlert: "none"});
     }
     sortAZ = () => {
         let products = (this.state.isFiltered) ? this.state.products : this.props.products;
         products.sort((a, b) => {
             return a.name.localeCompare(b.name);
           });
-        this.setState({products});
+        this.setState({products, searchingAlert: "none"});
     }
     sortZA = () => {
         let products = (this.state.isFiltered) ? this.state.products : this.props.products;
         products.sort((a, b) => {
             return b.name.localeCompare(a.name);
           });
-        this.setState({products});
+        this.setState({products, searchingAlert: "none"});
     }
     filterCategory = (category) => {
         let products = [];
@@ -59,7 +60,8 @@ class Home extends React.Component {
         this.setState({
             products,
             isFiltered: true,
-            currentPage: 1
+            currentPage: 1,
+            searchingAlert: "none"
         });
     }
 
@@ -76,13 +78,22 @@ class Home extends React.Component {
                 products.push(product);
             }
         });
-        this.setState({
-            products,
-            searchingText: ''
-        });
-        document.querySelectorAll(".active-filter").forEach((item) => {
-            item.classList.remove('active-filter');
-        });
+        if (products.length !== 0) {
+            this.setState({
+                products,
+                searchingText: '',
+                searchingAlert: "none"
+            });
+            document.querySelectorAll(".active-filter").forEach((item) => {
+                item.classList.remove('active-filter');
+            });
+        } else {
+            this.setState({
+                products,
+                searchingText: '',
+                searchingAlert: "block"
+            });
+        }
     }
 
     changeCurrentPage = (page) => {
@@ -125,6 +136,7 @@ class Home extends React.Component {
                         changeCurrentPage={this.changeCurrentPage}
                         currentPage={this.state.currentPage}
                         productsPerPage={this.state.productsPerPage}
+                        searchingAlert={this.state.searchingAlert}
                     />
                     <FilterButton toggleSidebar={this.toggleSidebar} sidebarShow={this.state.sidebarShow} />
                 </div>
