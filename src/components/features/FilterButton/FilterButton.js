@@ -16,6 +16,6 @@ const FilterButton = ({toggleSidebar, sidebarShow}) => {
 FilterButton.propTypes = {
         sidebarShow: PropTypes.bool,
         toggleSidebar: PropTypes.func
-    }
+}
 
 export default FilterButton;

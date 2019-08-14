@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import './Menu.scss';
 
@@ -23,6 +24,10 @@ const Menu = ({menuShow}) => {
             </ul>
         </div>
     )
+}
+
+Menu.propTypes = {
+    menuShow: PropTypes.bool
 }
 
 export default Menu;

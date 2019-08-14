@@ -1,7 +1,6 @@
 @import "../../../styles/variables.scss";
 
 .searching {
-    //text-align: center;
     margin-bottom: 10px;
     position: relative;
 
@@ -10,7 +9,6 @@
         padding-right: 30px;
         height: 35px;
         width: 100%;
-        border-bottom: 1px solid $light-border;
     }
     &__button {
         width: 34px;

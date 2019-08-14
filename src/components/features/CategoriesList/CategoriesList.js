@@ -52,7 +52,8 @@ const CategoriesList = ({filterCategory, toggleActiveClassName}) => {
 }
 
 CategoriesList.propTypes = {
-    filterCategory: PropTypes.func
+    filterCategory: PropTypes.func,
+    toogleActiveClassName: PropTypes.func
 }
 
 export default CategoriesList;

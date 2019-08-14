@@ -33,7 +33,7 @@ const Pagination = ({pagesNumber, currentPage, changeCurrentPage, paginationDisp
                 pages.map((page) => {
                     return (
                         <PaginationItem
-                            onClick={() => {changeCurrentPage(page); window.scroll(0, 0)}}
+                            onClick={() => {changeCurrentPage(page)}}
                             active={checkActivePage(page)}
                             key={page}
                         >

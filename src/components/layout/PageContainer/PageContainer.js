@@ -59,39 +59,4 @@ PageContainer.propTypes = {
   changeQuantity: PropTypes.func
 }
 
-
-// <Route
-//   path={"/sort_by=:sorting"}
-//   exact
-//   render={(props) => <Home {...props} products={products} addToCart={addProduct} />}
-// />
-// <Route
-//   path={"/category=:category"}
-//   exact
-//   render={(props) => <Home {...props} products={products} addToCart={addProduct} />}
-// />
-
-
-
-
-// const PageContainer = ({products, sortAsc, sortDesc, sortAZ, sortZA}) => {
-//   return (
-//           <div className="pageContainer">
-//             <Switch>
-//               <Route path={"/"}
-//                 exact
-//                 render={(props) => <Home {...props} products={products} sortAsc={sortAsc} sortDesc={sortDesc} sortAZ={sortAZ} sortZA={sortZA} />}
-//               />
-//               <Route path={"/faq"} exact component={FAQ} />
-//               <Route path={"/regulations"} exact component={Regulations} />
-//               <Route path={"/contact"} exact component={Contact} />
-//               <Route path={"/cart"} exact component={Cart} />
-//               <Route path={"/cakes/:id"} render={(props) => <ProductPage {...props} products={products} />} />
-//               <Route component={NoMatch} />
-//             </Switch>
-//           </div>
-//         )
-// }
-
-
 export default PageContainer;

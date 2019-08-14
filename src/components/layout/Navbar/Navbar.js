@@ -55,19 +55,4 @@ Navbar.propTypes = {
     cartContent: PropTypes.number
 }
 
-
-// const Navbar = ({cartContent, ...props}) => {
-//     return (
-//         <div className="navbar">
-//             <Container>
-//                 <Link to="/" className="navbar__logo-link">
-//                     <Logo />
-//                 </Link>
-//                 <Menu />
-//                 <CartLink cartContent={cartContent} />
-//             </Container>
-//         </div>
-//     )
-// }
-
 export default Navbar;

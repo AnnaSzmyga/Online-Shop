@@ -17,10 +17,6 @@ const MainLayout = ({products, cart, addProduct, removeProduct, clearCart, chang
                 removeProduct={removeProduct}
                 clearCart={clearCart}
                 changeQuantity={changeQuantity}
-                // sortAscend={sortAscend}
-                // sortDescend={sortDescend}
-                // sortAZ={sortAZ}
-                // sortZA={sortZA}
             />
             <Footer />
         </div>
@@ -36,20 +32,5 @@ MainLayout.propTypes = {
     changeQuantity: PropTypes.func
 }
 
-// const MainLayout = ({products, sortAsc, sortDesc, sortAZ, sortZA}) => {
-//     return (
-//         <div className="mainLayout">
-//             <Navbar />
-//             <PageContainer
-//                 products={products}
-//                 sortAsc={sortAsc}
-//                 sortDesc={sortDesc}
-//                 sortAZ={sortAZ}
-//                 sortZA={sortZA}
-//             />
-//             <Footer />
-//         </div>
-//     )
-// }
 
 export default MainLayout;

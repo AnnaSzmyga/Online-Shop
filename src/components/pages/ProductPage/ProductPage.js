@@ -9,8 +9,6 @@ import './ProductPage.scss';
 
 const ProductPage = ({products, addProduct, ...props}) => {
 
-  // const activeProduct = products.filter((product) => {product.id.toString() === match.params.id});
-
 
   let activeProduct;
   products.forEach((product) => {

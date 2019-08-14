@@ -50,8 +50,6 @@ class Home extends React.Component {
     }
     filterCategory = (category) => {
         let products = [];
-        // products.filter((product) => {category === product.category});
-        // dlaczego wyrzuca błąd?
         this.props.products.forEach((product) => {
             if (product.category === category) {
                 products.push(product);
