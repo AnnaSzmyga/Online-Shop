@@ -16,7 +16,7 @@ const CategoriesList = ({filterCategory, toggleActiveClassName}) => {
         },
         {
             categoryName: "wedding",
-            categoryOutput: "Torty ślubne"
+            categoryOutput: "Torty weselne"
         },
         {
             categoryName: "communion",
