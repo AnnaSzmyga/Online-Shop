@@ -7,9 +7,11 @@ import PropTypes from 'prop-types';
 
 import './Sidebar.scss';
 
-const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, searchingText, handleTextChange, handleSearching, toggleActiveClassName, sidebarShow}) => {
+const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, activeSorting, activeCategory, searchingText, handleTextChange, handleSearching, toggleActiveClassName, sidebarShow}) => {
 
-    const sidebarClassName = (sidebarShow) ? "sidebar" : "sidebar sidebar-hidden"
+    const sidebarClassName = (sidebarShow) ? "sidebar" : "sidebar sidebar-hidden";
+
+    console.log(activeCategory);
     return (
         <div className={sidebarClassName}>
             <Searching
@@ -19,6 +21,7 @@ const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, searc
             />
             <CategoriesList
                 filterCategory={filterCategory}
+                activeCategory={activeCategory}
                 toggleActiveClassName={toggleActiveClassName}
             />
             <Ornament />
@@ -27,6 +30,7 @@ const Sidebar = ({sortAscend, sortDescend, sortAZ, sortZA, filterCategory, searc
                 onSortDescend={sortDescend}
                 onSortAZ={sortAZ}
                 onSortZA={sortZA}
+                activeSorting={activeSorting}
                 toggleActiveClassName={toggleActiveClassName}
             />
             <Ornament />

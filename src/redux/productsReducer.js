@@ -1,5 +1,5 @@
 import products from '../data/data.json';
-import { SORT_ASC, SORT_DESC, SORT_AZ, SORT_ZA } from './productsActions';
+import { SORT_ASCEND, SORT_DESCEND, SORT_AZ, SORT_ZA, FILTER_CATEGORY, RESET_FILTERING } from './productsActions';
 
 /* INITIAL STATE */
 
@@ -10,14 +10,14 @@ const initialState = products;
 export default function productsReducer(state = initialState, action) {
   switch (action.type) {
 
-    case SORT_ASC:
+    case SORT_ASCEND:
       console.log("sortowanie rosnąco");
 
       return state.sort((a, b) => {
         return a.price - b.price;
       });
 
-    case SORT_DESC:
+    case SORT_DESCEND:
       console.log("sortowanie malejąco");
 
       return state.sort((a, b) => {
@@ -37,6 +37,12 @@ export default function productsReducer(state = initialState, action) {
       return state.sort((a, b) => {
         return b.name.localeCompare(a.name);
       });
+
+    case FILTER_CATEGORY:
+      return initialState.filter(product => product.category === action.category);
+
+    case RESET_FILTERING:
+      return initialState;
 
     default:
       return state;

@@ -6,12 +6,18 @@ import PropTypes from 'prop-types';
 
 import './MainLayout.scss';
 
-const MainLayout = ({products, cart, addProduct, removeProduct, clearCart, changeQuantity}) => {
+const MainLayout = ({products, sortAZ, sortZA, sortAscend, sortDescend, filterCategory, resetFiltering, cart, addProduct, removeProduct, clearCart, changeQuantity}) => {
     return (
         <div className="main-layout">
             <Navbar cartContent={cart.length}/>
             <PageContainer
                 products={products}
+                sortAZ={sortAZ}
+                sortZA={sortZA}
+                sortAscend={sortAscend}
+                sortDescend={sortDescend}
+                filterCategory={filterCategory}
+                resetFiltering={resetFiltering}
                 cart={cart}
                 addProduct={addProduct}
                 removeProduct={removeProduct}

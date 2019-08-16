@@ -10,54 +10,49 @@ import './Home.scss';
 class Home extends React.Component {
     constructor(props) {
         super(props);
+        let activeSorting;
+        const setActiveCategory = () => {
+            const categories = this.props.products.map(product => product.category);
+            categories.sort((a, b) => a.localeCompare(b));
+            let activeCategory = (categories[0] === categories[categories.length - 1]) ? categories[0] : '';
+            return activeCategory;
+        }
+
         this.state = {
-            products: this.props.products,
+            activeCategory: setActiveCategory(),
+            activeSorting: '',
             searchingText: '',
             searchingAlert: "none",
-            isFiltered: false,
             currentPage: 1,
             productsPerPage: 6,
             showSidebar: false
         };
     }
+
     sortAscend = () => {
-        let products = (this.state.isFiltered) ? this.state.products : this.props.products;
-        products.sort((a, b) => {
-            return a.price - b.price;
-          });
-        this.setState({products, searchingAlert: "none"});
+        this.props.sortAscend();
+        this.setState({activeSorting: "sort-ascend", searchingAlert: "none"});
     }
+
     sortDescend = () => {
-        let products = (this.state.isFiltered) ? this.state.products : this.props.products;
-        products.sort((a, b) => {
-            return b.price - a.price;
-          });
-        this.setState({products, searchingAlert: "none"});
+        this.props.sortDescend();
+        this.setState({activeSorting: "sort-descend", searchingAlert: "none"});
     }
+
     sortAZ = () => {
-        let products = (this.state.isFiltered) ? this.state.products : this.props.products;
-        products.sort((a, b) => {
-            return a.name.localeCompare(b.name);
-          });
-        this.setState({products, searchingAlert: "none"});
+        this.props.sortAZ();
+        this.setState({activeSorting: "sort-AZ", searchingAlert: "none"});
     }
+
     sortZA = () => {
-        let products = (this.state.isFiltered) ? this.state.products : this.props.products;
-        products.sort((a, b) => {
-            return b.name.localeCompare(a.name);
-          });
-        this.setState({products, searchingAlert: "none"});
+        this.props.sortZA();
+        this.setState({activeSorting: "sort-ZA", searchingAlert: "none"});
     }
+
     filterCategory = (category) => {
-        let products = [];
-        this.props.products.forEach((product) => {
-            if (product.category === category) {
-                products.push(product);
-            }
-        });
+        this.props.filterCategory(category)
         this.setState({
-            products,
-            isFiltered: true,
+            activeCategory: category,
             currentPage: 1,
             searchingAlert: "none"
         });
@@ -108,6 +103,10 @@ class Home extends React.Component {
         clickedItem.classList.add('active-filter');
     }
 
+    setActiveFilter = () => {
+
+    }
+
     toggleSidebar = () => {
         this.setState({sidebarShow: !this.state.sidebarShow})
     }
@@ -122,6 +121,8 @@ class Home extends React.Component {
                         sortAZ={this.sortAZ}
                         sortZA={this.sortZA}
                         filterCategory={this.filterCategory}
+                        activeSorting={this.state.activeSorting}
+                        activeCategory={this.state.activeCategory}
                         searchingText={this.state.searchingText}
                         handleTextChange={this.handleTextChange}
                         handleSearching={this.handleSearching}
@@ -129,7 +130,7 @@ class Home extends React.Component {
                         sidebarShow={this.state.sidebarShow}
                     />
                     <ProductList
-                        products={this.state.products}
+                        products={this.props.products}
                         addToCart={this.props.addToCart}
                         changeCurrentPage={this.changeCurrentPage}
                         currentPage={this.state.currentPage}
