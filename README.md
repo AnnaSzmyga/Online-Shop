@@ -1,3 +1,12 @@
+#WonderCake online shop
+
+This online-shop is a single page application, created with use React, React-routing and Redux store.
+
+Demo: https://wondercake-online-shop.firebaseapp.com/
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
