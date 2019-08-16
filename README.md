@@ -1,6 +1,6 @@
-#WonderCake online shop
+# WonderCake online shop
 
-This online-shop is a single page application, created with use React, React-routing and Redux store.
+This online shop is a single page application, created with use React, React-routing and Redux store.
 
 Demo: https://wondercake-online-shop.firebaseapp.com/
 
