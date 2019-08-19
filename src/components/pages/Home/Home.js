@@ -30,46 +30,46 @@ class Home extends React.Component {
         if (this.state.activeFilter.activeSorting !== 'non') {
             switch (this.state.activeFilter.activeSorting) {
                 case 'sortAZ':
-                    this.sortAZ();
+                    this.props.sortAZ();
                     break;
                 case 'sortZA':
-                    this.sortZA();
+                    this.props.sortZA();
                     break;
                 case 'sortAscend':
-                    this.sortAscend();
+                    this.props.sortAscend();
                     break;
                 case 'sortDescend':
-                    this.sortDescend();
+                    this.props.sortDescend();
                     break;
             }
         }
     }
 
-    sortAscend = () => {
-        this.props.sortAscend();
-        this.setState({searchingAlert: "none"});
-    }
+    // sortAscend = () => {
+    //     this.props.sortAscend();
+    //     //this.setState({searchingAlert: "none"});
+    // }
 
-    sortDescend = () => {
-        this.props.sortDescend();
-        this.setState({searchingAlert: "none"});
-    }
+    // sortDescend = () => {
+    //     this.props.sortDescend();
+    //     //this.setState({searchingAlert: "none"});
+    // }
 
-    sortAZ = () => {
-        this.props.sortAZ();
-        this.setState({searchingAlert: "none"});
-    }
+    // sortAZ = () => {
+    //     this.props.sortAZ();
+    //     //this.setState({searchingAlert: "none"});
+    // }
 
-    sortZA = () => {
-        this.props.sortZA();
-        this.setState({searchingAlert: "none"});
-    }
+    // sortZA = () => {
+    //     this.props.sortZA();
+    //     //this.setState({searchingAlert: "none"});
+    // }
 
     filterCategory = (category) => {
         this.props.filterCategory(category)
         this.setState({
             currentPage: 1,
-            searchingAlert: "none"
+            //searchingAlert: "none"
         });
     }
 
@@ -80,28 +80,28 @@ class Home extends React.Component {
 
     handleSearching = (e) => {
         e.preventDefault();
-        let products = [];
-        this.props.products.forEach((product) => {
-            if (product.name.toLowerCase().includes(this.state.searchingText.trim().toLowerCase())) {
-                products.push(product);
-            }
-        });
-        if (products.length !== 0) {
-            this.setState({
-                products,
-                searchingText: '',
-                searchingAlert: "none"
-            });
-            document.querySelectorAll(".active-filter").forEach((item) => {
-                item.classList.remove('active-filter');
-            });
-        } else {
-            this.setState({
-                products,
-                searchingText: '',
-                searchingAlert: "block"
-            });
-        }
+        this.props.searchProducts(this.state.searchingText);
+        this.setState({searchingText: ''});
+        this.setState({searchingAlert: (this.props.products.length !== 0) ? "none" : "block"});
+
+        // document.querySelectorAll(".active-filter").forEach((item) => {
+        //     item.classList.remove('active-filter');
+        // });
+
+        // if (this.props.products.length !== 0) {
+        //     this.setState({
+        //         searchingText: '',
+        //         searchingAlert: "none"
+        //     });
+        //     document.querySelectorAll(".active-filter").forEach((item) => {
+        //         item.classList.remove('active-filter');
+        //     });
+        // } else {
+        //     this.setState({
+        //         searchingText: '',
+        //         searchingAlert: "block"
+        //     });
+        // }
     }
 
     changeCurrentPage = (page) => {
@@ -119,7 +119,7 @@ class Home extends React.Component {
     }
 
     toggleSidebar = () => {
-        this.setState({sidebarShow: !this.state.sidebarShow})
+        this.setState({sidebarShow: !this.state.sidebarShow});
     }
 
     render() {
@@ -127,10 +127,10 @@ class Home extends React.Component {
             <Fade timeout={100}>
                 <div className="home">
                     <Sidebar
-                        sortAscend={this.sortAscend}
-                        sortDescend={this.sortDescend}
-                        sortAZ={this.sortAZ}
-                        sortZA={this.sortZA}
+                        sortAscend={this.props.sortAscend}
+                        sortDescend={this.props.sortDescend}
+                        sortAZ={this.props.sortAZ}
+                        sortZA={this.props.sortZA}
                         filterCategory={this.filterCategory}
                         activeFilter={this.state.activeFilter}
                         searchingText={this.state.searchingText}
@@ -145,7 +145,7 @@ class Home extends React.Component {
                         changeCurrentPage={this.changeCurrentPage}
                         currentPage={this.state.currentPage}
                         productsPerPage={this.state.productsPerPage}
-                        searchingAlert={this.state.searchingAlert}
+                        //searchingAlert={this.state.searchingAlert}
                     />
                     <FilterButton toggleSidebar={this.toggleSidebar} sidebarShow={this.state.sidebarShow} />
                 </div>
@@ -153,6 +153,7 @@ class Home extends React.Component {
         )
     }
 }
+
 
 Home.propTypes = {
     products: PropTypes.array,

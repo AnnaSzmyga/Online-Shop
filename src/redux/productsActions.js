@@ -4,6 +4,7 @@ export const SORT_AZ = 'SORT_AZ';
 export const SORT_ZA = 'SORT_ZA';
 export const FILTER_CATEGORY = 'FILTER_CATEGORY';
 export const RESET_FILTERING = 'RESET_FILTERING';
+export const SEARCH_PRODUCTS = 'SEARCH_PRODUCTS';
 
 
 export function sortAscend() {
@@ -40,6 +41,13 @@ export function filterCategory(category) {
 export function resetFiltering() {
     return {
         type: RESET_FILTERING,
+    }
+};
+
+export function searchProducts(text) {
+    return {
+        type: SEARCH_PRODUCTS,
+        text
     }
 };
 

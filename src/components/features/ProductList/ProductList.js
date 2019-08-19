@@ -5,16 +5,17 @@ import PropTypes from 'prop-types';
 import { Row } from 'reactstrap';
 import './ProductList.scss';
 
-const ProductList = ({products, addToCart, currentPage, productsPerPage, changeCurrentPage, searchingAlert}) =>{
-
+const ProductList = ({products, addToCart, currentPage, productsPerPage, changeCurrentPage,}) =>{
+    console.log(products);
     const firstProductIndex = (productsPerPage * currentPage) - productsPerPage;
     const lastProductIndex = firstProductIndex + productsPerPage;
     const currentProducts = products.slice(firstProductIndex, lastProductIndex);
-    const paginationDisplay = (searchingAlert === "none") ? "flex" : "none"
+    const paginationDisplay = (products.length !== 0) ? "flex" : "none";
+    const searchingAlertDisplay = (products.length !== 0) ? "none" : "block";
 
     return (
         <div className="products">
-            <p className="products__searching-alert" style={{display: searchingAlert}}>Nie znaleziono żadnych wyników wyszukiwania.</p>
+            <p className="products__searching-alert" style={{display: searchingAlertDisplay}}>Nie znaleziono żadnych wyników wyszukiwania.</p>
             <Row>
                 {
                     currentProducts.map((product) => {
@@ -37,8 +38,7 @@ ProductList.propTypes = {
     addToCart: PropTypes.func,
     productsPerPage: PropTypes.number,
     currentPage: PropTypes.number,
-    changeCurrentPage: PropTypes.func,
-    searchingAlert: PropTypes.string
+    changeCurrentPage: PropTypes.func
 }
 
 export default ProductList;

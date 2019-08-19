@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 import './MainLayout.scss';
 
-const MainLayout = ({products, sortAZ, sortZA, sortAscend, sortDescend, filterCategory, resetFiltering, cart, addProduct, removeProduct, clearCart, changeQuantity}) => {
+const MainLayout = ({products, sortAZ, sortZA, sortAscend, sortDescend, filterCategory, resetFiltering, searchProducts, cart, addProduct, removeProduct, clearCart, changeQuantity}) => {
     return (
         <div className="main-layout">
             <Navbar cartContent={cart.length} resetFiltering={resetFiltering}/>
@@ -17,6 +17,7 @@ const MainLayout = ({products, sortAZ, sortZA, sortAscend, sortDescend, filterCa
                 sortAscend={sortAscend}
                 sortDescend={sortDescend}
                 filterCategory={filterCategory}
+                searchProducts={searchProducts}
                 cart={cart}
                 addProduct={addProduct}
                 removeProduct={removeProduct}
