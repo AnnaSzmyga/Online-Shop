@@ -9,7 +9,7 @@ import './MainLayout.scss';
 const MainLayout = ({products, sortAZ, sortZA, sortAscend, sortDescend, filterCategory, resetFiltering, cart, addProduct, removeProduct, clearCart, changeQuantity}) => {
     return (
         <div className="main-layout">
-            <Navbar cartContent={cart.length}/>
+            <Navbar cartContent={cart.length} resetFiltering={resetFiltering}/>
             <PageContainer
                 products={products}
                 sortAZ={sortAZ}
@@ -17,7 +17,6 @@ const MainLayout = ({products, sortAZ, sortZA, sortAscend, sortDescend, filterCa
                 sortAscend={sortAscend}
                 sortDescend={sortDescend}
                 filterCategory={filterCategory}
-                resetFiltering={resetFiltering}
                 cart={cart}
                 addProduct={addProduct}
                 removeProduct={removeProduct}

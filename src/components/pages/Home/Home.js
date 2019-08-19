@@ -10,16 +10,8 @@ import './Home.scss';
 class Home extends React.Component {
     constructor(props) {
         super(props);
-        let activeSorting;
-        const setActiveCategory = () => {
-            const categories = this.props.products.map(product => product.category);
-            categories.sort((a, b) => a.localeCompare(b));
-            let activeCategory = (categories[0] === categories[categories.length - 1]) ? categories[0] : '';
-            return activeCategory;
-        }
-
         this.state = {
-            activeCategory: setActiveCategory(),
+            activeCategory: '',
             activeSorting: '',
             searchingText: '',
             searchingAlert: "none",
@@ -27,6 +19,13 @@ class Home extends React.Component {
             productsPerPage: 6,
             showSidebar: false
         };
+    }
+
+    componentDidMount() {
+        const categories = this.props.products.map(product => product.category);
+        categories.sort((a, b) => a.localeCompare(b));
+        let activeCategory = (categories[0] === categories[categories.length - 1]) ? categories[0] : '';
+        this.setState({activeCategory});
     }
 
     sortAscend = () => {

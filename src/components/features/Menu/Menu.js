@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 
 import './Menu.scss';
 
-const Menu = ({menuShow}) => {
+const Menu = ({menuShow, resetFiltering}) => {
     const menuClassName = (menuShow) ? "menu" : `menu menu-hidden`;
     return (
         <div className={menuClassName}>
             <ul className="menu__list">
-                <li className="menu__item">
+                <li className="menu__item" onClick={resetFiltering}>
                     <NavLink exact to="/" className="menu__link" activeClassName="menu__link--active">Home</NavLink>
                 </li>
                 <li className="menu__item">

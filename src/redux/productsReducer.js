@@ -3,11 +3,11 @@ import { SORT_ASCEND, SORT_DESCEND, SORT_AZ, SORT_ZA, FILTER_CATEGORY, RESET_FIL
 
 /* INITIAL STATE */
 
-const initialState = products;
+const [...initialState] = products;
 
 /* REDUCER */
 
-export default function productsReducer(state = initialState, action) {
+export default function productsReducer([...state] = initialState, action) {
   switch (action.type) {
 
     case SORT_ASCEND:
@@ -33,7 +33,6 @@ export default function productsReducer(state = initialState, action) {
 
     case SORT_ZA:
       console.log("Nazwa Z-A");
-
       return state.sort((a, b) => {
         return b.name.localeCompare(a.name);
       });
@@ -48,3 +47,5 @@ export default function productsReducer(state = initialState, action) {
       return state;
   }
 };
+
+console.log(initialState);

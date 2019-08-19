@@ -38,12 +38,12 @@ class Navbar extends React.Component {
             <div className="navbar" style={{padding: this.state.padding}}>
                 <Container>
                     <div className="navbar__mobile-view">
-                        <Link to="/" className="navbar__logo-link">
+                        <Link to="/" className="navbar__logo-link" onClick={this.props.resetFiltering}>
                             <Logo />
                         </Link>
                         <Hamburger toggleMenu={this.toggleMenu} menuShow={this.state.menuShow} />
                     </div>
-                    <Menu menuShow={this.state.menuShow} />
+                    <Menu menuShow={this.state.menuShow} resetFiltering={this.props.resetFiltering} />
                     <CartLink cartContent={this.props.cartContent} menuShow={this.state.menuShow} />
                 </Container>
             </div>

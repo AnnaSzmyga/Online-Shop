@@ -12,7 +12,7 @@ import { Container } from 'reactstrap';
 
 import './PageContainer.scss';
 
-const PageContainer = ({products, sortAZ, sortZA, sortAscend, sortDescend, filterCategory, resetFiltering, cart, addProduct, removeProduct, clearCart, changeQuantity}) => {
+const PageContainer = ({products, sortAZ, sortZA, sortAscend, sortDescend, filterCategory, cart, addProduct, removeProduct, clearCart, changeQuantity}) => {
   return (
     <div className="page-container">
       <Container>
@@ -30,7 +30,6 @@ const PageContainer = ({products, sortAZ, sortZA, sortAscend, sortDescend, filte
                 sortAscend={sortAscend}
                 sortDescend={sortDescend}
                 filterCategory={filterCategory}
-                resetFiltering={resetFiltering}
               />
             }
           />
