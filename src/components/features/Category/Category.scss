@@ -6,8 +6,6 @@
     text-transform: capitalize;
     font-size: 18px;
     font-family: 'Cinzel', serif;
-    transition: .4s;
-    cursor: pointer;
     position: relative;
 
     &::after {
@@ -23,12 +21,6 @@
 
     }
 
-    &:hover, &.active-filter {
-        letter-spacing: 2px;
-        color: $primary-green;
-        font-weight: 700;
-    }
-
     &:last-of-type::after {
         display: none;
     }
@@ -36,5 +28,18 @@
     @media(max-width: 767px) {
         font-size: 14px;
         padding: 6px 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $text-color;
+        transition: .4s;
+
+        &:hover, &.active-filter {
+            text-decoration: none;
+            color: $primary-green;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
     }
 }

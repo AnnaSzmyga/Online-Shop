@@ -17,10 +17,18 @@
             font-size: 18px;
         }
     }
+
+    &__link {
+        color: $text-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
     &__item {
-        margin: 10px 0;
         transition: .4s;
-        cursor: pointer;
+        margin: 10px 0;
 
         @media(max-width: 767px) {
             font-size: 14px;

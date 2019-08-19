@@ -6,9 +6,9 @@ import './Category.scss';
 
 const Category = ({category, onFilterCategory, activeFilter, toggleActiveClassName}) => {
 
-    const categoryClassName = (activeFilter.activeCategory === category.categoryName) ? "category active-filter" : "category";
+    const categoryClassName = (activeFilter.activeCategory === category.categoryName) ? "category__link active-filter" : "category__link";
     return (
-        <li>
+        <li className="category">
             <Link
                 to={`/category=${category.categoryName}&sorting=${activeFilter.activeSorting}`}
                 className={categoryClassName}
