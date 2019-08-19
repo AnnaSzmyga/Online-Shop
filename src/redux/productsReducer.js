@@ -47,5 +47,3 @@ export default function productsReducer([...state] = initialState, action) {
       return state;
   }
 };
-
-console.log(initialState);

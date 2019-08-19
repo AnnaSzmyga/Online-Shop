@@ -11,8 +11,10 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            activeCategory: '',
-            activeSorting: '',
+            activeFilter: {
+                activeCategory: (this.props.isFiltered) ? this.props.match.params.category : 'non',
+                activeSorting: (this.props.isFiltered) ? this.props.match.params.sorting : 'non'
+            },
             searchingText: '',
             searchingAlert: "none",
             currentPage: 1,
@@ -21,37 +23,51 @@ class Home extends React.Component {
         };
     }
 
-    componentDidMount() {
-        const categories = this.props.products.map(product => product.category);
-        categories.sort((a, b) => a.localeCompare(b));
-        let activeCategory = (categories[0] === categories[categories.length - 1]) ? categories[0] : '';
-        this.setState({activeCategory});
+    componentWillMount() {
+        if (this.state.activeFilter.activeCategory !== 'non') {
+            this.filterCategory(this.state.activeFilter.activeCategory);
+        }
+        if (this.state.activeFilter.activeSorting !== 'non') {
+            switch (this.state.activeFilter.activeSorting) {
+                case 'sortAZ':
+                    this.sortAZ();
+                    break;
+                case 'sortZA':
+                    this.sortZA();
+                    break;
+                case 'sortAscend':
+                    this.sortAscend();
+                    break;
+                case 'sortDescend':
+                    this.sortDescend();
+                    break;
+            }
+        }
     }
 
     sortAscend = () => {
         this.props.sortAscend();
-        this.setState({activeSorting: "sort-ascend", searchingAlert: "none"});
+        this.setState({searchingAlert: "none"});
     }
 
     sortDescend = () => {
         this.props.sortDescend();
-        this.setState({activeSorting: "sort-descend", searchingAlert: "none"});
+        this.setState({searchingAlert: "none"});
     }
 
     sortAZ = () => {
         this.props.sortAZ();
-        this.setState({activeSorting: "sort-AZ", searchingAlert: "none"});
+        this.setState({searchingAlert: "none"});
     }
 
     sortZA = () => {
         this.props.sortZA();
-        this.setState({activeSorting: "sort-ZA", searchingAlert: "none"});
+        this.setState({searchingAlert: "none"});
     }
 
     filterCategory = (category) => {
         this.props.filterCategory(category)
         this.setState({
-            activeCategory: category,
             currentPage: 1,
             searchingAlert: "none"
         });
@@ -102,10 +118,6 @@ class Home extends React.Component {
         clickedItem.classList.add('active-filter');
     }
 
-    setActiveFilter = () => {
-
-    }
-
     toggleSidebar = () => {
         this.setState({sidebarShow: !this.state.sidebarShow})
     }
@@ -120,8 +132,7 @@ class Home extends React.Component {
                         sortAZ={this.sortAZ}
                         sortZA={this.sortZA}
                         filterCategory={this.filterCategory}
-                        activeSorting={this.state.activeSorting}
-                        activeCategory={this.state.activeCategory}
+                        activeFilter={this.state.activeFilter}
                         searchingText={this.state.searchingText}
                         handleTextChange={this.handleTextChange}
                         handleSearching={this.handleSearching}
@@ -145,6 +156,7 @@ class Home extends React.Component {
 
 Home.propTypes = {
     products: PropTypes.array,
+    isFiltered: PropTypes.bool,
     addToCart: PropTypes.func
 }
 

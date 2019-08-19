@@ -30,9 +30,32 @@ const PageContainer = ({products, sortAZ, sortZA, sortAscend, sortDescend, filte
                 sortAscend={sortAscend}
                 sortDescend={sortDescend}
                 filterCategory={filterCategory}
+                isFiltered={false}
               />
             }
           />
+
+
+          <Route
+            path={"/category=:category&sorting=:sorting"}
+            render={(props) =>
+              <Home
+                {...props}
+                products={products}
+                addToCart={addProduct}
+                sortAZ={sortAZ}
+                sortZA={sortZA}
+                sortAscend={sortAscend}
+                sortDescend={sortDescend}
+                filterCategory={filterCategory}
+                isFiltered={true}
+              />
+            }
+          />
+
+
+
+
           <Route path={"/faq"} exact component={FAQ} />
           <Route path={"/regulations"} exact component={Regulations} />
           <Route path={"/contact"} exact component={Contact} />

@@ -8,8 +8,6 @@ import './ProductPage.scss';
 
 
 const ProductPage = ({products, addProduct, ...props}) => {
-
-
   let activeProduct;
   products.forEach((product) => {
       if (product.id.toString() === props.match.params.id) {
