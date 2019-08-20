@@ -6,7 +6,7 @@ import { Row } from 'reactstrap';
 import './ProductList.scss';
 
 const ProductList = ({products, addToCart, currentPage, productsPerPage, changeCurrentPage,}) =>{
-    console.log(products);
+
     const firstProductIndex = (productsPerPage * currentPage) - productsPerPage;
     const lastProductIndex = firstProductIndex + productsPerPage;
     const currentProducts = products.slice(firstProductIndex, lastProductIndex);

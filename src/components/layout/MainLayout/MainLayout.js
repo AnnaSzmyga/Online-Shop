@@ -31,6 +31,12 @@ const MainLayout = ({products, sortAZ, sortZA, sortAscend, sortDescend, filterCa
 
 MainLayout.propTypes = {
     products: PropTypes.array,
+    sortAZ: PropTypes.func,
+    sortZA: PropTypes.func,
+    sortAscend: PropTypes.func,
+    sortDescend: PropTypes.func,
+    filterCategory: PropTypes.func,
+    searchProducts: PropTypes.func,
     cart: PropTypes.array,
     addProduct: PropTypes.func,
     removeProduct: PropTypes.func,

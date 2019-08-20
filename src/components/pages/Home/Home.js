@@ -45,31 +45,19 @@ class Home extends React.Component {
         }
     }
 
-    // sortAscend = () => {
-    //     this.props.sortAscend();
-    //     //this.setState({searchingAlert: "none"});
-    // }
-
-    // sortDescend = () => {
-    //     this.props.sortDescend();
-    //     //this.setState({searchingAlert: "none"});
-    // }
-
-    // sortAZ = () => {
-    //     this.props.sortAZ();
-    //     //this.setState({searchingAlert: "none"});
-    // }
-
-    // sortZA = () => {
-    //     this.props.sortZA();
-    //     //this.setState({searchingAlert: "none"});
-    // }
+    setActiveFilter = (activeCategory, activeSorting) => {
+        this.setState({
+            activeFilter: {
+                activeCategory,
+                activeSorting
+            }
+        });
+    }
 
     filterCategory = (category) => {
         this.props.filterCategory(category)
         this.setState({
-            currentPage: 1,
-            //searchingAlert: "none"
+            currentPage: 1
         });
     }
 
@@ -82,26 +70,6 @@ class Home extends React.Component {
         e.preventDefault();
         this.props.searchProducts(this.state.searchingText);
         this.setState({searchingText: ''});
-        this.setState({searchingAlert: (this.props.products.length !== 0) ? "none" : "block"});
-
-        // document.querySelectorAll(".active-filter").forEach((item) => {
-        //     item.classList.remove('active-filter');
-        // });
-
-        // if (this.props.products.length !== 0) {
-        //     this.setState({
-        //         searchingText: '',
-        //         searchingAlert: "none"
-        //     });
-        //     document.querySelectorAll(".active-filter").forEach((item) => {
-        //         item.classList.remove('active-filter');
-        //     });
-        // } else {
-        //     this.setState({
-        //         searchingText: '',
-        //         searchingAlert: "block"
-        //     });
-        // }
     }
 
     changeCurrentPage = (page) => {
@@ -116,6 +84,9 @@ class Home extends React.Component {
             item.classList.remove('active-filter');
         });
         clickedItem.classList.add('active-filter');
+        if (clickedItemClass === "category__link") {
+            document.querySelectorAll('.sorting__item').forEach((item) => item.classList.remove('active-filter'));
+        };
     }
 
     toggleSidebar = () => {
@@ -133,6 +104,7 @@ class Home extends React.Component {
                         sortZA={this.props.sortZA}
                         filterCategory={this.filterCategory}
                         activeFilter={this.state.activeFilter}
+                        setActiveFilter={this.setActiveFilter}
                         searchingText={this.state.searchingText}
                         handleTextChange={this.handleTextChange}
                         handleSearching={this.handleSearching}
@@ -145,7 +117,6 @@ class Home extends React.Component {
                         changeCurrentPage={this.changeCurrentPage}
                         currentPage={this.state.currentPage}
                         productsPerPage={this.state.productsPerPage}
-                        //searchingAlert={this.state.searchingAlert}
                     />
                     <FilterButton toggleSidebar={this.toggleSidebar} sidebarShow={this.state.sidebarShow} />
                 </div>
@@ -157,6 +128,12 @@ class Home extends React.Component {
 
 Home.propTypes = {
     products: PropTypes.array,
+    sortAZ: PropTypes.func,
+    sortZA: PropTypes.func,
+    sortAscend: PropTypes.func,
+    sortDescend: PropTypes.func,
+    filterCategory: PropTypes.func,
+    searchProducts: PropTypes.func,
     isFiltered: PropTypes.bool,
     addToCart: PropTypes.func
 }

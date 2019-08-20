@@ -12,7 +12,7 @@ import { Container } from 'reactstrap';
 
 import './PageContainer.scss';
 
-const PageContainer = ({products, sortAZ, sortZA, sortAscend, sortDescend, filterCategory, searchProducts={searchProducts}, cart, addProduct, removeProduct, clearCart, changeQuantity}) => {
+const PageContainer = ({products, sortAZ, sortZA, sortAscend, sortDescend, filterCategory, searchProducts, cart, addProduct, removeProduct, clearCart, changeQuantity}) => {
   return (
     <div className="page-container">
       <Container>
@@ -68,10 +68,6 @@ const PageContainer = ({products, sortAZ, sortZA, sortAscend, sortDescend, filte
               />
             }
           />
-          <Route
-                    path={"/test"}
-                    render={() => <p>test</p>}
-                />
           <Route path={"/cakes/:id"} render={(props) => <ProductPage {...props} products={products} addProduct={addProduct} />} />
           <Route component={NoMatch} />
         </Switch>
@@ -82,6 +78,12 @@ const PageContainer = ({products, sortAZ, sortZA, sortAscend, sortDescend, filte
 
 PageContainer.propTypes = {
   products: PropTypes.array,
+  sortAZ: PropTypes.func,
+  sortZA: PropTypes.func,
+  sortAscend: PropTypes.func,
+  sortDescend: PropTypes.func,
+  filterCategory: PropTypes.func,
+  searchProducts: PropTypes.func,
   cart: PropTypes.array,
   addProduct: PropTypes.func,
   removeProduct: PropTypes.func,
