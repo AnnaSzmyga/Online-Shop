@@ -41,6 +41,8 @@ class Home extends React.Component {
                 case 'sortDescend':
                     this.props.sortDescend();
                     break;
+                default:
+                    break;
             }
         }
     }

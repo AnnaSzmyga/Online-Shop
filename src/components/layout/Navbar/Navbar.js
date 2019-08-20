@@ -15,9 +15,8 @@ class Navbar extends React.Component {
         this.state = {
             padding: '35px 0',
             menuShow: false
-        }
-        console.log(this.state)
-;    }
+        };
+    }
     // shrink navbar on scrolling
     componentDidMount() {
         document.addEventListener('scroll', () => {
