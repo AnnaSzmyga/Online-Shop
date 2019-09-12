@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import './Category.scss';
 
-const Category = ({category, onFilterCategory, activeFilter, setActiveFilter,toggleActiveClassName}) => {
+const Category = ({category, onFilterCategory, activeFilter, toggleActiveClassName}) => {
 
     const categoryClassName = (activeFilter.activeCategory === category.categoryName) ? "category__link active-filter" : "category__link";
     return (
@@ -14,8 +14,7 @@ const Category = ({category, onFilterCategory, activeFilter, setActiveFilter,tog
                 className={categoryClassName}
                 onClick={(e) => {
                     onFilterCategory();
-                    toggleActiveClassName(e);
-                    setActiveFilter(category.categoryName, activeFilter.activeSorting)}
+                    toggleActiveClassName(e);}
                 }
             >
                 {category.categoryOutput}

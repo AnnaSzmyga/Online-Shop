@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import './Sorting.scss';
 
-const Sorting = ({onSortAscend, onSortDescend, onSortAZ, onSortZA, activeFilter, setActiveFilter, toggleActiveClassName}) => {
+const Sorting = ({onSortAscend, onSortDescend, onSortAZ, onSortZA, activeFilter, toggleActiveClassName}) => {
 
     const setClassName = (sortingName) => {
         return (activeFilter.activeSorting === sortingName) ? "sorting__item active-filter" : "sorting__item";
@@ -19,8 +19,7 @@ const Sorting = ({onSortAscend, onSortDescend, onSortAZ, onSortZA, activeFilter,
                     className={setClassName("sortAZ")}
                     onClick={(e) => {
                         onSortAZ();
-                        toggleActiveClassName(e);
-                        setActiveFilter(activeFilter.activeCategory, "sortAZ")}
+                        toggleActiveClassName(e);}
                     }
                 >
                     Nazwa A-Z
@@ -31,8 +30,7 @@ const Sorting = ({onSortAscend, onSortDescend, onSortAZ, onSortZA, activeFilter,
                     className={setClassName("sortZA")}
                     onClick={(e) => {
                         onSortZA();
-                        toggleActiveClassName(e);
-                        setActiveFilter(activeFilter.activeCategory, "sortZA")}
+                        toggleActiveClassName(e);}
                     }
                 >
                     Nazwa Z-A
@@ -43,8 +41,7 @@ const Sorting = ({onSortAscend, onSortDescend, onSortAZ, onSortZA, activeFilter,
                     className={setClassName("sortAscend")}
                     onClick={(e) => {
                         onSortAscend();
-                        toggleActiveClassName(e);
-                        setActiveFilter(activeFilter.activeCategory, "sortAscend")}
+                        toggleActiveClassName(e);}
                     }
                 >
                     Cena rosnąco
@@ -55,8 +52,7 @@ const Sorting = ({onSortAscend, onSortDescend, onSortAZ, onSortZA, activeFilter,
                     className={setClassName("sortDescend")}
                     onClick={(e) => {
                         onSortDescend();
-                        toggleActiveClassName(e);
-                        setActiveFilter(activeFilter.activeCategory, "sortDescend")}
+                        toggleActiveClassName(e);}
                     }
                 >
                     Cena malejąco
